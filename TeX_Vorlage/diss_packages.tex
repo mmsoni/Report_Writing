@@ -1,0 +1,135 @@
+%%%%%%%%%%%%% Typografisch empfehlenswerte Pakete
+\usepackage{ellipsis}   % Korrigiert den Weißraum um Auslassungspunkte
+\usepackage{ragged2e}   % Ermöglicht Flattersatz mit Silbentrennung
+\usepackage{marginnote} % Für bessere Randnotizen mit \marginnote statt \marginline
+
+\usepackage[a4paper,text={160mm,230mm},centering,headsep=5mm,footskip=10mm]{geometry}
+%\usepackage[a5paper]{geometry}
+
+\usepackage{%
+  lmodern, % A) Latin Modern Fonts sind die Nachfolger von Computer
+            % Modern, den LaTeX-Standardfonts
+%  hfoldsty % B) Diese Schrift stellt alle Ziffern, außer
+            % im Mathemodus, auf Minuskel- oder Mediäval-Ziffern um.
+            % Wenn Ihre pdfs unscharf aussehen installieren Sie bitte
+            % die cm-super-Fonts (Type1-Fonts).
+ %charter   % C) Diese Zeile lädt die Charter als Schriftart
+ %fourier % D) Fourier
+}
+
+ %\usepackage[osf,sc]{mathpazo}% D) So erreichen Sie Palatino als
+            % Schrift mit Minuskel-Ziffern und echten Kapitälchen
+\usepackage{mathpazo}
+
+\usepackage[table]{xcolor}
+%
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}  % macht SS zu ß in PostScript
+%\usepackage{t1enc}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{amsfonts}
+\usepackage{makeidx}
+\usepackage{bm}
+\usepackage{euscript}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage[Sonny]{fncychap}
+\usepackage{fancyhdr} 
+\usepackage{fancybox}
+\usepackage{units}
+\usepackage{tocvsec2}
+
+% NATBIB Package
+%
+%round: (default) for round parentheses;
+%square: for square brackets;
+%curly: for curly braces;
+%angle: for angle brackets;
+%colon: (default) to separate multiple citations with colons;
+%comma: to use commas as separaters;
+%authoryear: (default) for author-year citations;
+%numbers: for numerical citations;
+%super: for superscripted numerical citations, as in Nature;
+%sort: orders multiple citations into the sequence in which they appear in the list of references;
+%sort&compress: as sort but in addition multiple numerical citations are compressed if possible (as 3-6, 15);
+%longnamesfirst: makes the first citation of any reference the equivalent of the starred variant (full author list) and subsequent citations normal (abbreviated list);
+%sectionbib: redefines \thebibliography to issue \section* instead of \chapter*; valid only for classes with a \chapter command; to be used with the chapterbib package;
+%nonamebreak: keeps all the authors' names in a citation on one line; causes overfull hboxes but helps with some hyperref problems.
+
+%\usepackage[square,numbers,comma,sort&compress]{natbib}
+\usepackage[numbers]{natbib}
+
+\usepackage[intoc]{nomencl}						%intoc == in table of contents
+\usepackage{multicol}
+\usepackage[percent]{overpic}
+\usepackage{caption}
+\renewcommand{\captionfont}{\small \sffamily}
+\renewcommand{\captionlabelfont}{\small \sffamily}
+
+\usepackage{subcaption}
+\usepackage{float}
+% boxed,boxruled,ruled,algoruled,tworuled,plain
+% lined,vlined
+\usepackage[boxruled,algochapter,commentsnumbered]{algorithm2e}
+% replace strings in eps pictures
+\usepackage{psfrag}
+\usepackage{pgfplots}
+\usepackage{ifpdf}
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{snakes}
+\usetikzlibrary{decorations}
+\usetikzlibrary{mindmap}
+
+\usepackage{todonotes}
+
+\usepackage{color}
+% TU Braunschweig rot
+% hex   be1e3c
+% dec   190,30,60
+% rel   0.75,0.12,0.24
+
+%\definecolor{tubsRed}{rgb}{1.0,0.84,0.89} PIG PINK
+\definecolor{tubsRed}{rgb}{0.75,0.12,0.24} 
+\definecolor{waterColor}{rgb}{0.2,0.2,1.0} 
+\definecolor{solidColor}{rgb}{0.75,0.12,0.24} 
+
+%\usepackage{ulem}
+
+\usepackage[
+	pdftex=true,%
+	pdfpagemode={UseOutlines},
+	pdfview={Fit},
+	pdfstartview={Fit},
+	pdftitle    = {Titel},
+	pdfsubject  = {},
+	pdfauthor   = {MartinS},
+	pdfkeywords = {},
+	colorlinks=true,%
+	linkcolor=black,%
+	menucolor=black,%
+	urlcolor=black,%
+	citecolor=black,%
+	linktocpage,%
+	bookmarksnumbered=true,%
+	bookmarksopen=true,%
+	plainpages=false
+]{hyperref}
+
+\usepackage{placeins} %fuer die floatbarrier
+
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{0.9}
+%%%%\usepackage[firstpage]{draftwatermark} %watermark on the first page only
+%%%%\SetWatermarkText{BIO-HAZARD}
+%%%%\SetWatermarkText{\sffamily DRAFT}
+%%%%\SetWatermarkScale{4}
+
+\usepackage{cleveref}
+

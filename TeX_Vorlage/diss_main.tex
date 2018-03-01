@@ -1,0 +1,299 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass[
+11pt,
+a4paper,
+%oneside,
+twoside,
+headings=small,%
+headinclude,
+headsepline,
+bibliography=totoc,% Bib im Inhaltsverzeichnis
+numbers=noenddot,  %verhindert den punkt nach "1.1.2." -> "1.1.2"
+index=totoc,			 % Index im Inhaltsverzeichnis
+listof=flat
+%BCOR=5mm,                     % Bindungskorrektur
+%DIV=12                       % Satzspiegel einstellen 
+]{scrbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% th%%%%%%%%%%%%%%%%
+\input{diss_packages}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\nomlabelwidth}{.20\hsize}	% Punkte zw. Abkürzung und Erklärung
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+%\makenomenclature
+
+\graphicspath{
+{./pics/},
+{./01_titlepage/figures/},
+{./01_wquote/figures/},
+{./02_abstract/figures/},
+}
+
+\makeatother
+
+%formatierung der bildunterschriften
+%\usepackage[bf]{caption2}
+%\usepackage{subcaption}
+
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% My nice little own float
+\floatstyle{plain}
+%\newfloat{type}{placement}{ext}[outer counter], where:
+\newfloat{testcase}{htbp}{tcs}[chapter]
+\floatname{testcase}{Test case}
+
+%\newcounter{subtestcase}
+%\newcounter{subtestcase@save}
+
+\DeclareCaptionSubType*{testcase}
+% Variante I: (1.5.a)
+%\renewcommand\thesubtestcase{\thetestcase\alph{subtestcase}}
+% Variante I: (a)
+\renewcommand\thesubtestcase{\alph{subtestcase}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatierungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\parindent 0pt %Legt die EinrückTiefe der ersten Zeile für alle folgenden Absätze fest. 
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+%\setlength{\parskip}{6pt}
+
+%
+\sloppy %Schaltet auf eine großzügige Formatierungsweise um, die relativ wenige Worttrennungen am Zeilenende erzeugt, dafür aber auch etwas größere Wortabstände innerhalb der Zeilen zuläßt. 
+\frenchspacing %Schaltet den zusätzlichen Zwischenraum ab, den LaTeX normalerweise nach einem Satzzeichen einfügt. 
+%
+
+% Zeilenabstand
+\renewcommand{\baselinestretch}{1.1}\normalsize
+%\renewcommand{\baselinestretch}{1.3}\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\slshape \leftmark}
+\fancyhead[LO]{\slshape \rightmark}
+\fancyfoot[C]{}
+\pagestyle{fancy}
+\addtolength{\headheight}{15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \autoref is used inside a sentence 
+% (this is a renew of the standard)
+\let\orgautoref\autoref
+\renewcommand{\autoref}
+        {\def\equationautorefname{Eq.}%
+         \def\algorithmautorefname{Alg.}%
+         \def\algoautorefname{Alg.}%
+         \def\figureautorefname{Fig.}%
+         \def\testcaseautorefname{test case setup}%
+         \def\subfigureautorefname{Fig.}%
+         \def\sectionautorefname{section}%
+         \def\subsectionautorefname{section}%
+         \def\subsubsectionautorefname{section}%
+         \def\Itemautorefname{item}%
+         \def\tableautorefname{Tab.}%
+         \orgautoref}
+%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{diss_ownDefines}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makenomenclature
+\makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% eigentliches Dokument
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%
+\sffamily
+%%
+%%%%%% title page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\input{01_titlepage/title_draft}
+%\input{01_titlepage/title_final}
+%%
+\pagenumbering{roman}
+%%
+%%%%%% abstract %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\input{02_abstract/abstract}							% Abstract
+\cleardoublepage
+\input{02_abstract/Kurzfassung}						% Abstract(deutsch)
+%%
+%%%%%% Danksagung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\cleardoublepage
+%%\input{03_acknowledgment/acknowledgment} 	% Acknowledgment
+%\cleardoublepage
+%\input{03_acknowledgment/Danksagung}     	% Ack. (deutsch)
+%%%
+%%%%%% table of contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagestyle{fancy}
+\setcounter{tocdepth}{2}
+\tableofcontents
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% EINLEITUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\headheight 40pt
+%%
+%\raggedbottom
+%\input{04_introduction/introduction}
+%%%
+%%%
+%%%%%%% TEIL 0: BASISMODELLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%\part{Basics} \label{part:one}
+%%%
+%%\input{01_wquote/part1_quote}
+%%%%%%% Lattice Boltzmann %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{05_lbm/lbm}
+%%%
+%%%%%%% Grafikkarten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{06_gpu/gpu}
+%%%
+%%%%%%% TEIL I: BASISMODELLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%\part{Algorithms and implementation} \label{part:two}
+%%%
+%%\input{01_wquote/part2_quote}
+%%%%%%% Esoteric Twist %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{07_esotwist/esotwist}
+%%%
+%%%%%%% Indirect Adressing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{08_ia/ia}
+%%%
+%%%%%%% Grid Refinement %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{09_gridrefinement/gridrefinement}
+%%%
+%%%%%% Multi GPGPU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{10_multigpu/multigpu}
+%%%
+%%%
+%%%% TEIL II: Evaluation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%\part{Model Evaluation} \label{part:three}
+%%%
+%%\input{01_wquote/part3_quote}
+%%%%%%% Shear Waves and TGV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{11_numericalTests/numericalTests}
+%%%
+%%%%%% Kugel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{12_sphere/sphere}
+%%%
+%%%
+%%%% TEIL III: Showcases %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%\part{Large Scale Applications} \label{part:four}
+%%%
+%%\input{01_wquote/part4_quote}
+%%%%%%%% BASF %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\input{14_basf/basf}
+%%%
+%%%%% Zylinder %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{13_beadPack/beadPack}
+%%%
+%%%%%%% Schiff 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{15_ship1/ship1}
+%%%
+%%%%%%% Schiff 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{16_ship2/ship2}
+%%%
+%%%%%%% Auto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{17_car/car}
+%%%
+%%%
+%%%%%% OUTLOOK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cleardoublepage
+%\input{18_outlook/outlook}
+%%%
+
+
+%%% APPENDIX %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appendix}
+%\settocdepth{chapter}
+%%
+%\cleardoublepage
+%\input{19_appendix/appendix}
+%%%
+%%%% Literaturverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+\bibliographystyle{plainnat}
+%%
+ \small
+ \bibliography{00_bib/bibtex}
+%\begin{multicols}{2}
+% \small
+% \bibliography{00_bib/bibtex}
+%\end{multicols}
+%%%
+%%%%%%% nomenclature %%%%%
+\cleardoublepage
+\printnomenclature
+%
+%%%%%%% index %%%%%
+%\cleardoublepage
+%%\addcontentsline{toc}{chapter}{Index}
+%\printindex
+%%%%% LIST OF FIGURES %%%%%%%%%
+\clearpage
+\small
+\listoffigures
+\addcontentsline{toc}{chapter}{List of figures}
+%%%%%% LIST OF TABLES %%%%%%%%%
+\clearpage
+\listoftables
+\addcontentsline{toc}{chapter}{List of tables}
+%%
+%\clearpage
+%\listof{testcase}{List of test cases}
+%\addcontentsline{toc}{chapter}{List of test cases}
+%%%
+%\clearpage
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{List of algorithms}
+%%
+%%
+\end{appendix}
+
+
+ %%Zitat
+
+\pagestyle{empty}
+
+%\input{diss_erklaerung}     % eidesstattliche Erklaerung
+
+\newpage
+\begin{center}
+\vspace*{0.4\pdfpageheight}
+The end.
+\end{center}
+
+\end{document}

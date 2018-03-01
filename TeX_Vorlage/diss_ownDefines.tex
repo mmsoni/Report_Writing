@@ -1,0 +1,34 @@
+% own commands
+
+\newcommand{\cfSpace}{\hspace{5mm}}
+\newcommand{\cfAnd}{\hspace{5mm} \text{and} \hspace{5mm}}
+\newcommand{\cfVec}[1]{\mathbf{#1}}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\landau}[1]{\mathcal{O}(#1)}
+
+% Own abbreviations
+\newcommand{\VF}{\textsc{VirtualFluids }}
+
+% dimensionless numbers
+\newcommand{\Ma}{\mbox{Ma}}
+\newcommand{\Fr}{\mbox{Fr}}
+\newcommand{\Kn}{\mbox{Kn}}
+\newcommand{\Rey}{\mbox{Re}}
+\newcommand{\CFL}{\mbox{CFL}}
+\newcommand{\pdf}{particle distribution function}
+
+%\newcommand{\includeTpX}[2]{\resizebox{#1}{!}{\input{#2}}}
+
+\setlength{\fboxsep}{15pt}
+
+%\newcommand{\cfBox}[1]{\shadowbox{\parbox{150mm}{#1}}}
+\newcommand{\cfBox}[1]{
+ \begin{center}
+  \color{tubsRed}
+  \Ovalbox{\centering\parbox{140mm}{\textcolor{black}{#1}}}
+ \end{center}
+}
+
+%\setlength{\fboxrule}{...}: setzt die Breite der Linien für \fbox, \shadowbox, \doublebox, \ovalbox
+%\setlength{\thicklines}{...}: setzt die Breite der Linien für \Ovalbox
+%\setlength{\cornersize}{...}: setzt die Größe der Ecken bei \ovelbox, \Ovalbox
