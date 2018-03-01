@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{xcolor}
+
+ 
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{amsmath}
+
+\newcommand{\createlength}[2]{\newlength{#1}\setlength{#1}{#2}}
+\createlength{\xmax}{5.7cm}
+\createlength{\ymax}{5cm}
+%
+%% Koordinaten der Punkte
+\createlength{\xa}{2.5cm}\createlength{\ya}{1cm}%
+%
+\createlength{\xb}{5.5cm}\createlength{\yb}{2cm}%
+%
+\createlength{\xc}{4.5cm}\createlength{\yc}{3.5cm}%
+%
+\createlength{\xd}{3.5cm}\createlength{\yd}{2cm}%
+%
+\createlength{\xe}{1.5cm}\createlength{\ye}{2.5cm}%
+%%
+%%
+\begin{document}
+\begin{tikzpicture}
+%Grundstyle f\"ur alle Flaechen (20% Deckkraft)
+\tikzstyle{FL}=[fill,draw,opacity=0.2] 
+
+%%Style f\"ur einzelne Fl\"achen: positiv: blau, negativ: rot
+\tikzstyle{F1}=[red,FL]
+\tikzstyle{F2}=[blue,FL]
+\tikzstyle{F3}=[blue,FL]
+\tikzstyle{F4}=[blue,FL]
+\tikzstyle{F5}=[red,FL]
+
+%% das Grundpolygon, bitte die Definition  der x-,y- Koordinaten  ("=(x_i,y_i)") nur auf der(n) ersten Slides verwenden, danach ausblenden!
+\draw[thick] (0,0) edge[->](\xmax,0);%x-achse
+\draw[thick] (0,0) edge[->](0,\ymax);%y-achse
+\draw (\xa,\ya) coordinate(A)   node[anchor=north]{$n_1$ $=(x_1,y_1)$}
+ --     (\xb,\yb) coordinate(B)   node[anchor=west]{$n_2$ $=(x_2,y_2)$}
+--      (\xc,\yc) coordinate(C)   node[anchor=south]{$n_3$ $=(x_3,y_3)$}
+--      (\xd,\yd) coordinate(D)   node [anchor=north]{$n_4$ $=(x_4,y_4)$}
+--      (\xe,\ye) coordinate(E)   node [anchor= south]  {$n_5$ $=(x_5,y_5)$} 
+-- cycle;
+
+%%Flaechen F1-F5
+\path[F1] (\xa,0)--(A)--(B)--(\xb,0)--cycle;
+\path ({(\xa+\xb)*0.5},0.2)node{F1};
+
+\path[F2] (\xb,0)--(B)--(C)--(\xc,0)--cycle;
+\path ({(\xb+\xc)*0.5},2.1)node{F2};
+
+\path[F3] (\xc,0)--(C)--(D)--(\xd,0)--cycle;
+\path ({(\xc+\xd)*0.5},2.1)node{F3};
+
+\path[F4] (\xd,0)--(D)--(E)--(\xe,0)--cycle;
+\path ({(\xd+\xe)*0.5},1.8)node{F4};
+
+\path[F5] (\xe,0)--(E)--(A)--(\xa,0)--cycle;
+\path ({(\xe+\xa)*0.5},0.2)node{F5};
+
+%% finale Flaeche:
+\path[pattern=horizontal lines,FL] (A)--(B)--(C)--(D)--(E)--cycle;
+
+%Bsp. Trapez F1
+\draw[red] (\xa,0.5)--node[midway,anchor=south]{$h$}(\xb,0.5);
+\draw[red] (\xa,0)--node[midway,anchor=east]{$a$}(\xa,\ya);
+\draw[red] (\xb,0)--node[midway,anchor=west]{$c$}(\xb,\yb);
+
+%Bsp. Trapez F2
+\draw[red] (\xb,0.5)--node[midway,anchor=south]{$h$}(\xc,0.5);
+\draw[red] (\xb,0)--node[midway,anchor=west]{$a$}(\xb,\yb);
+\draw[red] (\xc,0)--node[midway,anchor=east]{$c$}(\xc,\yc);
+
+
+%Erl\"auterungen zu den verschiedenen Slides (bitte den Gesamten Inhalt auf verschiedene Slides aufteilen)
+\path (\xmax,\ymax) ++(.5cm,1cm)node[anchor=north west, align=left]{
+\begin{minipage}{5cm}
+\small%% kleinere Schrift f\"ur mehr Inhalt
+Trapezformel:
+\[ A=\frac{1}{2}\sum_{i=1}^{n}  (x_i-x_{i+1})(y_i+y_{i+1}) \]
+
+Idee: Blaue Fl. - rote Fl. \\ 
+am Beispiel:\\
+
+$F1$: Fl\"acheninhalt eines Trapezes: $A=\frac{1}{2} h*(a+c)$\\
+
+$h$ \ldots H\"ohe $= x_2-x_1$\\
+$a$ \ldots Grundseite $=y_1$\\ 
+$c$ \ldots Basis $= y_2$ \\
+
+$A=- \frac{1}{2} (x_1-x_2)*(y_1+y_2)$\\
+($x_2 > x_1$: negativer Beitrag)\\
+
+
+$F2$:  $A=\frac{1}{2} h*(a+c)$\\
+
+$h$ \ldots H\"ohe $= x_2-x_3$\\
+$a$ \ldots Grundseite $=y_2$\\ 
+$c$ \ldots Basis $= y_3$ \\
+
+$A= \frac{1}{2} (x_2-x_3)*(y_2+y_3)$\\
+($x_3 < x_2$: positiver Beitrag)
+
+\(-F1+F2 = \)
+\begin{align*}
+&&\frac{1}{2} (x_1-x_2)*&(y_1+y_2)\\
++&& \frac{1}{2} (x_2-x_3)*&(y_2+y_3)
+\end{align*}
+\[=\frac{1}{2}\sum_{i=1}^{2} (x_i-x_{i+1})(y_i+y_{i+1}) \]
+\hfill $\cdots$ \hfill \hfill
+\[ A=\frac{1}{2}\sum_{i=1}^{5} (x_i-x_{i+1})(y_i+y_{i+1})  \]
+\end{minipage}
+};%%end Erl\"auterungsknoten
+\end{tikzpicture}
+\end{document}

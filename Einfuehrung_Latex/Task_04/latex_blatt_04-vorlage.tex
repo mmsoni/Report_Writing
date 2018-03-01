@@ -1,0 +1,75 @@
+\documentclass[	a4paper,      % Papiergröße
+% 		parskip,      % Absatz statt Einzug zwischen Absätzen
+	       ]{article}    % Dokumentklasse
+
+\usepackage [utf8] {inputenc}
+\usepackage[T1]{fontenc}
+
+
+%%% Layout \"Anderungen f\"ur mehr Platz
+\oddsidemargin0cm
+\topmargin0cm
+\textheight23.7cm	
+\textwidth16cm
+\headheight0cm
+\headsep0cm
+%
+%% keine Einr\"uckung von Abs\"atzen
+\setlength\parindent{0pt}
+
+\usepackage[ngerman]{babel}
+
+
+%%
+% #1: Vorname Student
+% #2: Nachname Student
+% #3: Herr oder Frau (oder Titel)
+% #3: Matr.Nr
+% #4: Note
+%
+%
+\newcommand{\latexSchein}[5]{%
+Institut f\"ur Mathematische Optimierung\\
+Technische Universit\"at Braunschweig\\
+Prof. Dr. S Stiller\par\bigskip
+D-38106 Braunschweig\\
+ Pockelstr. 14\\
+ Tel.(/Fax): +49 531 391-7550 (7559)\\
+ e-mail: sebastian.stiller@tu-bs.de\\
+ \today{} \par \bigskip
+Bescheinigung\par \bigskip
+Hiermit wird bescheinigt, dass #3 #1 #2 (Matr.-Nr. #4) die Lehrveranstaltung \textbf{Wissenschaftliche Textverarbeitung mit \LaTeX{} (3 LP)} 
+im Wintersemester 2015/16 mit der Note \textbf{#5} bestanden hat.\par \bigskip
+Prof. Dr. S. Stiller \hfill Stempel
+}%end \latexSchein
+
+%%%%
+%%%% Aufgabe 1 %%%%%
+%%%%
+%\renewcommand{\latexSchein}[5]{%
+%%%
+% Auskommentieren und hier Ihren Latex Schein umsetzen
+%%%
+%}%end renew \latexSchein
+
+
+\begin{document}
+\latexSchein{Alexander}{Richter}{Herr}{307218}{2.0}
+\vfill
+\latexSchein{Alexander}{Richter}{Herr}{307218}{2.0}
+\clearpage
+%%%%%%%%%%%% Hier Ihre(n) Schein(e) erzeugen
+\latexSchein{Vorname1}{Nachname1}{Anrede}{xxxxxx1}{2.0}
+\vfill
+%%%%%%%%%%%% Hier Ihre Ihre(n) Schein(e) erzeugen
+\latexSchein{Vorname2}{Nachname2}{Anrede}{xxxxxx2}{2.0}
+\clearpage
+%%%%%
+%%%%%% hier Aufgaben 2 und 3 bearbeiten
+%%%%%%%%
+%% hier Blindtabelle einf\"ugen
+%
+% hier Meine Tabelle einf\"ugen
+%
+%%% end aufgaben 2 und 3
+\end{document}

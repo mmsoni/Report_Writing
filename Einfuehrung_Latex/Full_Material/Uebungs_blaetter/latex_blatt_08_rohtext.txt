@@ -1,0 +1,42 @@
+﻿Ein Beispiel für ein größeres Projekt
+
+Irgendjemand
+
+01.01.2014
+
+
+Abstract
+
+In diesem größeren LaTeX-Projekt wird in einem beispielhaften Text und in wenigen Worten über die Geschichte der TU Braunschweig berichtet. Der Auszug verdeutlicht, dass sich der Verfasser der Arbeit sowohl mit der Einbindung von Bildern und Verzeichnissen, der Verwendung des hyperref-Pakets sowie generell mit der Verwendung von LaTeX bei der Erstellung von Büchern beschäftigt hat.
+
+Das erste Kapitel
+
+Einführung
+
+Dieser Text soll Ihnen helfen, Latex zu lernen. Ob dies auch so funktioniert, weiß ich natürlich nicht. Ich bin aber zuversichtlich.
+
+Nun soll es ja heute um größere Projekte gehen. Dabei spielen vor allem viele Details eine sehr große Rolle. So sollte die notwendige Trennung von besonders langen und dabei extrem ungewöhnlichen Wörtern wie zum Beispiel das Wort TU-Studierendenberatungsangebot möglichst gut klappen. Auch sollte nichts überstehen, dies wäre sehr ungünstig für das Schriftbild.
+
+Nun beginnt ein weiterer Absatz, obwohl dieser keinen sinnvollen Text mehr enthält.
+
+Überblick
+
+Der Text enthält ein weiteres Kapitel, in dem Sie zeigen sollen, wie Sie mit Bildern und Literaturverweisen umgehen.
+
+Das Kapitel, dass die ganzen Bilder enthält und daher eine lange Überschrift hat
+
+Erstes Bild und Hinweise
+
+Hier geht es nun um ein tolles Bild. Schauen Sie sich das Bild ??? auf dieser Seite an. Ob das so gut für das Audimax ist, bleibt zu bezweifeln.
+
+Als nächstes benötigen wir einen Fülltext, in dem ich Ihnen etwas zur Geschichte der Universität mitteile. Dies können Sie ebenso in der Wikipedia nachlesen oder einfach das Buch von Herrn Mummelhausen lesen, den Sie unter ??? im Literaturverzeichnis finden.
+
+Dies ist übrigens der einzige Literaturverweis im Text. Auf die zweite Quelle im Literaturverzeichnis gibt es keinen Verweis im Text. Außerdem sollten Sie den passenden Stil für das Literaturverzeichnis wählen.
+
+Auszug aus der Geschichte der Uni
+
+Die heutige Technische Universität Braunschweig geht zurück auf eine 1745 auf Anregung des Hofpredigers J. F. W. Jerusalem durch Carl I. unter dem Namen Collegium Carolinum in Braunschweig gegründete Bildungsinstitution, welche zwischen Gymnasium und Universität einzuordnen ist. Die Aufgabe des am Bohlweg angesiedelten Collegium Carolinum war zunächst vor allem die Ausbildung von Beamten. Mit der Berufung von Literaturhistorikern wie Johann Joachim Eschenburg und dem Kreis der Bremer Beiträger an das Collegium Carolinum sowie Gotthold Ephraim Lessing an die Herzog August Bibliothek wurde das Fürstentum Braunschweig-Wolfenbüttel in der zweiten Hälfte des 18. Jahrhunderts für kurze Zeit zu einem intellektuellen Zentrum der Aufklärung in Deutschland. Nach seiner Auflösung im Jahre 1808 und der Umwandlung in eine Militärakademie wurde das Collegium 1814 wieder eröffnet. Nach einer immer stärkeren Zunahme der naturwissenschaftlich-technischen Fächer wurde das Collegium 1878 in Herzogliche Technische Hochschule Carolo-Wilhelmina umbenannt, und erhielt schließlich 1968 den aktuellen Namen Technische Universität Carolo-Wilhelmina zu Braunschweig.
+
+Ein weiteres Bild
+
+Auch auf dieser Seite finden Sie ein schönes Bild. Haben Sie es schon gefunden?

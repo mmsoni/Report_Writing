@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%
+% 		Übung 2			 %
+%%%%%%%%%%%%%%%%%%%
+%Name : Malav Soni
+%Mtr.Num : 4360054
+% T-nummer : T068 
+
+
+
+
+\documentclass[foldmarks=true, foldmarks=BHLVmtP,subject=titled,version=last]{scrlttr2} % Foldmarks - Are used to have the folding marks on the letter. I have tried to include a top and bottom folds. Also I have implemented a central horizontal fold, which can be used as the marking position for punching the letter. Subject = titled is used to have subject also printed with the subject line. 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}	% I have used this package as the compiler was complaining, about the english package missing, so I had to include it 
+\begin{document}
+
+%%%%%%%%%%%%
+%  The following two commands are used to provide the name and the address for the section, where the return address is mentioned and this section is visible from the window of the "window envelope"
+%%%%%%%%%%%%
+
+\setkomavar{fromname}{Malav M Soni}		
+\setkomavar{fromaddress}{A-9 New Shital Appartment\\
+Nr.Hirabag Rly Crossing\\
+380006,Ahmedabad}
+
+%%%%%%%%%%%%%%%%%%%%%
+%		       Aufgabe 1			%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{letter}{Director\\
+Joe Burns\\
+University Library\\
+40601 Nonexisiting\\ }
+
+%%%%%%%%%%
+% Here I have implemented a new reference field for the matrikel nummer
+%%%%%%%%%%
+\newkomavar[Matrikel Nummer]{Mtr.Num}
+\addtoreffields{Mtr.Num}
+\setkomavar{Mtr.Num}{4360054}		% Additional defined field used 
+\setkomavar{subject}{Issue with literature}
+\opening{Respected Mr.Burns,}			% This command typesets the parts of the format letter e.g. fonts, spacing etc
+I am writing this letter to you on behalf of a student group studying in xx department. We are aspiring students willing to study xx subject, but we found that there is not enough literature on that subject available in the library.\\
+We would like to have an appointment with you to discuss this issue and find the possible solution to it.\\
+Please do the needfull!
+\closing{Yours Obedient,}				% Closing command provides us with the final closing greeting
+\ps PS: We hope that you provide us with an appointment on an early basis	% Post-script is  used to mention some important details, which was not included in the letter body
+\setkomavar*{enclseparator}{Enclosure}	
+\encl{The signed letter from all the students of the xx group} 	% Enclosure - is used to list out the attached documents with the letter
+%\thisletter
+\end{letter}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%		       Aufgabe 3			%
+%%%%%%%%%%%%%%%%%%%%%
+%			Brief 1				%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{letter}{Technische Universität Braunschweig\\
+Institut für Mathematische Optimierung\\
+Pockelsstraße 14\\
+D-38106 Braunschweig}
+\newkomavar[Matrikel Nummer]{Mtr.Num}
+\addtoreffields{Mtr.Num}
+\setkomavar{Mtr.Num}{4360054}
+\setkomavar{subject}{Issue with literature}
+\opening{Respected Sir/ Madam,}
+I am writing this letter to you on behalf of a student group studying in xx department. We are aspiring students willing to study xx subject, but we found that there is not enough literature on that subject available in the library.\\
+We would like to have an appointment with you to discuss this issue and find the possible solution to it.\\
+Please do the needfull!
+
+\closing{Yours Obedient,}
+\ps PS: We hope that you provide us with an appointment on an early basis
+\setkomavar*{enclseparator}{Enclosure}
+\encl{The signed letter from all the students of the xx group}
+\end{letter}
+
+%%%%%%%%%%%%%%%%%%%%%
+%			Brief 2				%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{letter}{Braunschweigische Landessparkasse\\
+Bevenroder Str. 134\\
+D-38108 Braunschweig}
+\newkomavar[Kunden Nummer]{Kun.Num}
+\addtoreffields{Kun.Num}
+\setkomavar{Kun.Num}{AS xxxxxx}		
+\setkomavar{subject}{Address Change}
+\opening{To whomsoever it may concern,}			
+I am writing this letter to inform that I have changed my address and the new address can be found in the enclosed documents.\\
+I want to request you to change my address in your database.
+Please do the needfull!
+\closing{Best Regards,}				
+\ps PS: I would ask you to do it at the earliest if possible	
+\setkomavar*{enclseparator}{Enclosure}	
+\encl{Registration document of the city office, My account details} 	
+\end{letter}
+
+%%%%%%%%%%%%%%%%%%%%%
+%		       Aufgabe 2			%
+%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Aufagbe 2}\\
+\\
+When ',' is placed outside the curly braces, than it is not considered as the argument that is passed to the command "opening". Thus it will be placed in the section "Letter body" and not in the opening section, as it is not considered as an argument.
+But if it is placed in the braces, than it is considered as an argument to the command "opening" and it will included in the opening section.\\
+
+%%%%%%%%%%%%%%%%%%%%%
+%		       Aufgabe 4			%
+%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Aufagbe 4}\\
+\\
+Yes it fulfills the DIN standard. It fulfills the requirements by having the appropriate distance between the following fields: Address, Subject, Greetings and Signature field.\\
+ Also the font size, which should be atleast 10 as per specified in the DIN standard, but "scrlttr 2" format uses the font size of 12 as default.  
+
+\end{document}

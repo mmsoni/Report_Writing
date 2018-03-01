@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%
+% 		Übung 3			 %
+%%%%%%%%%%%%%%%%%%%
+%Name : Malav Soni
+%Mtr.Num : 4360054
+% T-nummer : T068 
+
+
+\documentclass[10pt,a4paper,notitlepage]{article}
+%\usepackage{amsthm,hyperref}
+%\usepackage{lipsum}
+\usepackage{multicol}
+\title{Turbulent Mixing of flows}
+\author{Malav Soni}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}%
+\noindent
+Primary purpose of this study is to validate the two test cases viz. Sandia national laboratory propane jet and Sydney bluff body jet flame against the turbulence models available in ANSYS CFX 16.1 and ANSYS Fluent 17.0. This study is divided in to two sections a) Investigation of Sandia propane jet b) Investigation of Sydney Bluff body jet. Both investigations involve simulations carried out under isothermal, non-reacting and steady state conditions. Sandia propane jet configuration involves quasi-2D meshes, defined as the 2D mesh rotated by 5° in the circumferential direction, used for computation. In order to validate the test configurations numerically the turbulence models k-ω SST, k-ε, BSL RSM (Base Line Reynolds Stress Model) and EARSM (Explicit Algebraic Reynolds Stress Model) from ANSYS CFX 16.1 and k-ω SST, standard k-ε, realizable k-ε models from ANSYS Fluent 17.0 were used. Round jet anomaly phenomenon was addressed and modification in the dissipation (ε) equation of k-ε model was applied and the results compared with the experimental data. In the second case study with Sydney Bluff Body Jet flame involved full 3D meshes for the numerical investigation. Investigation was carried out with k-ω SST and k-ε turbulence models in ANSYS CFX 16.1 and k-ω SST, standard k-ε and realizable k-ε turbulence model in ANSYS Fluent 17.0.
+\end{abstract}
+%\begin{minipage}{5cm}
+\begin{multicols}{2}
+\section{Introduction}
+Combustion is one of the most important processes in engineering, which involves turbulent fluid flow, heat transfer, chemical reaction, radiative heat transfer and other complicated physical and chemical processes. Typical engineering applications include internal combustion engines, power station combustors, aero engines, gas turbine combustors, boilers, furnaces, and many other combustion equipments. Combustion is an extremely difficult phenomenon for several reasons. It involves a large number of chemical species and associated chemical reactions. Coupling of the thermo-chemistry with fluid mechanics can be strong, and leads to further complications. In most applications the flows are turbulent, leading to the phenomenon of turbulent combustion, which is the interaction of the two non-linear problems with multiple scales.\par Development of the numerical models is largely based on the sub-models developed for non-reacting constant density flows. But this poses another challenge in terms of verification of these sub-models, which becomes difficult in the reacting flows due to the turbulent mixing and heat release. According to several authors [20-21], it is not useful to use the sub-models developed for non-reacting constant density flows for reacting flows. This is where the non-reacting variable densities flows come into play. It provides a simplified flow situation in which the complexity of variable density remains without the complex coupling between the turbulent mixing and chemical heat release. This means the variable density effects on the turbulent mixing can be isolated from combustion chemistry. 
+\subsection{Literature Survey}
+Sandia propane jet is the case where non-reacting variable density jet have been used for the experiment, which is considered to be one of the few data`s available for non-reacting variable density case. Wild carried out the numerical investigation of the experiment with modified k-ε model, Cε1 was changed to 1.6 in dissipation (ε) equation, for both reacting and non-reacting case. The results of the non-reacting case in with modified k-ε model appear to be same as the results in my case without the modification in k-ε model. Briggs Jr. performed the investigation with Large Eddy Simulation (LES) model. No further literature for such validation was obtained.\par
+Sydney bluff body is a typical laboratory flame. A ceramic bluff body, burner, with the 3.6 mm bore, for the fuel flow, is surrounded by the co-flowing air. Dally carried out this validation with modified k-ε model for both reacting and non-reacting cases with Ethylene as fuel. Dally [8] carried out the same study with modified k-ε and RSM model, for both non-reacting and reacting case with all fuels. Dally emphasized the fact that turbulence models are not able to predict the accurate enough flow field, due to well known deficiency and modified the k-ε model as done by Wild[17] to obtain the accurate results. Studies performed in my case, involved no RSM model, shows that there is no need for the modification in the standard k-ε model. Numerical results, specifically for standard k-ε model, were in good agreement with the experimental data for non-reacting case.
+\subsection{Objective of work}
+The main motivation to carry out these investigations, of Sandia Propane Jet and Sydney Bluff Body, was to obtain a better understanding of the flow structure and mixing process in variable density jets, under non-reacting conditions (also constant density jet flow in case of Sydney Bluff Body). Turbulent mixing in the recirculation zone behind the bluff body is investigated with the different turbulent models of type RANS. These investigations were carried out under non-reacting conditions because the turbulent mixing is decoupled from the complex combustion chemistry and the effects of chemical heat release found in the highly exothermic reacting jets. This allows us to make appropriate conclusions about the model performance and better address the reasons for the differences appearing to the expected results. Also it is a necessary pre-requisite; to compute the mixing and reactive scalar field, the correct and accurate prediction of the flow and the turbulence field is required. Turbulence models validated in these investigations are available in ANSYS CFX 16.1 and ANSYS Fluent 17.0 software. The simulation results are compared with experimental data. 
+
+\section{Theorem}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}{Lemma}[thm]
+
+\begin{thm}\label{Cref1}
+A subset of the real line is compact if and only if it is closed and  bounded. 
+\end{thm}
+\begin{lem}
+In any graph, the sum of the degrees of the vertices is twice the number of edges.
+\end{lem}
+
+\subsection{Equations}
+\newenvironment{MyItemize}{%
+\begin{itemize}%
+\setlength{\itemsep}{-2pt}%
+\setlength{\parskip}{-2pt}%
+\setlength{\parsep}{-2pt}%
+}{\end{itemize}}%
+\begin{MyItemize}
+\item 
+  $(x-y)(x+y)$, $[3-x]$\\
+  The above equation is obtained from \ref{Cref1}
+
+
+\item Eq 2
+  $\{x : 3x-1 \in A\}$. 
+
+
+\item Absolute value: $|x-y|$, $\|\vec{x} - \vec{y}\|$. 
+
+
+\item Floor and ceiling: $\lfloor \pi \rfloor = \lceil e \rceil$. 
+\end{MyItemize}
+
+\begin{thebibliography}{9}
+\bibitem{les85}Leslie Lamport, 1985. \emph{\LaTeX---A Document
+Preparation System---User’s Guide and Reference Manual},
+Addision-Wesley, Reading.
+\bibitem{don89}Donald E. Knuth, 1989. \emph{Typesetting Concrete
+Mathematics}, TUGBoat, 10(1):31-36.
+\bibitem{rondon89}Ronald L. Graham, Donald E. Knuth, and Ore
+Patashnik, 1989. \emph{Concrete Mathematics: A Foundation for
+Computer Science}, Addison-Wesley, Reading.
+\end{thebibliography}
+\end{multicols}
+%{Primary purpose of this study is to validate the two test cases viz. Sandia national laboratory propane jet and Sydney bluff body jet flame against the turbulence models available in ANSYS CFX 16.1 and ANSYS Fluent 17.0.}
+%\end{minipage}
+\end{document}

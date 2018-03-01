@@ -1,0 +1,135 @@
+\documentclass[	a4paper,      % Papiergröße
+% 		parskip,      % Absatz statt Einzug zwischen Absätzen
+	       ]{article}    % Dokumentklasse
+
+\usepackage [utf8] {inputenc}
+\usepackage[T1]{fontenc}
+
+
+%%% Layout \"Anderungen f\"ur mehr Platz
+\oddsidemargin0cm
+\topmargin0cm
+\textheight23.7cm	
+\textwidth16cm
+\headheight0cm
+\headsep0cm
+%
+%% keine Einr\"uckung von Abs\"atzen
+\setlength\parindent{0pt}
+
+\usepackage[ngerman]{babel}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\usetikzlibrary{backgrounds,scopes,shapes.geometric,shadows,decorations.shapes}
+
+
+%%%  zu aufgabe g)
+%%% color definitions
+\colorlet{woodcol}{brown!70!black}
+\colorlet{bodycol}{green!40!black}
+\colorlet{waxcol}{yellow}
+\colorlet{lightcol}{red}
+
+\colorlet{dekoIIcolI}{red}
+\colorlet{dekoIIcolII}{blue}
+\colorlet{dekoIIcolIII}{green}
+
+\colorlet{dekoIIIcolI}{red!80!white}
+\colorlet{dekoIIIcolII}{blue!80!white}
+%% end zu aufgabe g)
+
+
+%%% zu Aufgabe c)
+\newsavebox{\dekoOne}
+\savebox{\dekoOne}{%
+\begin{tikzpicture}
+\draw(0,0)rectangle(2,1);
+\draw(0,0)node[anchor=south west]{dekoOne};
+\end{tikzpicture}%
+}%end savebox
+%%% end zu Aufgabe c)
+
+
+%%
+%% creates a help grid for given \emph{integer} coordinates 
+%% (fractional coordinates do not work correctly)
+%% #1: minimum x-coordinate, #2 maximum x-coordinate
+%% #3  minimum y-coordinate, #4 maximum y-coordinate
+%
+\newcommand{\helpgrid}[4]{%
+\draw[scale=0.1,line width=0.1pt,opacity=0.5]  (10*#1,10*#3) grid (10*#2,10*#4);
+\draw[line width=1pt,opacity=0.2]  (#1,#3) grid (#2,#4);
+\begin{scope}[every node/.style={font=\tiny,opacity=0.5}]
+\foreach \x  in {#1,...,#2}
+   \node[anchor=north] at (\x,#3){ \x };
+\foreach \x  in {#1,...,#2}
+   \node[anchor=south] at (\x,#4){ \x };
+\foreach \y  in {#3,...,#4}
+   \node[anchor=east] at (#1,\y){ \y };
+\foreach \y in {#3,...,#4}
+   \node[anchor=west] at (#2,\y){ \y };    
+\end{scope}
+}%
+
+%%%
+%
+% zu Aufgabe b): eigener Befehl
+%
+\newcommand{\bodyshape}{
+\path (-4,0) coordinate(A){} 
+        (4,0) coordinate(B){}
+        (0,4) coordinate(C){};
+%%% todo: fill
+%
+%
+}%end bodyshape
+%%end zu Aufgabe b): eigener Befehl
+
+
+\begin{document}
+
+%% zu Aufgabe c)
+%% todo delete this Demo-box:
+\usebox{\dekoOne}
+
+
+\begin{center}
+%%% the main image
+  \begin{tikzpicture}[ %% parameters for main image:
+    mystar/.style={star, minimum size=1.5cm, star point ratio=2.5, shade, thick,
+       line join=round, color=yellow!80!black, draw=red!20!black,
+       top color=yellow!80!white, bottom color=yellow!60!black},
+    myball/.style ={shade, ball color=#1, circular drop shadow={
+     shadow xshift=0.05ex, shadow yshift=-0.1ex, fill=black, opacity=0.4}},
+    starline/.style={decorate,decoration={shape backgrounds,shape=star, shape width=1.5mm, shape height=1.5mm,shape sep=2.2mm},
+                  star points=6,draw=#1!50!black, fill=#1!50},
+    ]%% end parameters for main image
+
+%% zu aufgabe a):
+\path[fill=woodcol](-1.5,0)--(1.5,0)to[bend left=25](0,3.5) to[bend left=25](-1.5,0);
+%%end aufgabe a)  
+  
+  
+%% koerper
+%%zu aufgabe b):
+\bodyshape
+%erster scope TODO
+
+%zweiter scope TODO
+%%end aufgabe b)
+
+%%% zu aufgabe c)
+%TODO
+%% end aufgabe c)
+
+%% zu aufgabe d)
+%TODO
+%% end aufgabe d)
+ 
+%% zu aufgabe a)
+\helpgrid{-1}{1}{-2}{3}
+%%end zu aufgabe a)
+ \end{tikzpicture}
+\end{center}
+\end{document}
