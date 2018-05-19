@@ -1,0 +1,70 @@
+\newpage
+\section{Introduction}
+
+The idea for this investigation is to check the cause for non-existant eddy viscosity in the channel for the ${Re_{\tau}} = 395$.
+We would perform two set of simulations on the mesh resolution 192x64x96 (Mesh1). We would write out all the quantities i.e. gradients $\frac{\D v_i}{\D x_i}$ , strain rates contraction and the traceless tensor formulated with the square of the velocity gradient tensor. In short, it would be same as we did previously in the poiseuille flow simulations and the Taylor green vortex simulations. \\
+
+{\bf i. Mesh 1 AA2016Wale}. We will perform the simulation for total 300,000 time steps and write out the data only for the $300,000^{th}$ time-step. In this tests we will not perform any kind of averaging, but write out all the details as discussed above. The idea here is to observe the order for the different quantities written out and to estimate the orgin of the error.\\
+
+{\bf ii. Mesh 1 AA2016Wale -  smaller perturbation number ($\epsilon$)}. Here we will perform the same simulation as above, but with the smaller $\epsilon$ added to make the system well-poised.
+The definition of which is as follows:\\
+%
+\begin{equation}
+\label{eddy-viscosity}
+\begin{split}
+{\nu_t} &= \left({C_w}{\Delta}\right)^{2}
+\frac{\left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{3/2}}{\left(\sij \sij\right)^{5/2} + {\left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{5/4}} + \epsilon}
+\end{split}
+\end{equation}
+%
+\\
+where, $\epsilon$ in our case is of the order $\sim 10^{-8}$.\\
+
+In this simulation we will change the value of $\epsilon$ to $\sim 10^{-30}$ or lower as the order of the terms in the numerator and the denominator are in between $\sim 10^{-18}$ to $\sim 10^{-25}$. Adding the epsilon of $\sim 10^{-8}$ in the denominator, which is relatively a larger number, is the reason we do not see the eddy viscosity in the channel. The purpose of this test is to see if we get the same orders of magnitude of the eddy viscosity as obtained in the tests performed using Matlab.
+\subsection{Discussion $9^{th}$ May}
+
+{\bf I. Test 1}. Here we have to improve the conditioning for the eddy viscosity in a more general way, rather than adding a constant  approximately. The idea as discussed by professor is as follows:
+\begin{equation}
+\label{eddy-viscosity-conditioning}
+\begin{split}
+A^{3/2} &= \left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{3/2},\\
+A^{5/4} &= \left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{5/4},\\
+B^{5/2} &= \left(\sij \sij\right)^{5/2}
+\end{split}
+\end{equation}
+When terms of the equation ~\ref{eddy-viscosity-conditioning} are replaced in the equation for ~\ref{eddy-viscosity} it looks as follows (not considering $\epsilon$ now):
+\begin{equation}
+\label{eddy-viscosity-changed}
+\begin{split}\\
+{\nu_t} &= \left({C_w}{\Delta}\right)^{2}
+\frac{A^{3/2}}{B^{5/2} + {A^{5/4}}},\\
+{OP} &= \frac{A^{3/2}}{B^{5/2} + {A^{5/4}}}\\
+\end{split}
+\end{equation}\\
+Now in the equation ~\ref{eddy-viscosity-changed} let's divide by ${A^{5/4}}$ and ${OP}$ would like:
+\begin{equation}
+\label{some_modification}
+\begin{split}\\
+{OP} &= \frac{A^{3/2}A^{\--5/4}}{\left(B^{5/2}\// {A^{5/4}}\right) + 1}\\
+\end{split}
+\end{equation}\\
+Some sort of this modification can give a general conditioning of the eddy viscosity.\\
+{\bf II. Channel flow}.  Pressure and the density are negative i.e. mass deficit in the channel\\
+{\bf III. Taylor green vortex}. Finer resolution with changed value of $\epsilon$. %%
+\begin{equation}
+\label{some_modification}
+\begin{split}
+{OP} &= \frac{A^{1/4}}{\left(B^{1/2}\// {\left(A^{1/4} + 10^{-10}\right)}\right)^{5} + 1}
+\end{split}
+\end{equation}\\
+%Some sort of this modification can give a general conditioning of the eddy viscosity.\\
+%{\bf II. Channel flow}.  Pressure and the density are negative i.e. mass deficit in the channel\\
+%{\bf III. Taylor green vortex}. Finer resolution with changed value of $\epsilon$. 
+
+\subsection{Next steps $15^{th} May$}
+
+Since the reason for the missing eddy viscosity is found, $\epsilon$ = $10^{-30}$, and an appropriate wale model co-efficient, $C_{W} = 0.55$, we should start the wale model simulations on the channel flow.
+\\
+\\
+{\bf i}. AA2016Wale and OneWale\\
+{\bf ii}. AA2016wale with double precision. This will be a comparison to see if any significant changes are present in the flow.
