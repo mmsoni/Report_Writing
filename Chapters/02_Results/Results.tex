@@ -1,0 +1,29 @@
+\newpage
+
+\section{Results and Discussion}
+
+Apart from the free shear flows, most turbulent flows are bounded by one or more solid surfaces depending on whether they belong to class of the internal or external flow of fluids i.e. flow through pipes and flow over a car respectively.  In this investigation one of the simplest internal flow has been chosen for the validation \& testing of the implementation: fully developed channel flow. In this flow the mean velocity vector will be parallel to the wall and this flow is considered to be of prime importance as it has played a prominent role in the developement of the study of the wall bounded turbulent flows~\cite{pope:book}.~\cite{pope:book} has described the fundamental theories of the full developed channel flow in great detail along with the reasoning of certain behaviour of the fluid near the channel wall. [fröhlich] also has a good compilation on the fully developed channel flow. In general it serves as a very good reference for the begineers in LES.
+
+In this section an attempt will be made to address the main challanges faced in the LES simulations that will include the mesh statistics, initialisation, experimental settings, boundary conditions, LB solver specifics followed by post-processing and the final discusssion of the results. 
+
+\subsection{Turbulent channel flow}
+\subsubsection{Computational Domain}
+
+As shown in the figure a three dimensional flow through a rectangular duct is considered and the aspet ratio of the duct is $\gg$ than 1.
+The dimensions of the 3d box are shown in the table~\ref{Computational Domain}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$Nominal \ret$ & $L_x$ x $L_y $x $L_z$ \\
+\hline
+%
+395   &  $6\de$ x $2\de$ x $3\de$  \\
+\hline
+\end{tabular}
+\caption{The size of the domain in x, y, z directions}
+\label{Computational Domain}
+\end{table}
+
+The size of the 3D duct has been chosen in accordance with the reference literature of ~\cite{moser:kim:mansour:99}.
