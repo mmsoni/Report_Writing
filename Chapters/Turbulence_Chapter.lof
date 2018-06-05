@@ -1,0 +1,10 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Velocity profile in the fully developed channel flow \nobreakspace {}\cite {cengel:book}}}{6}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Nondimensional velocity $u^+$ vs. the nondimensional distance $y^+$ (plotted in logarithmic scale) \nobreakspace {}\cite {kundu:book}}}{8}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Parabolic flow profile with $U_b = 0.1335\ m/s$}}{10}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Time history of $v'_1$. Horisontal red lines show $\pm v_{1,rms}$.}}{13}{figure.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$S=1.51$ and $F= 7.68$}}}{13}{figure.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$S=-0.27$ and $F= 5.81$}}}{13}{figure.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$S=-0.09$ and $F= 2.77$}}}{13}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Channel flow at $Re_\tau =2000$. Terms in the $\overline {v'_1v'_2}$ equation scaled by $u_\tau ^4/\nu $. DNS data\nobreakspace {}\cite {hoyas:jimenez:06,hoyas:jimenez:web:data}. {$\leavevmode {\color {blue}\overline {\hskip 0.5cm}}\ $}: $P_{12}$; {$\leavevmode {\color {red}\overline {\hskip 0.1cm}\ \overline {\hskip 0.1cm}\ \overline {\hskip 0.1cm}\ }$}: $-\varepsilon _{12}$; $\triangledown : -\partial \overline {v'p'}/\partial x_2$; $\overline {\hskip 0.1cm}\ \overline {\hskip 0.03cm}\ \overline {\hskip 0.1cm}\ $: $\Pi _{12}$; \leavevmode {\color {red}$+$}: $-\partial (\overline {v'_1v^{\prime 2}_2})/\partial x_2$; \leavevmode {\color {blue}$\circ $}: $\nu \partial ^2\overline {v'_1v'_2}/\partial x_2^2$.}}{15}{figure.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Zoom near the wall}}}{15}{figure.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Outer region}}}{15}{figure.5}

@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+
+\bibitem{cengel:book}
+Y.A. Cengel and J.M. Cimbala.
+\newblock {\em Fluid Mechanics: Fundamentals and Applications}.
+\newblock McGraw-Hill, New Delhi, 2 edition, 2011.
+
+\bibitem{kundu:book}
+P.K. Kundu and I.M. Cohen.
+\newblock {\em Fluid Mechanics}.
+\newblock Academic Press, 525 B Streek Suite 1900, San Diego, California
+  92101-4495, USA, 2002.
+
+\bibitem{hoyas:jimenez:06}
+S.~Hoyas and J.~Jim{\'e}nez.
+\newblock Scaling of the velocity fluctuations in turbulent channels up to
+  ${R}e_\tau=2003$.
+\newblock {\em Physics of Fluids A}, 18(011702), 2006.
+
+\bibitem{hoyas:jimenez:web:data}
+S.~Hoyas and J.~Jim{\'e}nez.
+\newblock http://torroja.dmt.upm.es/ftp/channels/data/statistics/.
+\newblock 2006.
+
+\bibitem{pope:book}
+S.B. Pope.
+\newblock {\em Turbulent Flow}.
+\newblock Cambridge University Press, Cambridge, UK, 2001.
+
+\bibitem{froehlich:book}
+Jochen Fröhlich.
+\newblock {\em Large Eddy Simulationen turbulenter Strömungen}.
+\newblock Teubner/GWV Fachverlage GmbH, Wiesbaden, DE, 2006.
+
+\bibitem{moser:kim:mansour:99}
+R.D. Moser, J.D. Kim, and N.N. Mansour.
+\newblock Direct numerical simulation of turbulent channel flow up to
+  ${R}e_\tau=590$.
+\newblock {\em Physics of Fluids}, 11:943--945, 1999.
+
+\bibitem{Moin:78}
+W.C.~Reynolds P.Moin and J.H.Ferziger.
+\newblock Large eddy simulation of incompressible turbulent channel flow.
+\newblock Technical report number t-12, Thermosciences Division, Department of
+  Mechanical Engineering, Stanford University, Stanford, California, 1978.
+
+\bibitem{sagaut:02}
+P.~Sagaut.
+\newblock {\em Large Eddy Simulation for Incompressible Flow}.
+\newblock Springer Verlag, 2002.
+
+\bibitem{devilliers:phd}
+Eugene de~Villiers.
+\newblock {\em The Potential of Large Eddy Simulation for the Modeling of Wall
+  Bounded Flows}.
+\newblock PhD thesis, Thermofluids Section, Department of Mechanical
+  Engineering, Imperial College of Science, Technology and Medicine,
+  Kensington, London SW7 2AZ, 2006.
+
+\bibitem{tennekes:lumley}
+H.~Tennekes and J.L. Lumley.
+\newblock {\em A First Course in Turbulence}.
+\newblock The MIT Press, Cambridge, Massachusetts, 1972.
+
+\bibitem{davidson:transport:06}
+L.~Davidson.
+\newblock Transport equations in incompressible {URANS} and {LES}.
+\newblock Report 2006/01, Div. of Fluid Dynamics, Dept. of Applied Mechanics,
+  Chalmers University of Technology, G{\"o}teborg, Sweden, 2006.
+
+\end{thebibliography}

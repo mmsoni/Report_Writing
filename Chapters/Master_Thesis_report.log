@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.23)  5 JUN 2018 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.23)  5 JUN 2018 23:56
 entering extended mode
-**./Turbulence_Chapter.tex
-(Turbulence_Chapter.tex
+**./Master_Thesis_report.tex
+(Master_Thesis_report.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -651,38 +651,29 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-) (Turbulence_Chapter.aux
-
-LaTeX Warning: Label `some_modification' multiply defined.
-
-
-LaTeX Warning: Label `eddy-viscosity-conditioning' multiply defined.
-
-
-LaTeX Warning: Label `eddy-viscosity-changed' multiply defined.
-
+) (Master_Thesis_report.aux
 
 LaTeX Warning: Label `some_modification' multiply defined.
 
 )
-\openout1 = `Turbulence_Chapter.aux'.
+\openout1 = `Master_Thesis_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring ON on input line 66.
+Package hyperref Info: Link coloring ON on input line 67.
 
 ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -694,12 +685,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
- (Turbulence_Chapter.out) (Turbulence_Chapter.out)
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
+ (Master_Thesis_report.out) (Master_Thesis_report.out)
 \@outlinefile=\write4
-\openout4 = `Turbulence_Chapter.out'.
+\openout4 = `Master_Thesis_report.out'.
 
 
 ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
@@ -717,15 +708,15 @@ i"
 \makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks23
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 80.
  ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 80.
  ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 79.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 80.
  ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -743,18 +734,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 ) [1
 
-] (Turbulence_Chapter.lof)
+] (Master_Thesis_report.lof)
 \tf@lof=\write5
-\openout5 = `Turbulence_Chapter.lof'.
+\openout5 = `Master_Thesis_report.lof'.
 
- [2] (Turbulence_Chapter.lot)
+ [2] (Master_Thesis_report.lot)
 \tf@lot=\write6
-\openout6 = `Turbulence_Chapter.lot'.
+\openout6 = `Master_Thesis_report.lot'.
 
  [3]
-(Turbulence_Chapter.toc)
+(Master_Thesis_report.toc)
 \tf@toc=\write7
-\openout7 = `Turbulence_Chapter.toc'.
+\openout7 = `Master_Thesis_report.toc'.
 
  (01_Introduction/Introduction.texpdfTeX warning (ext4): destination with the s
 ame identifier (name{page.1}) has been already used, duplicate ignored
@@ -806,17 +797,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 64.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--103
+Underfull \hbox (badness 10000) in paragraph at lines 66--104
 
  []
 
-(02_Results/Results.tex [3] [4]
+(02_LBM/LBM.tex [3]) (03_Turbulence/Turbulence.tex [4])
+(04_Implementation/Implementation.tex [5]) (05_Methodology/Methodology.tex
+[6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-[5]
-<figur/Turbulent_profile.png, id=225, 523.9575pt x 346.29375pt>
+[8]
+<figur/Turbulent_profile.png, id=206, 523.9575pt x 346.29375pt>
 File: figur/Turbulent_profile.png Graphic file (type png)
 <use figur/Turbulent_profile.png>
 Package pdftex.def Info: figur/Turbulent_profile.png  used on input line 84. on
@@ -828,19 +821,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
-[6 <./figur/Turbulent_profile.png>]
+[9 <./figur/Turbulent_profile.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
-<figur/Log-law-plot.png, id=236, 661.72218pt x 487.8225pt>
+<figur/Log-law-plot.png, id=219, 661.72218pt x 487.8225pt>
 File: figur/Log-law-plot.png Graphic file (type png)
 <use figur/Log-law-plot.png>
 Package pdftex.def Info: figur/Log-law-plot.png  used on input line 121. on inp
 ut line 121.
 Package pdftex.def Info: Requested size: 310.4979pt x 228.89697pt on input line
  121.
-
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
@@ -850,7 +843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -860,209 +853,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
-[8 <./figur/Log-law-plot.png>]
+[11 <./figur/Log-law-plot.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
+<figur/Infinite_plates.png, id=246, 554.07pt x 321.45094pt>
+File: figur/Infinite_plates.png Graphic file (type png)
+<use figur/Infinite_plates.png>
+Package pdftex.def Info: figur/Infinite_plates.png  used on input line 168. on 
+input line 168.
+Package pdftex.def Info: Requested size: 310.4979pt x 180.13882pt on input line
+ 168.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-<figur/Parabolic_profile.png, id=280, 421.575pt x 316.18124pt>
-File: figur/Parabolic_profile.png Graphic file (type png)
-<use figur/Parabolic_profile.png>
-Package pdftex.def Info: figur/Parabolic_profile.png  used on input line 180. o
-n input line 180.
-Package pdftex.def Info: Requested size: 207.0021pt x 155.2534pt on input line 
-180.
-) (03_reportReference/reportReference.tex [10 <./figur/Parabolic_profile.png (P
-NG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 5--16
+Underfull \hbox (badness 10000) in paragraph at lines 164--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--16
-
- []
-
-[11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-[]\OT1/cmr/bx/n/10 turbulent
- []
-
-Package epstopdf Info: Source file: <figur/v_time_2_new.eps>
-(epstopdf)                    date: 2009-12-08 19:27:50
-(epstopdf)                    size: 25613 bytes
-(epstopdf)             Output file: <./v_time_2_new-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-30 12:51:59
-(epstopdf)                    size: 19879 bytes
-(epstopdf)             Command: <epstopdf --outfile=./v_time_2_new-eps-converte
-d-to.pdf figur/v_time_2_new.eps>
-(epstopdf)             \includegraphics on input line 79.
-Package epstopdf Info: Output file is already uptodate.
-<./v_time_2_new-eps-converted-to.pdf, id=300, pagebox=cropbox, 506.89375pt x 42
-0.57124pt>
-File: ./v_time_2_new-eps-converted-to.pdf Graphic file (type pdf)
-<use ./v_time_2_new-eps-converted-to.pdf>
-Package pdftex.def Info: ./v_time_2_new-eps-converted-to.pdf  used on input lin
-e 79. on input line 79.
-Package pdftex.def Info: Requested size: 108.12054pt x 89.7023pt on input line 
-79.
-
-Overfull \hbox (0.93657pt too wide) in paragraph at lines 79--80
-[][] 
- []
-
-Package epstopdf Info: Source file: <figur/v_time_3_new.eps>
-(epstopdf)                    date: 2009-12-08 19:27:56
-(epstopdf)                    size: 25607 bytes
-(epstopdf)             Output file: <./v_time_3_new-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-30 12:52:01
-(epstopdf)                    size: 19941 bytes
-(epstopdf)             Command: <epstopdf --outfile=./v_time_3_new-eps-converte
-d-to.pdf figur/v_time_3_new.eps>
-(epstopdf)             \includegraphics on input line 87.
-Package epstopdf Info: Output file is already uptodate.
-<./v_time_3_new-eps-converted-to.pdf, id=301, pagebox=cropbox, 523.9575pt x 420
-.57124pt>
-File: ./v_time_3_new-eps-converted-to.pdf Graphic file (type pdf)
-<use ./v_time_3_new-eps-converted-to.pdf>
-Package pdftex.def Info: ./v_time_3_new-eps-converted-to.pdf  used on input lin
-e 87. on input line 87.
-Package pdftex.def Info: Requested size: 108.12054pt x 86.7824pt on input line 
-87.
-
-Overfull \hbox (0.93657pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-Package epstopdf Info: Source file: <figur/v_time_3_new_low.eps>
-(epstopdf)                    date: 2009-12-08 19:28:05
-(epstopdf)                    size: 26375 bytes
-(epstopdf)             Output file: <./v_time_3_new_low-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-30 12:52:03
-(epstopdf)                    size: 20498 bytes
-(epstopdf)             Command: <epstopdf --outfile=./v_time_3_new_low-eps-conv
-erted-to.pdf figur/v_time_3_new_low.eps>
-(epstopdf)             \includegraphics on input line 95.
-Package epstopdf Info: Output file is already uptodate.
-<./v_time_3_new_low-eps-converted-to.pdf, id=302, pagebox=cropbox, 506.89375pt 
-x 420.57124pt>
-File: ./v_time_3_new_low-eps-converted-to.pdf Graphic file (type pdf)
-<use ./v_time_3_new_low-eps-converted-to.pdf>
-Package pdftex.def Info: ./v_time_3_new_low-eps-converted-to.pdf  used on input
- line 95. on input line 95.
-Package pdftex.def Info: Requested size: 108.12054pt x 89.7023pt on input line 
-95.
-
-Overfull \hbox (0.93657pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-[13 <./v_time_2_new-eps-converted-to.pdf> <./v_time_3_new-eps-converted-to.pdf>
- <./v_time_3_new_low-eps-converted-to.pdf>]
-<figur/Energy_Spectrum_comp.png, id=338, 683.55376pt x 506.6428pt>
-File: figur/Energy_Spectrum_comp.png Graphic file (type png)
-<use figur/Energy_Spectrum_comp.png>
-Package pdftex.def Info: figur/Energy_Spectrum_comp.png  used on input line 214
-. on input line 214.
-Package pdftex.def Info: Requested size: 199.16928pt x 147.61841pt on input lin
-e 214.
-
-Overfull \hbox (33.33594pt too wide) in paragraph at lines 214--215
-[][] 
- []
-
-<figur/Profile_global_coords.png, id=339, 421.575pt x 316.0608pt>
-File: figur/Profile_global_coords.png Graphic file (type png)
-<use figur/Profile_global_coords.png>
-Package pdftex.def Info: figur/Profile_global_coords.png  used on input line 22
-1. on input line 221.
-Package pdftex.def Info: Requested size: 199.16928pt x 149.32022pt on input lin
-e 221.
-
-Overfull \hbox (33.33594pt too wide) in paragraph at lines 221--222
-[][] 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varepsilon' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 245.
-
-) (Appendix/Appendix.tex [15 <./figur/Energy_Spectrum_comp.png> <./figur/Profil
-e_global_coords.png (PNG copy)>]pdfTeX warning (ext4): destination with the sam
-e identifier (name{appendix.A}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4 \section{Initial conditions}
-                                )
-Underfull \hbox (badness 10000) in paragraph at lines 13--111
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-(Turbulence_Chapter.bbl
-Overfull \hbox (34.12297pt too wide) in paragraph at lines 21--24
-[]\OT1/cmr/m/n/10 S. Hoyas and J. Jimenez.  http://torroja.dmt.upm.es/ftp/chan
-nels/data/statistics/.
+[13 <./figur/Infinite_plates.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
- (Turbulence_Chapter.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
-Package rerunfilecheck Info: File `Turbulence_Chapter.out' has not changed.
-(rerunfilecheck)             Checksum: 90A9EAFFA40741186BC60540DF06FA1F;1345.
+<figur/Parabolic_profile.png, id=273, 421.575pt x 316.18124pt>
+File: figur/Parabolic_profile.png Graphic file (type png)
+<use figur/Parabolic_profile.png>
+Package pdftex.def Info: figur/Parabolic_profile.png  used on input line 207. o
+n input line 207.
+Package pdftex.def Info: Requested size: 207.0021pt x 155.2534pt on input line 
+207.
+) (06_Resultsanddiscussion/Resultsanddiscussion.tex) (Appendix/Appendix.tex
+[14 <./figur/Parabolic_profile.png (PNG copy)>])
+Underfull \hbox (badness 10000) in paragraph at lines 13--119
+
+ []
+
+(Master_Thesis_report.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
+ (Master_Thesis_report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
+Package rerunfilecheck Info: File `Master_Thesis_report.out' has not changed.
+(rerunfilecheck)             Checksum: AAE5763C2F0713C235432741748EC5DC;1065.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 7000 strings out of 493312
- 102661 string characters out of 3130262
- 187996 words of memory out of 3000000
- 10315 multiletter control sequences out of 15000+200000
- 15416 words of font info for 63 fonts, out of 3000000 for 9000
+ 6944 strings out of 493312
+ 101858 string characters out of 3130262
+ 183040 words of memory out of 3000000
+ 10265 multiletter control sequences out of 15000+200000
+ 14063 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,19n,32p,1056b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,19n,32p,1120b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/font
@@ -1078,19 +937,15 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Soni/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Soni/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Soni/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Us
-ers/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsl10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Soni/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Soni/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Soni/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/U
-sers/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
-/msam10.pfb>
-Output written on Turbulence_Chapter.pdf (20 pages, 756562 bytes).
+ers/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl1
+0.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Soni/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Master_Thesis_report.pdf (19 pages, 681767 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,2 +1,21 @@
-\BOOKMARK [2][-]{subsection.0.1}{Discussion 9th May}{}% 1
-\BOOKMARK [2][-]{subsection.0.2}{Next steps 15th May}{}% 2
+\BOOKMARK [1][-]{section*.2}{List of Figures}{}% 1
+\BOOKMARK [1][-]{section*.3}{List of Tables}{}% 2
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 3
+\BOOKMARK [2][-]{subsection.1.1}{Discussion 9th May}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.2}{Next steps 15th May}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Results and Discussion}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Turbulent channel flow}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Computational Domain}{subsection.2.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Governing equations}{subsection.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Scaling units}{subsection.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.2}{Reynolds number}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{Meshing}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.4}{Initial conditions}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Introduction Turbulence modelling}{}% 14
+\BOOKMARK [1][-]{section.4}{Turbulent mean flow}{}% 15
+\BOOKMARK [1][-]{section.5}{Turbulent mean flow}{}% 16
+\BOOKMARK [2][-]{subsection.5.1}{Time averaged Navier-Stokes}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Boundary-layer approximation}{subsection.5.1}% 18
+\BOOKMARK [1][-]{appendix.A}{- identity}{}% 19
+\BOOKMARK [1][-]{appendix.A}{Initial conditions}{}% 20
+\BOOKMARK [1][-]{section*.5}{References}{}% 21

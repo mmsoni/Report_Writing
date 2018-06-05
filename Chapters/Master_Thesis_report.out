@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section*.2}{List of Figures}{}% 1
+\BOOKMARK [1][-]{section*.3}{List of Tables}{}% 2
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 3
+\BOOKMARK [2][-]{subsection.1.1}{Discussion 9th May}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.2}{Next steps 15th May}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Lattice Boltzmann theories}{}% 6
+\BOOKMARK [1][-]{section.3}{Turbulence theories}{}% 7
+\BOOKMARK [1][-]{section.4}{Implementation}{}% 8
+\BOOKMARK [1][-]{section.5}{Model set-up and theories}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Turbulent channel flow}{section.5}% 10
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Governing equations}{subsection.5.1}% 11
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Scaling units}{subsection.5.1}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Reynolds number}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Computational Domain and Meshing}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.4}{Initial conditions}{section.5}% 15
+\BOOKMARK [1][-]{appendix.A}{Initial conditions}{}% 16
+\BOOKMARK [1][-]{section*.5}{References}{}% 17
