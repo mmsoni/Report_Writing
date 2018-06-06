@@ -1,16 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{cengel:book}
-Y.A. Cengel and J.M. Cimbala.
-\newblock {\em Fluid Mechanics: Fundamentals and Applications}.
-\newblock McGraw-Hill, New Delhi, 2 edition, 2011.
-
-\bibitem{kundu:book}
-P.K. Kundu and I.M. Cohen.
-\newblock {\em Fluid Mechanics}.
-\newblock Academic Press, 525 B Streek Suite 1900, San Diego, California
-  92101-4495, USA, 2002.
-
 \bibitem{pope:book}
 S.B. Pope.
 \newblock {\em Turbulent Flow}.
@@ -29,6 +18,17 @@ R.D. Moser, J.D. Kim, and N.N. Mansour.
 \newblock Direct numerical simulation of turbulent channel flow up to
   ${R}e_\tau=590$.
 \newblock {\em Physics of Fluids}, 11:943--945, 1999.
+
+\bibitem{cengel:book}
+Y.A. Cengel and J.M. Cimbala.
+\newblock {\em Fluid Mechanics: Fundamentals and Applications}.
+\newblock McGraw-Hill, New Delhi, 2 edition, 2011.
+
+\bibitem{kundu:book}
+P.K. Kundu and I.M. Cohen.
+\newblock {\em Fluid Mechanics}.
+\newblock Academic Press, 525 B Streek Suite 1900, San Diego, California
+  92101-4495, USA, 2002.
 
 \bibitem{Moin:78}
 W.C.~Reynolds P.Moin and J.H.Ferziger.
