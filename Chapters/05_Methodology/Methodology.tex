@@ -159,10 +159,12 @@ Several choices of $V_{ch}$ are possible, but in this investigation two differen
 	\label{bulk Re}
 	Re_b = \frac{U_b\ 2\delta}{\nu}
 \end{equation}
+The bulk mean velocity is defined as:
+$$U_b = \frac{1}{h}\int_{0}^h U dy$$
 
 \subsection{Computational Domain and Meshing}
 \subsubsection{Computational Domain}
-We are interested to investigate the fully developed turbulent channel and that implies a sufficient length and width of the domain for the flow in the channel to be fully developed. Since the stream-wise and the span-wise directions are homogeneous the periodic boundary conditions is used at either side of the two homogeneous directions. This implies that we have a flow between two infinite parallel planes, Figure \ref{infinite plates}.
+We are interested to investigate the fully developed turbulent channel and that implies a sufficient length and width of the domain for the flow in the channel to be fully developed. Since the stream-wise and the span-wise directions are homogeneous, periodic boundary conditions are applied on either side of the two homogeneous directions. All flow properties along with the state of the flow are set to be equal for the equivalent points on the periodic boundary pairs. Use of periodic boundaries is equivalent to having an infinitely long domain in that direction. This implies that we have a flow between two infinite parallel planes, Figure \ref{infinite plates}.
 %
 \begin{figure}[h]
     \centering
@@ -171,7 +173,7 @@ We are interested to investigate the fully developed turbulent channel and that 
     \label{infinite plates}
 \end{figure}
 %
-Since the artificial periodic boundaries are enforced great care has to be taken that the domain is long enough to avoid this artificial boundary conditions from influencing the results.\emph{Moin et.al}~\cite{Moin:78} has specified certain aspects to be considered in the process of choosing the dimensions of the flow domain for the numerical simulation of the turbulent channel flow. According to~\cite{Moin:78} the experimental two-point correlation functions have to be considered for choosing the stream-wise $\left(L_x\right)$ and the span-wise $\left(L_z\right)$ lengths. The usage of periodic boundary conditions is justified if the length of the side of the computational domain is at least twice the distance, at which the correlation function becomes zero.\\
+Since the artificial periodic boundaries are enforced great care has to be taken that the domain is long enough to avoid this artificial boundary conditions from influencing the results.\emph{Moin et.al}~\cite{Moin:78} has specified certain aspects to be considered in the process of choosing the dimensions of the flow domain for the numerical simulation of the turbulent channel flow. According to~\cite{Moin:78} the experimental two-point correlation functions have to be considered for choosing the stream-wise $\left(L_x\right)$ and the span-wise $\left(L_z\right)$ lengths. The usage of periodic boundary conditions is justified if the distance between the pair of periodic boundaries is at least twice the distance, at which the correlation function becomes zero. This means that the domain size is enough to accommodate the largest eddy without the pair of periodic boundaries influencing each other.\\
 
 To validate the LES results of the fully developed turbulent channel flow the DNS data from the database of~\cite{moser:kim:mansour:99} for the $Re_\tau = 395$ is used. The authors have shown the adequacy of the domain by performing the two-point spatial correlations. Same domain size used in~\cite{moser:kim:mansour:99} has been chosen for performing the LES of channel flow, Table \ref{Computational Domain}. Thus, no separate study for two-point correlation has been performed in this investigation.
 %
@@ -182,15 +184,48 @@ To validate the LES results of the fully developed turbulent channel flow the DN
 $Nominal \ret$ & $L_x$ x $L_y $x $L_z$ \\
 \hline
 %
-395   &  $6\de$ x $2\de$ x $3\de$  \\
+395   &  $2\pi\de$ x $2\de$ x $\pi\de$  \\
 \hline
 \end{tabular}
 \caption{The size of the domain in x, y, z directions}
 \label{Computational Domain}
+\end{table}\\
+%
+Several authors ~\cite{Freitas:11, sonja:12} have performed the turbulent channel flow simulations with smaller domain dimensions comapred to the dimensions used in the reference data, ~\cite{moser:kim:mansour:99}, in order to save the computational time. But \emph{Bespalko}~\cite{bespalko:11} suggests that for performing the validation studies the dimensions of the domain should be similar to that used in the reference data. Else, the usage of smaller domain dimensions might add some kind of error and this might be than attributed to the error originating from the implementation under test.
+
+\subsubsection{Physical parameters}
+The physical parameters that are necessary for the model set-up and later on for the simulations are pressure gradient(to drive the flow), discussed in the later section, $u_\tau$, $\nu$ and $U_b$
+In ~\cite{moser:kim:mansour:99} the authors have not specified $u_\tau$, $\nu$ and $U_b$ used in the simulations.~\cite{devilliers:phd} has computed and specified these parameters obtained from the DNS results of ~\cite{moser:kim:mansour:99} for $Re_\tau = 395$, Table \ref{Physical quantities}  :
+
+%
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|c}
+%\hline
+$ $ & $Value\ in\ S.I\ Units$ & $Expression$ \\
+\hline
+%
+Half channel height, $\de$ & $1.0\ m$ & $9437184$ \\
+\hline
+%
+Friction velocity, $u_\tau$ & $0.0079\ m/s$ & $ $ \\
+\hline
+%
+Bulk velocity, $U_b$ & $0.1335\ m/s$ & $ $ \\
+\hline
+%
+Kinematic Viscosity, $\nu$ & $0.00002\ m^2/s$ & $ $ \\
+\hline
+%
+\end{tabular}
+\caption{Physical quantities}
+\label{Physical quantities}
 \end{table}
 %
+ 
+In order to compute the bulk mean velocity from the DNS data (Mean stream-wise velocity), trapezoidal rule can be used to solve the equation of $U_b$ numerically. i.e. \emph{trapz} command in Matlab. 
 \subsubsection{Meshing}
-In order to see the effects of mesh resolution a hierarchy of meshes was created. Three uniformly spaced meshes in all directions were generated namely: Mesh 1 (coarse), Mesh 1\_5 (medium) and Mesh 2 (fine). The resolution of Mesh 1 was refined by a factor of 1.5 in all directions for Mesh 1\_5 and by a factor of 2 in all directions for Mesh 2. To compute the mesh spacing the dimensionless distances in wall normal and wall parallel directions (stream-wise and span-wise) were used. 
+In order to see the effects of mesh resolution a hierarchy of meshes was created. Three uniformly spaced meshes, in all directions, were generated namely: Mesh 1 (coarse), Mesh 1\_5 (medium) and Mesh 2 (fine). The resolution of Mesh 1 was refined by a factor of 1.5 in all directions for Mesh 1\_5 and similarly by a factor of 2 for Mesh 2. To compute the mesh spacing the dimensionless distances in wall normal and wall parallel directions (stream-wise and span-wise) were used. Initially the plan was to go for Mesh 3, refinement by factor 4 in all directions, but the total number of mesh points were $\sim 88\ million$ ,so the idea was dropped and an intermediate mesh resolution was chosen and hence the name Mesh 1\_5.
 \begin{equation}
 \label{Dimensionless distances}
 \begin{split}
@@ -199,24 +234,33 @@ y^+ = \frac{\Delta y u\tau}{\nu}\\
 z^+ = \frac{\Delta z u\tau}{\nu}\\
 \end{split}
 \end{equation} 
-Since the spacing is same in all three directions from now onward it will be referred as $\Delta^+$. The bottom and top faces of the domain were defined as the wall, no-slip boundary condition. The no-slip boundary condition was realized by using the half-way bounce back boundary condition. Because of the half-way bounce back boundary condition the distance of the nearest cell to the wall, $y^+$, is halved. The $y^+$ will always be a smaller than $\Delta^+$ by a factor of 2. The following table shows the mesh statistics used in the investigation
+Since the spacing is same in all three directions from now onward it will be referred as $\Delta^+$. The bottom and top faces of the domain were defined as the wall, no-slip boundary condition. The no-slip boundary condition was realized by using the half-way bounce back boundary condition. Because of the half-way bounce back boundary condition the distance of the nearest cell to the wall, $y^+$, is halved. The $y^+$ will always be a smaller than $\Delta^+$ by a factor of 2. The following table \ref{Mesh statistics} shows the mesh statistics used in the investigation, where $N_x\ , N_y\ , N_z$ denote the number of nodes in the stream-wise, wall-normal and span-wise directions. In order to facilitate the grid generator the size of domain was reduced to $6\de$ x $2\de$ x $3\de$.
 %
 \begin{table}[!h]
 \centering
-\begin{tabular}{c|c|c}
-\hline
-$Name$ & $N_x$ x $N_y $x $N_z$ \\
+\begin{tabular}{c|c|c|c|c}
+%\hline
+$ $ & $N_x$ x $N_y$ x $N_z$ & $Total\ nodes$ & $\sim \Delta^+$ & $\sim y^+$ \\
 \hline
 %
-Mesh 1 & $192$x$64$x$96$   \\
+Mesh 1 & $192$ x $64$ x $96$ & $1179648$ &$12$ & $6$ \\
 \hline
-
+%
+Mesh 1\_5 & $288$ x $96$ x $144$ & $3981312$ & $8$ & $4$   \\
+\hline
+%
+Mesh 2 & $384$ x $128$ x $192$ & $9437184$ &$6$ & $3$ \\
+\hline
+%
 \end{tabular}
-\caption{The size of the domain in x, y, z directions}
-\label{Computational Domain}
-\end{table}
+\caption{Mesh statistics}
+\label{Mesh statistics}
+\end{table}\\
 %
-
+The domain size has been slightly altered in this investigation and this leads to the necessity for performing the two-point correlations to prove the adequacy of the domain. \emph{Premnath et.al}~\cite{Premnath:09} suggests doing it otherwise.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Initial conditions}
 It is known from the theory of the internal fluid flow that there exists a hydrodynamic entry length ($L_h$), starting from the inlet (x = 0), that the fluid has to travel, in the channel, for the flow to become fully developed. This means when we integrate the flow governing equations, in time, the fluid has to travel the distance $L_h$ ($\tilde{x} =10H$) in every time-step, to generate a fully developed flow, which is unnecessary considering the computational efforts and also the storage requirements. The idea is to consider only that portion of the channel which will be fully developed, turbulent and not the initial part ($L_h$) of the channel. This implies we will have to provide specific initial conditions for the flow to become fully developed and turbulent.\\
 %
@@ -229,13 +273,19 @@ Different approaches have been used by different authors to generate the initial
 For the initialisation of our simulations the work of \emph{Eugene de Villiers}~\cite{devilliers:phd} is closely followed. \emph{Eugene de Villiers} introduced some sort of near wall streak cycle, where he uses the fundamentals of the turbulent structures near the walls. A parabolic flow profile is chosen as the base flow. To generate the parabolic flow profile the bulk mean velocity, $U_b = 0.1335\ m/s$, which was computed by \cite{devilliers:phd}, from the mean velocity DNS data of \cite{moser:kim:mansour:99} for $Re_\tau = 395$, is used.\\
 
 Parabolic flow profile has been applied in the stream-wise direction, $u(y,0)$,  on all the fluid nodes in the domain. Figure \ref{para profile} shows the parabolic profile used as the base flow. A combination of sine and cosine waves have been used to break the flow symmetry and to develop the turbulence in the flow. 
-
+%
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figur/Parabolic_profile.png}
     \caption{Parabolic flow profile with $U_b = 0.1335\ m/s$}
     \label{para profile}
 \end{figure}
-Initially the the disturbances were applied on to the parabolic profile, but that approach was quite time consuming. It took approximately 4.5 million time-steps for the flow to be turbulent. Next approach was to apply the disturbances in the wall-normal direction, $v$. This approach reduced the time it took for the flow to be turbulent, ~100,000 time-steps. The exact equations for the initialization have been specified in the the Appendix.
+Initially the the disturbances were applied the disturbance in the stream-wise direction, but that approach was quite time consuming. It took approximately 4.5 million time-steps for the flow to be turbulent. In the next approach we applied the disturbances in the wall-normal direction, $v$. This approach reduced the time it took for the flow to be turbulent, ~100,000 time-steps. The exact equations for the initialization have been specified in the the eq. \ref{Initial conditions} in Appendix.
+
+\subsection{Solver settings}
+In this subsection the modelling of the pressure gradient, which is the flow driving factor, along with the simulation settings for the LES will be discussed.
+
+\subsubsection{Modelling of pressure gradient}
 
 
+ 
