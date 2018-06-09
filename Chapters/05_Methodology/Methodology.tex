@@ -280,12 +280,29 @@ Parabolic flow profile has been applied in the stream-wise direction, $u(y,0)$, 
     \caption{Parabolic flow profile with $U_b = 0.1335\ m/s$}
     \label{para profile}
 \end{figure}
+%
 Initially the the disturbances were applied the disturbance in the stream-wise direction, but that approach was quite time consuming. It took approximately 4.5 million time-steps for the flow to be turbulent. In the next approach we applied the disturbances in the wall-normal direction, $v$. This approach reduced the time it took for the flow to be turbulent, ~100,000 time-steps. The exact equations for the initialization have been specified in the the eq. \ref{Initial conditions} in Appendix.
+
+\subsection{Modelling of pressure gradient}
+In the theoretical section it was shown that the pressure gradient drives the flow through a channel. With the periodic boundary conditions applied in the both streamwise and spanwise direction no information on the pressure gradient is available and thus some kind of external forcing is required to drive the flow through the channel. This requires an additional step, to model the pressure gradient, in the numerical simulation. An additional force term will be added on the right hand side of the Navier-stokes equation. Forcing is only applied in the streamwise direction, $F_x$. Two most commonly used modelling strategies will be discussed here.
+
+\textbf{i. Constant Pressure gradient :}\\ In this approach we set $F_x$ to some constant value, thus explicitly setting the driving force, which becomes constant and uniform. 
+Since the forcing is constant the mass flow rate will be varying in time, which is attributed to the wall shear stress, until the flow is fully developed (see eq. \ref{Solution equations}).
+%
+\begin{equation}
+\label{CPG}
+F_x = -\frac{\D P}{\D x} = \frac{\tau_w}{\delta} = \frac{\rho u_\tau^2}{\de}
+\end{equation}
+%
+Thus the simulation a posteriori yields the mean flow rate required to generate the prescribed frictional losses ~\cite{Quadrioa:15}. ~\cite{KPremnath:09, Freitas:11} have used this forcing strategy.
+
+\textbf{ii. Constant Flow rate :} In this approach the forcing is not constant, but it is time dependent. The forcing is adjusted in every time step to keep the mass flow rate in the channel equal to the specified flow rate. Flow rate per channel cross-sectional area is $U_b$. Thus $U_b$ is provided as the input and we get the mean friction velocity, $u_\tau$ as the output which we compare with that of the DNS result. This is the most widely used approach in the turbulent channel simulations~\cite{devilliers:phd, sonja:12, roos:16} and it has been utilised in this investigation. Detailed description of this approach is specified rarely and the authors~\cite{Quadrioa:15, Lenormanda:00} describe the approach in detail. ~\cite{Quadrioa:15} has shown a comparison between different forcing strategies applied on the turbulent channel flow.
 
 \subsection{Solver settings}
 In this subsection the modelling of the pressure gradient, which is the flow driving factor, along with the simulation settings for the LES will be discussed.
 
-\subsubsection{Modelling of pressure gradient}
+
+
 
 
  
