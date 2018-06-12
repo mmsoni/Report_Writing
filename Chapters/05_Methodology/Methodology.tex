@@ -191,7 +191,7 @@ $Nominal \ret$ & $L_x$ x $L_y $x $L_z$ \\
 \label{Computational Domain}
 \end{table}\\
 %
-Several authors ~\cite{Freitas:11, sonja:12} have performed the turbulent channel flow simulations with smaller domain dimensions comapred to the dimensions used in the reference data, ~\cite{moser:kim:mansour:99}, in order to save the computational time. But \emph{Bespalko}~\cite{bespalko:11} suggests that for performing the validation studies the dimensions of the domain should be similar to that used in the reference data. Else, the usage of smaller domain dimensions might add some kind of error and this might be than attributed to the error originating from the implementation under test.
+Several authors ~\cite{Freitas:11, sonja:12} have performed the turbulent channel flow simulations with smaller domain dimensions comapred to the dimensions used in the reference data, ~\cite{moser:kim:mansour:99}, in order to either save the computational time or to statiate the upper limit of the total gird points on a Graphic card~\cite{sonja:12}. But \emph{Bespalko}~\cite{bespalko:11} suggests that for performing the validation studies the dimensions of the domain should be similar to that used in the reference data. Else, the usage of smaller domain dimensions might add some kind of error and this might be than attributed to the error originating from the implementation under test.
 
 \subsubsection{Physical parameters}
 The physical parameters that are necessary for the model set-up and later on for the simulations are pressure gradient(to drive the flow), discussed in the later section, $u_\tau$, $\nu$ and $U_b$
@@ -296,10 +296,36 @@ F_x = -\frac{\D P}{\D x} = \frac{\tau_w}{\delta} = \frac{\rho u_\tau^2}{\de}
 %
 Thus the simulation a posteriori yields the mean flow rate required to generate the prescribed frictional losses ~\cite{Quadrioa:15}. ~\cite{KPremnath:09, Freitas:11} have used this forcing strategy.
 
-\textbf{ii. Constant Flow rate :} In this approach the forcing is not constant, but it is time dependent. The forcing is adjusted in every time step to keep the mass flow rate in the channel equal to the specified flow rate. Flow rate per channel cross-sectional area is $U_b$. Thus $U_b$ is provided as the input and we get the mean friction velocity, $u_\tau$ as the output which we compare with that of the DNS result. This is the most widely used approach in the turbulent channel simulations~\cite{devilliers:phd, sonja:12, roos:16} and it has been utilised in this investigation. Detailed description of this approach is specified rarely and the authors~\cite{Quadrioa:15, Lenormanda:00} describe the approach in detail. ~\cite{Quadrioa:15} has shown a comparison between different forcing strategies applied on the turbulent channel flow.
+\textbf{ii. Constant Flow rate :} In this approach the forcing is not constant, but it is time dependent. The forcing is adjusted in every time step to keep the mass flow rate in the channel equal to the specified flow rate. Flow rate per channel cross-sectional area is $U_b$. Thus $U_b$ is provided as the input and we get the mean friction velocity, $u_\tau$ as the output which we compare with that of the DNS result. This is the most widely used approach in the turbulent channel simulations~\cite{devilliers:phd, sonja:12, roos:book} and it has been utilised in this investigation. Detailed description of this approach is specified rarely and the authors~\cite{Quadrioa:15, Lenormanda:00} describe the approach in detail. ~\cite{Quadrioa:15} has shown a comparison between different forcing strategies applied on the turbulent channel flow.
 
 \subsection{Solver settings}
-In this subsection the modelling of the pressure gradient, which is the flow driving factor, along with the simulation settings for the LES will be discussed.
+Once the channel flow becomes turbulent the flow is allowed to further develop in time until the statistically steady state is reached i.e. the statistics of the flow variables are invariant to temporal changes. Once the stat. steady state is reached the time averaging of the flow variables is carried out and these time averaged quantities are further averaged over in space along the two homogeneous directions i.e spatial averaging over the x-z planes. \\
+
+To determine the statistically steady state in the channel one can observer the evolution of the several quantities viz. (volume averaged)turbulent kinetic energy, $\tau_w$, $u_\tau$ etc. over some non-dimensional time. Refer to ~\cite{Jimandmoin:91} for the detailed description for steady state determination and spatial averaging. Here two non-dimensional time will be specified \emph{large-eddy turn-over-time (LETOT)}, $tu_\tau/\de$, and the flow through the domain time, $tU_b/\de$. LETOT is the time required by the large eddy to breakdown and transfer the energy to the small eddies~\cite{bespalko:11}. In this investigation no specific quantity had been monitored to determine the statistically steady state. An estimation that $\sim10LETOT$ is sufficient for the flow to be fully developed and statistically steady~\cite{mk}.  \\
+
+Since LB-LES simulations are performed. In LB-LES a non-dimensional parameter mach number, \emph{\textbf{Ma}}, is very important. Since the LBM is only applicable to the incompressible flows \emph{\textbf{Ma}}$\leq 0.3$ is the upper-limit. Since the spatial resolution is fixed the temporal resolution can only be fixed by varying the \emph{\textbf{Ma}} number. In our case with the given physical parameters the \emph{\textbf{Ma}} number was very small and it has been artificially increased to increase the time-step size. The respective settings in lb units is specified in the Appendix.  
+The following table shows the details of the simulation settings:
+%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2cm}||p{1.5cm}|p{2cm}|p{2cm}|p{2cm}|  } 
+\hline
+ &$\sim time$ & Mesh1 & Mesh1\_5 & Mesh2 \\
+  \hline
+  \multirow{3}{6em}{Flow developing stage} & $t\ [s]$ & 3 & 5 & 8\\
+  & $tu_\tau/\delta$ & 300 & 1 & 2\\ 
+  & $tU_b/\delta$ & 100 & 1 & 2\\ 
+  \hline
+  \multirow{3}{6em}{Averaging stage} & $t [s]$ & 3 & 5 & 8\\
+  & $tu_\tau/\delta$ & 300 & 1 & 2\\ 
+  & $tU_b/\delta$ & 100 & 1 & 2\\ 
+  \hline
+\end{tabular}
+\end{center}
+\caption{Solver settings}
+\end{table}
+%
+
 
 
 
