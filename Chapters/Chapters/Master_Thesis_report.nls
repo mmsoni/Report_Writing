@@ -1,0 +1,47 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{$\ub$}]\begingroup filtered stream-wise velocity\nomeqref {0}
+		\nompageref{iv}
+  \item [{$\vb$}]\begingroup filtered wall-normal velocity\nomeqref {0}
+		\nompageref{iv}
+  \item [{$\wb$}]\begingroup filtered span-wise velocity\nomeqref {0}
+		\nompageref{iv}
+  \item [{$U$}]\begingroup Mean stream-wise velocity\nomeqref {0}
+		\nompageref{iv}
+  \item [{$u$}]\begingroup stream-wise velocity fluctuation\nomeqref {0}
+		\nompageref{iv}
+  \item [{$V$}]\begingroup Mean wall-normal velocity\nomeqref {0}
+		\nompageref{iv}
+  \item [{$v$}]\begingroup wall-normal velocity fluctuation\nomeqref {0}
+		\nompageref{iv}
+  \item [{$W$}]\begingroup Mean span-wise velocity\nomeqref {0}
+		\nompageref{iv}
+  \item [{$w$}]\begingroup span-wise velocity fluctuation\nomeqref {0}
+		\nompageref{iv}
+  \item [{$L_x$}]\begingroup Length of the domain, stream-wise direction\nomeqref {0}
+		\nompageref{iv}
+  \item [{$L_y$}]\begingroup Height of the domain, wall-normal direction\nomeqref {0}
+		\nompageref{iv}
+  \item [{$L_z$}]\begingroup Width of the domain, span-wise direction\nomeqref {0}
+		\nompageref{iv}
+
+ \nomgroup{B}
+
+  \item [{$\mathbb{H}$}]\begingroup Quaternions\nomeqref {0}
+		\nompageref{iv}
+  \item [{$\mathbb{C}$}]\begingroup Complex Numbers\nomeqref {0}
+		\nompageref{iv}
+  \item [{$\mathbb{R}$}]\begingroup Real Numbers\nomeqref {0}
+		\nompageref{iv}
+  \item [{$\de$}]\begingroup Half-channel height, wall-normal direction\nomeqref {0}
+		\nompageref{iv}
+
+ \nomgroup{C}
+
+  \item [{$\rho$}]\begingroup Friction Index\nomeqref {0}
+		\nompageref{iv}
+  \item [{$V$}]\begingroup Constant Volume\nomeqref {0}\nompageref{iv}
+
+\end{thenomenclature}

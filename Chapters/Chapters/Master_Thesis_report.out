@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section*.2}{List of Figures}{}% 1
+\BOOKMARK [1][-]{section*.3}{List of Tables}{}% 2
+\BOOKMARK [1][-]{section*.4}{Nomenclature}{}% 3
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 4
+\BOOKMARK [2][-]{subsection.1.1}{Literature survey}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.2}{Objectives and Motivation}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Lattice Boltzmann theories}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{BGK}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{MRT}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Cumulant LBM}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Turbulence theories}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{RANS}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{LES}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Implementation}{}% 14
+\BOOKMARK [1][-]{section.5}{Model set-up and theories}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Turbulent channel flow}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Governing equations}{subsection.5.1}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Scaling units}{subsection.5.1}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Reynolds number}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Computational Domain and Meshing}{section.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Computational Domain}{subsection.5.3}% 21
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Physical parameters}{subsection.5.3}% 22
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Meshing}{subsection.5.3}% 23
+\BOOKMARK [2][-]{subsection.5.4}{Initial conditions}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.5}{Modelling of pressure gradient}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.6}{Solver settings}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.7}{Computational details \046 Post-processing}{section.5}% 27
+\BOOKMARK [1][-]{appendix.A}{Appendices}{}% 28
+\BOOKMARK [2][-]{subsection.A.1}{Initial conditions}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.2}{Lattice units}{appendix.A}% 30
+\BOOKMARK [1][-]{section*.7}{References}{}% 31

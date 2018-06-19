@@ -1,0 +1,94 @@
+\newpage
+
+\appendix
+
+\section{Appendices}
+
+\subsection{Initial conditions} \label{I.C}
+
+The following are the initial conditions, for density and the velocity components resp, used for fully developed channel flow simulations:
+
+\begin{multline}
+\rho = 27\ U_b^2 \left( cos\left(x\right) \frac{4\pi}{x} + cos\left(y\right) \frac{4\pi}{y}\right) \frac{y}{x} \\+  27\ U_b^2 \left( cos\left(x\right) \frac{4\pi}{x} + cos\left(z\right) \frac{4\pi}{z}\right) \frac{z}{x}
+\end{multline}
+
+\begin{equation}
+\label{Initial conditions}
+\begin{split}
+u &= 3* U_b \left(\frac{y}{h} - 0.5\left(\frac{y^2}{h^2}\right)\right)\\
+v &= U_b* cos\left(x\right)\frac{2\pi}{x}*sin\left(y\right)\frac{2\pi}{y} \\
+w &= 0\\
+\end{split}
+\end{equation}\\
+\label{Initial condition}
+
+
+\subsection{Lattice units} \label{Mach number explanation}
+
+As mentioned earlier the lattice units are the dimensionless lattice values of the corresponding physical parameters. Chapter 7 in~\cite{krueger:book} provides the detailed explanation on how to non-dimensionalise and several considerations while performing that to the physical units. For the further discussion the lattice units will be marked with an asterisk, *, sign and the unmarked symbols will represent the physical parameters. As mentioned earlier to simulate the same flow, the Reynolds number in both the unit systems has to be equal. Here the $Re_b$ is taken as the reference.
+%
+\begin{equation}
+\label{Law of similarity}
+\begin{split}
+Re^* &= Re_b\\
+\frac{ U^*l^*}{\nu^*}  &= \frac{U_b\ l}{\nu}\\
+\end{split}
+\end{equation}
+%
+The total number of grid nodes are same in both unit system, thus :
+\begin{equation}
+\label{Length lb}
+\begin{split}
+N^* &= N\\
+\frac{l^*}{{\Delta x}^*}  &= \frac{l}{{\Delta x}}\\
+l^*  &= \frac{l}{{\Delta x}} {\Delta x}^*\\
+\end{split}
+\end{equation}
+The usage of the uniform grid here implies that ${\Delta x}^* = 1$. With the same assumption as of Reynolds number the lattice and the physical Mach number must also match and this implies:
+\begin{equation}
+\label{Length lb}
+\begin{split}
+Ma^* &= Ma\\
+\frac{U^*}{{c_s}^*}  &= \frac{U_b}{{c_s}}\\
+U^*  &= Ma\ {{c_s}^*}\\
+\end{split}
+\end{equation}
+%
+where $c_s^*$ is the lattice speed of sound and equal to $\frac{1}{\sqrt{3}}$ $\approx 0.577$. When simulating the incompressible flow simulations the Mach number is small and hence it is not necessary to equate the Mach number until and unless it is small. Mach number is lattice units is considered small when $Ma^*<0.3$~\cite{krueger:book}.
+Now $l^*$ and $U^*$ are known the only free parameter $\nu^*$ can be computed by using the eq. \ref{Law of similarity}.
+
+As mentioned before the Mach number of the simulation is very small i.e. $Ma\ll 1$, as the flow is incompressible. This means that the $U^*$ will be very small and thus $\Delta t$ which scales as $\Delta t \propto Ma^*$ will also be very small. The total simulation time, T, is expressed as ~\cite{krueger:book} $$ T \propto \frac{1}{\Delta x^n \Delta t}$$
+where n is the spatial dimension. This shows that smaller $\Delta t$ requires a large number of time-steps for the flow to develop. Hence it is suggested to some how increase $Ma^*$ and eventually $U^*$ as $U^* \propto Ma^*$.
+Let us consider an example of Mesh 1 resolution to show how the Mach number was increased. 
+\begin{equation}
+\label{Art Ma}
+\begin{split}
+U^* &= \frac{Re_b \nu^*}{l^*}\\
+Ma^* &= {U^*}{\sqrt{3}}\\
+\end{split}
+\end{equation}
+%
+$l^* = 64$ and $\nu^*$ is chosen equal to 0.0005 and the resulting $U^* = 0.104296875
+$. With the increase in the mesh resolution the $\nu^*$ also increases to keep the Reynolds number same. Thus the eq. \ref{Art Ma} show how the $Ma^*$ has been increased. The intrinsic restrictions of LB algorithm however puts a limit on the simulation parameters i.e. $Ma^*$ ~\cite{krueger:book}. Thus there is a upperlimit till which the $Ma^*$ can be increased. The table \ref{P in LB} shows the parameters in lattice units to increase the Mach number.
+%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ p{2cm}|p{2cm}p{2cm}p{2cm}  } 
+\hline
+ & Mesh1 & Mesh1\_5 & Mesh2 \\
+  \hline
+  \multirow{1}{6em}{$U^*$}  & 0.104296875 & 0.104296875 & 0.104296875\\
+  \hline
+  \multirow{1}{6em}{$\nu^*$} & 0.0005 & 0.00075 & 0.001\\
+  \hline
+  \multirow{1}{6em}{$l^*$} & 64 & 96 & 128\\
+  \hline
+\end{tabular}
+\end{center}
+\caption{Parameters in lattice units}
+\label{P in LB}
+\end{table}
+%
+
+
+
