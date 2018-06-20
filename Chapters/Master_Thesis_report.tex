@@ -12,7 +12,12 @@
 \def\e{\varepsilon}
 \def\ub{\bar{u}}
 \def\vb{\bar{v}}
+\def\wb{\bar{w}}
 \def\pb{\bar{p}}
+\def\up{{u}^\prime}
+\def\vp{{v}^\prime}
+\def\wp{{w}^\prime}
+\def\pp{{p}^\prime}
 \def\sij{\bar{S_{ij}}}
 \def\de{\delta}
 \def\ret{Re_{\tau}}
@@ -50,12 +55,31 @@
 \usepackage[outdir=./]{epstopdf}
 \usepackage{grffile}
 \usepackage{url}
-\usepackage{nomencl}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[intoc]{nomencl}
+\makenomenclature
 \usepackage[nottoc]{tocbibind}
+\usepackage[toc]{appendix}
 
 
 %\usepackage{\mathaccent}
+%% This will add the subgroups
+%----------------------------------------------
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+  \item[\bfseries
+  \ifstrequal{#1}{A}{Latin symbols}{%
+  \ifstrequal{#1}{B}{Greek symbols}{%
+  \ifstrequal{#1}{C}{Brackets, Superscripts, Sub-scripts}{}}}%
+]}
+%----------------------------------------------
 
+%% This will add the units
+%----------------------------------------------
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+%----------------------------------------------
 
 \def\karm{von  K\'arm\'an }
 
@@ -93,6 +117,8 @@
 \thispagestyle{empty}
 \listoftables
 
+\input{Nomenclature/Nomenclature}
+\printnomenclature
 
 \newpage
 \tableofcontents
@@ -112,11 +138,13 @@
 
 \input{05_Methodology/Methodology}
 
-%\input{06_Resultsanddiscussion/Resultsanddiscussion}
+\input{06_Resultsanddiscussion/Resultsanddiscussion}
 
-
+\clearpage
 \input{Appendix/Appendix}
 
+\clearpage
+\phantomsection
 \bibliographystyle{unsrt}
 \bibliography{bibfil}
 

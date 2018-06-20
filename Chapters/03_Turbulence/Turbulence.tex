@@ -1,3 +1,16 @@
 \newpage
 
 \section{Turbulence theories}
+{\bf i DNS}.\\
+Direct numerical simulation (DNS) method uses a modelling-free approach for approximation of the exact solution, as the navier-stokes equation comprises of all turbulence mechanisms. Since the turbulence is three dimensional and inherently instationary it has to take in to account all the components present in the navier stokes equation.Turbulence involves the interaction in between the scales of various different sizes and thus to represnt the exact solution or the characteristics of the turbulent flow considered correctly, the DNS method emphasises on the fine spatial and temporal resolution of the meshes. Apart from that this method requires the discretization methods to have low level of numerical dissipation and dispersion. In order to correctly determine the effects of the turbulence intensity, the fluctuating flow variables which satisfy the navier stokes equation are provided as inputs.
+\\
+{\bf ii DES}.\\
+Detached eddy simulation, DES, combines the approach of RANS and the LES method; it therefore belongs to the class of the hybrid RANS-LES simulations. The basic idea of this method is that the near wall boundary layer would be resolved using the RANS approach, while the usuage of LES to (correctly) resolve such regions requires a very fine spatial and temporal resolution, as the turbulent scales to be resolved in the boundary layers are very small. On the other hand, the detached regions, wakes and the free shear layers are the regions, where the RANS model frequently fails, are handled by the LES.\\
+\\
+ DES was first introduced by {\it Spalart et al.}. The goal was to compute the aerodynamic flows involving massive seperation with a moderate increase in the grid resolution compared to the RANS method. The idea behind the DES is to segregate the flow, using suitable detectors, in to the domains where the entire energy spectrum will be modelled using the RANS (near wall boundary layer) or the large energy containing structures are resolved using the LES method (detached flow region). Therefore in this approach, a suitable method is chosen, for each domain, in terms of efficiency and accuracy.\\
+\\
+In comparison with LES, for the computation of the flows involving the boundary layer, DES reduces the computational effort significantly. Since the flows involved are unsteady and three dimensional turbulent flows, the computational effort will be relatively higher when compared with RANS.\\
+\\
+Avery good compilation of the hybrid RANS-LES approach is found in {\it Fröhlich and von Tersi (2008)}\\
+\subsection{RANS}
+\subsection{LES}

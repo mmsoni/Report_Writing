@@ -2,35 +2,38 @@
 
 \section{Model set-up and theories}
 
-Apart from the free shear flows, most turbulent flows are bounded by one or more solid surfaces depending on whether they belong to class of the internal or external flow of fluids i.e. flow through pipes and flow over a car respectively.  In this investigation one of the simplest internal flow has been chosen for the validation \& testing of the implementation: fully developed channel flow. In this flow the mean velocity vector will be parallel to the wall and this flow is considered to be of prime importance as it has played a prominent role in the development of the study of the wall bounded turbulent flows~\cite{pope:book}.~\cite{pope:book} has described the fundamental theories of the full developed channel flow in great detail along with the reasoning of certain behaviour of the fluid near the channel wall.~\cite{froehlich:book} also has a good compilation on the fully developed channel flow. In general it serves as a very good reference for the beginners in LES.
+Apart from the free shear flows, most turbulent flows are bounded by one or more solid surfaces depending on whether they belong to class of the internal or external flow of fluids i.e. flow through pipes and flow over a car respectively.  In this investigation one of the simplest internal flow has been chosen for the validation \& testing of the implementation: fully developed channel flow. This flow is considered to be of prime importance as it has played a prominent role in the development of the study of the wall bounded turbulent flows~\cite{pope:book}.~\cite{pope:book} has described the fundamental theories of the full developed channel flow in great detail. ~\cite{froehlich:book} also has a good compilation on the fully developed channel flow. 
 
-In this section an attempt will be made to address the main challenges faced in the LES simulations that will include the mesh statistics, initialization, experimental settings, boundary conditions, LB solver specifics followed by post-processing and the final discussions of the results. 
+In this section a brief description of the turbulent channel flow with some basic theories is presented. Later on it is followed by description of the computational domain, meshing, initial conditions, boundary conditions, pressure gradient modelling, solver settings and in the end by post-processing. 
 
 \subsection{Turbulent channel flow}
 
-Fully developed turbulent channel flow is a classic benchmark case and has been studied extensively to investigate and understand the mechanics of wall-bounded turbulent flows. It is the geometrical simplicity of this case that has lured to a large number of, computational (DNS) and experimental, investigations being carried out for the turbulent channel flow over the years and as a result, an adequate database (DNS data) for certain Re-numbers is already available.~\cite{channeldata:99}(MKM, Moin \& Jiminez) Link too. Historical progression in the turbulent channel flow simulations have been very well documented in the literature by Kim et al. Also, Kim has pointed out several difficulties related to the experimental measurements and how numerical simulations serve as an essential tool, alongside the experimental results, for the study of the wall-bounded turbulence. The recent development along with the comparison of the DNS results of the turbulent channel flow simulations for higher Re-numbers is documented in [Moser]
-As shown in the figure a three dimensional flow through a rectangular duct is considered and the aspect ratio of the duct is $\gg$ than 1.
-The dimensions of the 3d box are shown in the table~\ref{Computational Domain}
-
-\begin{table}[!h]
-\centering
-\begin{tabular}{c|c}
-\hline
-$Nominal \ret$ & $L_x$ x $L_y $x $L_z$ \\
-\hline
+Fully developed turbulent channel flow is a classic benchmark case and has been studied extensively to investigate and understand the mechanics of wall-bounded turbulent flows. It is the geometrical simplicity of this case that has lured to a large number of, computational (DNS) and experimental, investigations being carried out for the turbulent channel flow over the years and as a result, an adequate database (DNS data) for certain Re-numbers is already available~\cite{channeldata:99}. Historical progression in the turbulent channel flow simulations have been very well documented in the literature by \emph{Kim et al.}~\cite{kim:moin:moser:87}. Also, Kim has pointed out several difficulties related to the experimental measurements and how numerical simulations serve as an essential tool, alongside the experimental results, for the study of the wall-bounded turbulence. The recent development along with the comparison of the DNS results of the turbulent channel flow simulations for higher Re-numbers is documented in ~\cite{lee:moser:15}.\\
 %
-395   &  $6\de$ x $2\de$ x $3\de$  \\
-\hline
-\end{tabular}
-\caption{The size of the domain in x, y, z directions}
-\label{Computational Domain}
-\end{table}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figur/3D_Domain.png}
+    \caption{3D rectangular duct}
+    \label{3D domain}
+\end{figure}
+%
+As shown in figure \ref{3D domain}, a 3D rectangular duct has been chosen as the computational domain. The positive x-axis is the stream-wise direction or the flow direction with the flow varying in the y-direction, the height $h = 2\de$, the wall-normal direction. The z-axis is the span-wise direction, the width b. The domain is long and has a large aspect ratio $\left(b/\de \gg 1\right)$. The bottom (y = 0) and top (y = $2\de$) surfaces of the domain are walls. The mid-plane (y = $\de$), which is frequently termed as the half-channel width in the literature, is ambiguous with the assigned Cartesian coordinate directions in this case and hence term half-channel height will be used(h = $\de$). 
 
-The size of the 3D duct has been chosen in accordance with the reference literature of ~\cite{moser:kim:mansour:99}.
+The mean velocities in the three directions are $U$, $V$, $W$, the stream-wise, wall-normal and span-wise velocities, and the corresponding fluctuating velocities are $u$,$v$ and $w$. The mean span-wise or cross-stream velocity is zero, $W = 0$. 
+In the turbulent channel flow test case, fully developed flow region in the channel is of our interest i.e. it is the region where the velocity statistics of the flow remain invariant to spatial changes, x-direction in our case. Also, the domain is large enough in the span-wise direction, z, compared to the half-channel height, $\de$, so that the flow remains statistically independent of the z-direction. In short, we have two homogeneous flow directions along x \& z-axis. Thus, the flow is said to be statistically one- dimensional as the flow statistics vary only in one-direction i.e. y-direction. 
+%%
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=0.7\textwidth]{figur/3D_Domain.png}
+%    \caption{3D rectangular duct}
+%    \label{3D domain}
+%\end{figure}
+%%
+
 
 \subsubsection{Governing equations}
 
-Turbulent channel flow is fully developed, where the velocity statistics along the stream-wise direction remain constant i.e. ${\D U}/{\D x}=0 $, and statistically one dimensional, where the flow statistics vary only in the wall-normal(y) direction. Since the flow is two-dimensional, there is no mean flow in the span-wise direction i.e $W=0$ and thus the gradient of the span-wise velocity in the span-wise direction is zero i.e. ${\D W}/{\D z}=0 $. The mean continuity equation for the incompressible flow results in the mean wall normal velocity gradient to be zero:
+Turbulent channel flow is fully developed, where the velocity statistics along the stream-wise direction remain constant i.e. ${\D U}/{\D x}=0 $, and statistically one dimensional, where the flow statistics vary only in the wall-normal(y) direction. There is no mean flow in the span-wise direction i.e $W=0$ and thus the gradient of the span-wise velocity in the span-wise direction is zero i.e. ${\D W}/{\D z}=0 $. The mean continuity equation for the incompressible flow results in the mean wall normal velocity gradient to be zero:
 \begin{equation}
 \label{zero wall-normal mean vel. gradient}
 \begin{split}
@@ -46,7 +49,7 @@ where $\tau = \left(\mu \frac{\D U}{\D y} - \rho\uij\right)$ is the total shear 
 
 The eq.~\ref{Forces channel flow} shows that the total shear stress gradient and the pressure gradient balance each other in the full developed channel flow. It shows an equality of the form $\emph{f(x)}= \emph{g(y)}$ and for this equality to hold it is important that both $\emph{f(x)}$ and $\emph{g(y)}$ are individually constants. In eq.~\ref{Forces channel flow} both the gradients are dependent on different variables and thus they must be individually constants for this equality to hold. $$\frac{\D P}{\D x} = const\  \&\  \frac{\D \tau}{\D y} = const$$\\
 %
-Total shear stress is the summation of the viscous stress, $ \mu \frac{\D U}{\D y} $, and the Reynolds stress, $- \rho\uij$. At the wall with the no-slip boundary condition applied, the Reynolds stresses are reduced to zero and thus the shear stress near the wall or to be specific at the wall would entirely be dominated by the viscous stresses. Shear stress can be defined here as the \emph{wall shear stress},\marginpar{\bf wall shear \\stress} the region where the viscous stresses are dominant:
+Total shear stress is the summation of the viscous stress, $ \mu \frac{\D U}{\D y} $, and the Reynolds stress, $- \rho\uij$. At the wall with the no-slip boundary condition applied, the Reynolds stresses are reduced to zero and thus the shear stress near the wall or to be specific at the wall would entirely be dominated by the viscous stresses. At the walls the Reynolds stresses drop to zero and the stress at the walls can be defined as the \emph{wall shear stress},\marginpar{\bf wall shear \\stress} the region where the viscous stresses are dominant:
 \begin{equation}
 \label{Wall shear stress}
 \begin{split}
@@ -64,8 +67,7 @@ Now we can integrate the eq.~\ref{Forces channel flow}, from 0 to $2\delta$, for
 \end{split}
 \end{equation}\\ 
 %
-From the fully developed channel flow it is known that the mean velocity profile (time-averaged) remains constant. It is clear from eq.~\ref{Wall shear stress} that wall shear stress is linearly proportional to the velocity gradient near the wall. A constant velocity profile implies that the wall shear stress will also be constant in a fully developed channel flow. Thus from eq.\ref{Solution equations} we can say that the pressure gradients is constant. $\tau\left(y\right)$ is anti-symmetric about the mid channel height $\tau\left(\delta\right)$ and thus the total shear stress is zero there. 
-Integrating the eq.~\ref{Forces channel flow}, from 0 to some y, with the no-slip boundary condition at the wall results in the following solution:
+From the fully developed channel flow it is known that the mean velocity profile (time-averaged) remains constant. It is clear from eq.~\ref{Wall shear stress} that wall shear stress is linearly proportional to the velocity gradient near the wall. A constant velocity profile implies that the wall shear stress will also be constant in a fully developed channel flow. Thus from eq.\ref{Solution equations} we can say that the pressure gradients is constant. Integrating the eq.~\ref{Forces channel flow}, from 0 to some y, with the no-slip boundary condition at the wall results in the following solution:
 \begin{equation}
 \label{Shear stress profile}
 \begin{split}
@@ -73,9 +75,8 @@ Integrating the eq.~\ref{Forces channel flow}, from 0 to some y, with the no-sli
 \end{split}
 \end{equation}\\ 
 %
-The pressure gradient in eq.~\ref{Solution equations} is negative as the viscous effects decreases the pressure along the stream-wise direction. It is this pressure gradient that drives the flow through the infinite parallel plates. For a given pressure gradient and the half-channel height we get a linear shear stress profile from eq.~\ref{Solution equations} and ~\ref{Shear stress profile} independent of the fluid properties and the state of the fluid motion (laminar or turbulent)~\cite{pope:book}.
-Also, several investigations have showed that the total shear stress
-profile is anti-symmetric about the channel mid height $ y=\delta $ and thus $\tau\left(\delta\right) = 0$.
+It is this pressure gradient that drives the flow through the infinite parallel plates.The pressure gradient in eq.~\ref{Solution equations} is negative as the viscous effects decreases the pressure along the stream-wise direction.  For a given pressure gradient and the half-channel height we get a linear shear stress profile from eq.~\ref{Solution equations} and ~\ref{Shear stress profile} independent of the fluid properties and the state of the fluid motion (laminar or turbulent)~\cite{pope:book}.
+Experimental and numerical results~\cite{kim:moin:moser:87} show that the total shear stress profile is anti-symmetric about the channel mid height $ y=\delta $ and thus $\tau\left(\delta\right) = 0$.
 %
 \subsubsection{Scaling units}
 The Reynolds stresses decreases towards the wall, remain zero at the wall and so does the eddy viscosity (\emph{Boussinesq hypothesis}). The value of the eddy viscosity ranges from zero, at the wall, to several orders of magnitude higher than the molecular viscosity, in the core region of the turbulent boundary layer~\cite{cengel:book}. From the figure. \ref{TFlow} it can be seen that the velocity profile changes more slowly (more flatter compared to the parabolic flow profile) in the core of the turbulent boundary layer, where the eddy viscosity is higher than the molecular viscosity, and there is an abrupt change in the velocity profile near the wall, where the molecular viscosity is dominant. The turbulent flow profile has the largest gradient near the wall. 
@@ -114,7 +115,7 @@ The quantity $\nu / u_\tau $ has the dimensions of length and it is called \emph
 	\label{nondimensions law of wall}
 	u^+ = y^+ 
 \end{equation}
-This law shows a very good correlation with the experimental data for smooth surfaces for $0\leq {u_\tau y}/{\rho} \leq 5	$. Thus for the $y^+ =  5$ we will have the linear velocity profile and the viscous sub-layer. \\
+This law shows a very good correlation with the experimental data for smooth surfaces for $0\leq {u_\tau y}/{\rho} \leq 5	$. Thus for the $y^+ =  5$ we will have the linear velocity profile in the viscous sub-layer. \\
 
 \begin{figure}[t]
     \centering
@@ -200,21 +201,21 @@ In ~\cite{moser:kim:mansour:99} the authors have not specified $u_\tau$, $\nu$ a
 %
 \begin{table}[!h]
 \centering
-\begin{tabular}{c|c|c}
+\begin{tabular}{c|c}
 %\hline
-$ $ & $Value\ in\ S.I\ Units$ & $Expression$ \\
+$ Physical\ quantity$ & $Value\ in\ S.I\ Units$  \\
 \hline
 %
-Half channel height, $\de$ & $1.0\ m$ & $9437184$ \\
+Half channel height, $\de$ & $1.0\ m$  \\
 \hline
 %
-Friction velocity, $u_\tau$ & $0.0079\ m/s$ & $ $ \\
+Friction velocity, $u_\tau$ & $0.0079\ m/s$  \\
 \hline
 %
-Bulk velocity, $U_b$ & $0.1335\ m/s$ & $ $ \\
+Bulk velocity, $U_b$ & $0.1335\ m/s$  \\
 \hline
 %
-Kinematic Viscosity, $\nu$ & $0.00002\ m^2/s$ & $ $ \\
+Kinematic Viscosity, $\nu$ & $0.00002\ m^2/s$  \\
 \hline
 %
 \end{tabular}
@@ -225,7 +226,7 @@ Kinematic Viscosity, $\nu$ & $0.00002\ m^2/s$ & $ $ \\
  
 In order to compute the bulk mean velocity from the DNS data (Mean stream-wise velocity), trapezoidal rule can be used to solve the equation of $U_b$ numerically. i.e. \emph{trapz} command in Matlab. 
 \subsubsection{Meshing}
-In order to see the effects of mesh resolution a hierarchy of meshes was created. Three uniformly spaced meshes, in all directions, were generated namely: Mesh 1 (coarse), Mesh 1\_5 (medium) and Mesh 2 (fine). The resolution of Mesh 1 was refined by a factor of 1.5 in all directions for Mesh 1\_5 and similarly by a factor of 2 for Mesh 2. To compute the mesh spacing the dimensionless distances in wall normal and wall parallel directions (stream-wise and span-wise) were used. Initially the plan was to go for Mesh 3, refinement by factor 4 in all directions, but the total number of mesh points were $\sim 88\ million$ ,so the idea was dropped and an intermediate mesh resolution was chosen and hence the name Mesh 1\_5.
+In order to see the effects of mesh resolution a hierarchy of meshes was created. Three uniformly spaced meshes, in all directions, were generated namely: Mesh 1 (coarse), Mesh 1\_5 (medium) and Mesh 2 (fine). The resolution of Mesh 1 was refined by a factor of 1.5 in all directions for Mesh 1\_5 and similarly by a factor of 2 for Mesh 2. To compute the mesh spacing the dimensionless distances in wall normal and wall parallel directions (stream-wise and span-wise) were used. The $u_\tau$ used for spacing computation is taken from the DNS data. Initially the plan was to go for Mesh 3, refinement by factor 4 in all directions, but the total number of mesh points were $\sim 88\ million$ ,so the idea was dropped and an intermediate mesh resolution was chosen and hence the name Mesh 1\_5.
 \begin{equation}
 \label{Dimensionless distances}
 \begin{split}
@@ -234,7 +235,7 @@ y^+ = \frac{\Delta y u\tau}{\nu}\\
 z^+ = \frac{\Delta z u\tau}{\nu}\\
 \end{split}
 \end{equation} 
-Since the spacing is same in all three directions from now onward it will be referred as $\Delta^+$. The bottom and top faces of the domain were defined as the wall, no-slip boundary condition. The no-slip boundary condition was realized by using the half-way bounce back boundary condition. Because of the half-way bounce back boundary condition the distance of the nearest cell to the wall, $y^+$, is halved. The $y^+$ will always be a smaller than $\Delta^+$ by a factor of 2. The following table \ref{Mesh statistics} shows the mesh statistics used in the investigation, where $N_x\ , N_y\ , N_z$ denote the number of nodes in the stream-wise, wall-normal and span-wise directions. In order to facilitate the grid generator the size of domain was reduced to $6\de$ x $2\de$ x $3\de$.
+Because of the uniform meshes the spacing is same in all three directions and from now onward it will be referred as $\Delta^+$. The bottom and top faces of the domain were defined as the wall, no-slip boundary condition. The no-slip boundary condition was realized by using the half-way bounce back boundary condition. Because of the half-way bounce back boundary condition the distance of the nearest cell to the wall, $y^+$, is halved~\cite{krueger:book}. The $y^+$ will always be a smaller than $\Delta^+$ by a factor of 2. The following table \ref{Mesh statistics} shows the mesh statistics used in the investigation, where $N_x\ , N_y\ , N_z$ denote the number of nodes in the stream-wise, wall-normal and span-wise directions. In order to facilitate the grid generator the size of domain was reduced to $6\de$ x $2\de$ x $3\de$.
 %
 \begin{table}[!h]
 \centering
@@ -262,15 +263,15 @@ The domain size has been slightly altered in this investigation and this leads t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \subsection{Initial conditions}
-It is known from the theory of the internal fluid flow that there exists a hydrodynamic entry length ($L_h$), starting from the inlet (x = 0), that the fluid has to travel, in the channel, for the flow to become fully developed. This means when we integrate the flow governing equations, in time, the fluid has to travel the distance $L_h$ ($\tilde{x} =10H$) in every time-step, to generate a fully developed flow, which is unnecessary considering the computational efforts and also the storage requirements. The idea is to consider only that portion of the channel which will be fully developed, turbulent and not the initial part ($L_h$) of the channel. This implies we will have to provide specific initial conditions for the flow to become fully developed and turbulent.\\
+It is known from the theory of the internal fluid flow that there exists a hydrodynamic entry length ($L_h$), starting from the inlet (x = 0), that the fluid has to travel, in the channel, for the flow to become fully developed. This means when we integrate the flow governing equations, in time, the fluid has to travel the distance $L_h$ ($\sim{x} =10H$) in every time-step, to generate a fully developed flow, which is unnecessary considering the computational efforts and also the storage requirements. The idea is to consider only that portion of the channel which will be fully developed, turbulent and neglecting the initial part ($L_h$) of the channel. This implies that specific initial conditions for the flow to become fully developed and turbulent has to be provided.\\
 %
-Different approaches have been used by different authors to generate the initial condition for the incompressible, three-dimensional, unsteady, turbulent channel flow simulations.\emph{Moin et.al}~\cite{Moin:78} has specified few consistency criteria for initial velocity field. \emph{Sagaut}~\cite{sagaut:02} \& \emph{Fröhlich}~\cite{froehlich:book} have a concide description of most commonly used approaches with their respective advantage, disadvantages and their applications to suitable flows. Few of the several approaches mentioned in~\cite{sagaut:02} \& ~\cite{froehlich:book} will be discussed here.
+Different approaches have been used by different authors to generate the initial condition for the incompressible, three-dimensional, turbulent channel flow simulations.\emph{Moin et.al}~\cite{Moin:78} has specified few consistency criteria for initial velocity field. \emph{Sagaut}~\cite{sagaut:02} \& \emph{Fröhlich}~\cite{froehlich:book} have a concide description of most commonly used approaches with their respective advantage, disadvantages and their applications to suitable flows. Two of the several approaches mentioned in~\cite{sagaut:02} \& ~\cite{froehlich:book} will be discussed here.
 
 \textbf{i. First approach:} In this approach a simulation is performed for some Reynolds number smaller than the one to be simulated. The resulting fields of this simulations are then used as the starting point for the required Reynolds number and is  simulated further in time until a steady state, where the statistics of the flow do not change with time, is achieved. This approach is termed as \emph{Precursor simulation} in several literature.
 
 \textbf{ii. Second approach: } In this approach a laminar flow is chosen as the base flow and certain set of disturbances are applied on the base flow. The base flow super-imposed with disturbances is then integrated in time until the flow transitions to a turbulent flow. This approach is computationally intensive, as the flow takes time to become turbulent. There are several options available to impose the disturbances on to the base flow. Several authors have used this approach for the generating appropriate initial conditions. In this investigation this approach has been used.\\
 
-For the initialisation of our simulations the work of \emph{Eugene de Villiers}~\cite{devilliers:phd} is closely followed. \emph{Eugene de Villiers} introduced some sort of near wall streak cycle, where he uses the fundamentals of the turbulent structures near the walls. A parabolic flow profile is chosen as the base flow. To generate the parabolic flow profile the bulk mean velocity, $U_b = 0.1335\ m/s$, which was computed by \cite{devilliers:phd}, from the mean velocity DNS data of \cite{moser:kim:mansour:99} for $Re_\tau = 395$, is used.\\
+For the initialisation of our simulations the approach of \emph{Eugene de Villiers}~\cite{devilliers:phd} was followed. \emph{Eugene de Villiers} introduced some sort of near wall streak cycle, where he uses the fundamentals of the turbulent structures near the walls. A parabolic flow profile is chosen as the base flow. To generate the parabolic flow profile the bulk mean velocity, $U_b = 0.1335\ m/s$, which was computed by \cite{devilliers:phd}, from the mean velocity DNS data of \cite{moser:kim:mansour:99} for $Re_\tau = 395$, is used.\\
 
 Parabolic flow profile has been applied in the stream-wise direction, $u(y,0)$,  on all the fluid nodes in the domain. Figure \ref{para profile} shows the parabolic profile used as the base flow. A combination of sine and cosine waves have been used to break the flow symmetry and to develop the turbulence in the flow. 
 %
@@ -281,7 +282,7 @@ Parabolic flow profile has been applied in the stream-wise direction, $u(y,0)$, 
     \label{para profile}
 \end{figure}
 %
-Initially the the disturbances were applied the disturbance in the stream-wise direction, but that approach was quite time consuming. It took approximately 4.5 million time-steps for the flow to be turbulent. In the next approach we applied the disturbances in the wall-normal direction, $v$. This approach reduced the time it took for the flow to be turbulent, ~100,000 time-steps. The exact equations for the initialization have been specified in the the eq. \ref{Initial conditions} in Appendix.
+Initially the the disturbances were applied in the stream-wise direction, but that approach was quite time consuming. It took approximately 4.5 million time-steps for the flow to become turbulent. In the next approach the disturbance was applied in the wall-normal direction, $v$. This approach reduced the time it took for the flow to becomee turbulent, ~100,000 time-steps. The exact equations for the initialization have been specified in the the eq. \ref{Initial conditions} in Appendix.
 
 \subsection{Modelling of pressure gradient}
 In the theoretical section it was shown that the pressure gradient drives the flow through a channel. With the periodic boundary conditions applied in the both streamwise and spanwise direction no information on the pressure gradient is available and thus some kind of external forcing is required to drive the flow through the channel. This requires an additional step, to model the pressure gradient, in the numerical simulation. An additional force term will be added on the right hand side of the Navier-stokes equation. Forcing is only applied in the streamwise direction, $F_x$. Two most commonly used modelling strategies will be discussed here.
@@ -294,40 +295,80 @@ Since the forcing is constant the mass flow rate will be varying in time, which 
 F_x = -\frac{\D P}{\D x} = \frac{\tau_w}{\delta} = \frac{\rho u_\tau^2}{\de}
 \end{equation}
 %
-Thus the simulation a posteriori yields the mean flow rate required to generate the prescribed frictional losses ~\cite{Quadrioa:15}. ~\cite{KPremnath:09, Freitas:11} have used this forcing strategy.
+Thus the simulation a posteriori yields the mean flow rate, $U_b$, required to generate the prescribed frictional losses ~\cite{Quadrioa:15}. ~\cite{KPremnath:09, Freitas:11} have used this forcing strategy.
 
 \textbf{ii. Constant Flow rate :} In this approach the forcing is not constant, but it is time dependent. The forcing is adjusted in every time step to keep the mass flow rate in the channel equal to the specified flow rate. Flow rate per channel cross-sectional area is $U_b$. Thus $U_b$ is provided as the input and we get the mean friction velocity, $u_\tau$ as the output which we compare with that of the DNS result. This is the most widely used approach in the turbulent channel simulations~\cite{devilliers:phd, sonja:12, roos:book} and it has been utilised in this investigation. Detailed description of this approach is specified rarely and the authors~\cite{Quadrioa:15, Lenormanda:00} describe the approach in detail. ~\cite{Quadrioa:15} has shown a comparison between different forcing strategies applied on the turbulent channel flow.
 
 \subsection{Solver settings}
-Once the channel flow becomes turbulent the flow is allowed to further develop in time until the statistically steady state is reached i.e. the statistics of the flow variables are invariant to temporal changes. Once the stat. steady state is reached the time averaging of the flow variables is carried out and these time averaged quantities are further averaged over in space along the two homogeneous directions i.e spatial averaging over the x-z planes. \\
+Once the channel flow becomes turbulent the flow is allowed to further develop in time until the statistically steady state is reached i.e. the statistics of the flow variables are invariant to temporal changes. Once the statistically steady state is reached the time averaging of the flow variables is carried out and these time averaged quantities are further averaged over in space along the two homogeneous directions i.e spatial averaging over the x-z planes. 
 
-To determine the statistically steady state in the channel one can observer the evolution of the several quantities viz. (volume averaged)turbulent kinetic energy, $\tau_w$, $u_\tau$ etc. over some non-dimensional time. Refer to ~\cite{Jimandmoin:91} for the detailed description for steady state determination and spatial averaging. Here two non-dimensional time will be specified \emph{large-eddy turn-over-time (LETOT)}, $tu_\tau/\de$, and the flow through the domain time, $tU_b/\de$. LETOT is the time required by the large eddy to breakdown and transfer the energy to the small eddies~\cite{bespalko:11}. In this investigation no specific quantity had been monitored to determine the statistically steady state. An estimation that $\sim10LETOT$ is sufficient for the flow to be fully developed and statistically steady~\cite{mk}.  \\
+To determine the statistically steady state in the channel one can observe the evolution of the several quantities viz. turbulent kinetic energy (volume averaged), $\tau_w$, $u_\tau$ etc. over some non-dimensional time. Refer to ~\cite{Jimandmoin:91} for the detailed description for steady state determination and spatial averaging. Here two non-dimensional time will be specified \emph{large-eddy turn-over-time (LETOT)}, $tu_\tau/\de$, and the flow through the domain time, $tU_b/\de$. The $u_\tau$ obtained from DNS data is used for computing the LETOT. LETOT is the time required by the large eddy to breakdown and transfer the energy to the small eddies~\cite{bespalko:11}. In this investigation no specific quantity had been monitored to determine the statistically steady state. An estimation that $\sim10\ LETOT$ is sufficient for the flow to be fully developed and statistically steady~\cite{mk} had been followed. 
 
-Since LB-LES simulations are performed. In LB-LES a non-dimensional parameter mach number, \emph{\textbf{Ma}}, is very important. Since the LBM is only applicable to the incompressible flows \emph{\textbf{Ma}}$\leq 0.3$ is the upper-limit. Since the spatial resolution is fixed the temporal resolution can only be fixed by varying the \emph{\textbf{Ma}} number. In our case with the given physical parameters the \emph{\textbf{Ma}} number was very small and it has been artificially increased to increase the time-step size. The respective settings in lb units is specified in the Appendix.  
-The following table shows the details of the simulation settings:
+The lb simulations are generally performed in \emph{lattice units}, where all the physical parameters are represented by dimensionless numbers. This implies that converting the dimensional quantities into dimensionless lattice quantities and vice versa to interpret the simulation results. Exploiting the law of similarity we can ensure that we simulate the same kind of flow in both the unit systems by maintaining certain non-dimensional parameters equal in both unit systems i.e. Reynolds number.
+ 
+LB is mostly used for simulating the incompressible fluids where the Mach number is smaller $\left(Ma<0.3\right)$. The flow in this investigation is also incompressible. Smaller Mach number $Ma\ll 1$ implies that the flow in the channel evolves with smaller time-step, $\Delta t$, i.e. flow evolves slowly and thus renders the simulation as computationally expensive. In order to avoid that, $Ma$ has been artificially increased to speed-up the simulation i.e. coarser $\Delta t$ by keeping the $Re$ number constant. The computation of the parameters required to increase the $Ma$ is specified in the Appendix.  The table  \ref{Mach settings} shows the actual, $Ma_{act}$, and the artificial, $Ma_{art}$, Mach number.\\
 %
 \begin{table}[h!]
 \begin{center}
-\begin{tabular}{ |p{2cm}||p{1.5cm}|p{2cm}|p{2cm}|p{2cm}|  } 
+\begin{tabular}{ p{2.2cm}|p{2cm} } 
+\hline
+Mach number & Value \\
+  \hline
+  \multirow{1}{5em}{$Ma_{act}$} & 0.000389213 \\
+  \hline
+  \multirow{1}{5em}{$Ma_{art}$} & 0.180647487 \\
+  \hline
+\end{tabular}
+\end{center}
+\caption{Mach number}
+\label{Mach settings}
+\end{table}
+%
+\\
+There are two stages in the simulation of turbulent channel flow: Flow development stage and the averaging stage. In the flow development stage the flow is allowed to develop till it reaches the statistically steady state and in the averaging stage the statistics of the flow variables are sampled. Table \ref{Solver settings} shows the time, dimensional and non-dimensional values, required by different mesh resolutions for each stage.
+%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2cm}|p{1.5cm}|p{2cm}|p{2cm}|p{2cm}|  } 
 \hline
  &$\sim time$ & Mesh1 & Mesh1\_5 & Mesh2 \\
   \hline
-  \multirow{3}{6em}{Flow developing stage} & $t\ [s]$ & 3 & 5 & 8\\
-  & $tu_\tau/\delta$ & 300 & 1 & 2\\ 
-  & $tU_b/\delta$ & 100 & 1 & 2\\ 
+  \multirow{3}{6em}{Flow developing stage} & $t\ [s]$ & 7324 & 9806 & 12871\\
+  & $tu_\tau/\delta$ & 57 & 77 & 101\\ 
+  & $tU_b/\delta$ & 977 & 1309 & 1718\\ 
   \hline
-  \multirow{3}{6em}{Averaging stage} & $t [s]$ & 3 & 5 & 8\\
-  & $tu_\tau/\delta$ & 300 & 1 & 2\\ 
-  & $tU_b/\delta$ & 100 & 1 & 2\\ 
+  \multirow{3}{6em}{Averaging stage} & $t [s]$ & 65917 & 76002 & 69873\\
+  & $tu_\tau/\delta$ & 520  & 600 & 552\\ 
+  & $tU_b/\delta$ & 8800 & 10146 & 9328\\ 
   \hline
 \end{tabular}
 \end{center}
 \caption{Solver settings}
+\label{Solver settings}
 \end{table}
 %
+As suggested by~\cite{mk} $\sim10\ LETOT$ is sufficient for the flow development stage, but the table \ref{Solver settings} shows some higher values as it also involves the duration over which the flow becomes turbulent.
+In the averaging stage the averaging was carried out for longer duration to make sure that we have symmetric Reynolds stress component profiles. This decision was made after observing the profiles generated from every temporal and spatial averaged data set. Mean velocity profiles relatively require less time to have a steady symmetric profile.
+%%
+%\begin{table}[h!]
+%\begin{center}
+%\begin{tabular}{|r||r@{--}l|p{4cm}|}
+%\hline
+%\multicolumn{4}{|c|}{Eine aufwendige Tabelle} \\ \hline \hline
+%& \multicolumn{2}{c|}{Flow developing stage} & \\ \cline{2-3}
+%\multicolumn{1}{|c||}{J.}
+%& \multicolumn{1}{r@{\,\vline\,}}{niedrig} & hoch &
+%\multicolumn{1}{c|}{Averaging stage} \\ \hline
+%2012 & 25 & 370 & Schlechtes Jahr. \\ \hline
+%13 & 350 & 390 & Stabile Preise. Es geht aufwärts. \\ \hline
+%\end{tabular}
+%\end{center}
+%\caption{Solver}
+%\end{table}
 
-
-
+\subsection{Computational details \& Post-processing}
+Simulations have been carried out on the Phoenix cluster~\cite{phoenix} of TU Braunschweig. Computations have been performed on the one of the 8 available GPU nodes. Visualisation of the large data sets has been performed using the one of the 6 available visualisation nodes on the cluster.
+Time averaging of the flow variables along with the other turbulence statistics is carried out during the on-going simulations within the solver itself i.e. running time average as referred in the literature~\cite{Moin:78}. The fluctuating quantities are computed in the solver itself. Paraview together with python scripting is used to manipulate and extract the data from the resulting time-averaged data sets. It is also used for the visualisation of the instantaneous data i.e. velocity contour plots, iso-volumes etc. The data extracted by the python scripts is then used by the Matlab scripts to further manipulate and visualise the data in the form of profile plots i.e mean velocity profiles, Reynolds stresses. Spatial averaging was carried out in Matlab and just to point out that it can be time-consuming for the finer mesh resolutions.
 
 
 
