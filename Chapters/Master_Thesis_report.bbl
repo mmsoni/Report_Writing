@@ -36,17 +36,17 @@ Myoungkyu Lee and Robert~D. Moser.
   ${R}e_\tau \approx 5200$.
 \newblock {\em Journal of Fluid Mechanics}, 774:395--415, 2015.
 
-\bibitem{moser:kim:mansour:99}
-R.D. Moser, J.D. Kim, and N.N. Mansour.
-\newblock Direct numerical simulation of turbulent channel flow up to
-  ${R}e_\tau=590$.
-\newblock {\em Physics of Fluids}, 11:943--945, 1999.
-
 \bibitem{Moin:78}
 P.Moin, W.C. Reynolds, and J.H.Ferziger.
 \newblock Large eddy simulation of incompressible turbulent channel flow.
 \newblock Technical report number t-12, Thermosciences Division, Department of
   Mechanical Engineering, Stanford University, Stanford, California, 1978.
+
+\bibitem{moser:kim:mansour:99}
+R.D. Moser, J.D. Kim, and N.N. Mansour.
+\newblock Direct numerical simulation of turbulent channel flow up to
+  ${R}e_\tau=590$.
+\newblock {\em Physics of Fluids}, 11:943--945, 1999.
 
 \bibitem{Freitas:11}
 R.K. Freitas, A.~Henze, M.~Meinke, and W.~Schröder.
@@ -74,6 +74,11 @@ Eugene de~Villiers.
 \newblock PhD thesis, Thermofluids Section, Department of Mechanical
   Engineering, Imperial College of Science, Technology and Medicine,
   Kensington, London SW7 2AZ, 2006.
+
+\bibitem{krueger:book}
+T.~Krüger, H.~Kusumaatmaja, A.~Kuzmin, O.~Shardt, G.~Silva, and E.M. Viggen.
+\newblock {\em The Lattice Boltzmann Method: Principles and Practice}.
+\newblock Springer, Cham, Switzerland, 2016.
 
 \bibitem{Premnath:09}
 K.~Premnath, M.J. Pattinson, and S.~Banerjee.
@@ -122,9 +127,16 @@ Prof.~Manfred Krafczyk.
 \bibitem{phoenix}
 \url{https://www.tu-braunschweig.de/it/dienste/21/phoenix}.
 
-\bibitem{krueger:book}
-T.~Krüger, H.~Kusumaatmaja, A.~Kuzmin, O.~Shardt, G.~Silva, and E.M. Viggen.
-\newblock {\em The Lattice Boltzmann Method: Principles and Practice}.
-\newblock Springer, Cham, Switzerland, 2016.
+\bibitem{geier:parameter}
+Martin Geier, Andrea Pasquali, and Martin Schönherr.
+\newblock Parametrization of the cumulant lattice boltzmann method for fourth
+  order accurate diffusion part i: derivation and validation.
+\newblock {\em Journal of Computational Physics}, 348:862--888, 2017.
+
+\bibitem{geier:cumulant}
+Martin Geier, Martin Schönherr, Andrea Pasquali, and Manfred Krafczyk.
+\newblock The cumulant lattice boltzmann equation in three dimensions: Theory
+  and validation.
+\newblock {\em Computers and Mathematics with Applications}, 70:507--547, 2015.
 
 \end{thebibliography}
