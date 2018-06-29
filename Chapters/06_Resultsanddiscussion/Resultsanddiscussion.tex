@@ -35,21 +35,37 @@ Physical quantity & Mesh1 & Mesh1\_5 & Mesh2 & Target \\
 %
 \subsubsection{Mean velocity profile} \label{Mean velocity UDNS}
 
-Mean velocity profiles presented here have been averaged in time and space. It is seen from the Fig. (\ref{Mean velocity global}) and Fig. (\ref{Mean velocity wall}), the mean velocity profiles for all the meshes over-predict the DNS data. As discussed in the section \ref{scaling} the viscous sublayer plays a dominant role on the flow characteristics as higher velocity gradients are present there. Since the viscous sublayer is under-resolved in the simulations, $u_\tau$ and eventually the $\tau_w$ is under-predicted and as a result we see the different flow characteristics obtained from the simulations i.e. over-predicting velocity profiles in comparison to the DNS data. It is clear that with the better resolution of the viscous sublayer, the correct flow characteristics will be obtained and it is apparent from the Fig. (\ref{Mean velocity global}) and Fig. (\ref{Mean velocity wall}) that with the mesh refinement, the velocity profiles approach closer to the DNS data. Velocity profile for mesh3 nearly collapses on to the DNS data. Thus a positive effect of mesh resolution is seen from the mean velocity profile plots. 
+Mean velocity profiles presented here have been averaged in time and space. It is seen from the Fig. (\ref{mean profile udns}), the mean velocity profiles for all the meshes over-predict the DNS data. As discussed in the section \ref{scaling} the viscous sublayer plays a dominant role on the flow characteristics as higher velocity gradients are present there. Since the viscous sublayer is under-resolved in the simulations, $u_\tau$ and eventually the $\tau_w$ is under-predicted and as a result we see the different flow characteristics obtained from the simulations i.e. over-predicting velocity profiles in comparison to the DNS data. It is clear that with the better resolution of the viscous sublayer, the correct flow characteristics will be obtained and it is apparent from the Fig. (\ref{mean profile udns}) that with the mesh refinement, the velocity profiles approach closer to the DNS data. Velocity profile for mesh3 nearly collapses on to the DNS data. Thus a positive effect of mesh resolution is seen from the mean velocity profile plots. 
+%
 %
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.95\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png}
-    \caption{Mean stream-wise velocity profile normalized by $u_\tau$, plotted in global coordinates}
-    \label{Mean velocity global}
+%\centering
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png}}
+\end{minipage}
+\caption{Mean stream-wise velocity profile normalized by $u_\tau$}
+\label{mean profile udns}
 \end{figure}
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.95\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png}
-    \caption{Mean stream-wise  velocity profile normalized by $u_\tau$, plotted in wall coordinates (semi-log plot)}
-    \label{Mean velocity wall}
-\end{figure}
+%
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=0.95\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png}
+%    \caption{Mean stream-wise velocity profile normalized by $u_\tau$, plotted in global coordinates}
+%    \label{Mean velocity global}
+%\end{figure}
+%
+%\begin{figure}[t]
+%    \centering
+%    \includegraphics[width=0.95\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png}
+%    \caption{Mean stream-wise  velocity profile normalized by $u_\tau$, plotted in wall coordinates (semi-log plot)}
+%    \label{Mean velocity wall}
+%\end{figure}
 
 \subsubsection{Turbulence intensities} \label{Turbulence intensities UDNS}
 Turbulence intensities is the term used for the root-mean-square (rms) profiles of the velocity fluctuations. The rms profiles shown in this section have been averaged in the following order: 
@@ -63,7 +79,7 @@ the time-averaged data set written out in every time-step is spatially averaged 
 \end{figure}
 %
 
-Fig.(\ref{urms wall})-(\ref{wrms wall}) shows the comparison of the components of the rms profiles of the streamwise, wall-normal and spanwise velocity fluctuations, respectively, with the different mesh resolutions and the DNS data in wall coordinates. The profiles do not start from zero value, as only the fluid nodes are plotted. The general observation from all three velocity fluctuation profiles is that they converge to the DNS data with the increase in the mesh resolution. 
+Fig.(\ref{urms udns})-(\ref{wrms udns}) shows the comparison of the components of the rms profiles of the streamwise, wall-normal and spanwise velocity fluctuations, respectively, with the different mesh resolutions and the DNS data in wall coordinates. The profiles do not start from zero value, as only the fluid nodes are plotted. The general observation from all three velocity fluctuation profiles is that they converge to the DNS data with the increase in the mesh resolution. 
 
 Mesh 2 and Mesh 3 accurately estimates the location of the peak values for all three velocity component profiles, respectively, compared to the DNS data. Mesh 3 for all the velocity component profiles predict the peak value fairly close to that of the DNS data. All three velocity component profiles for Mesh 3 are in fairly good agreement with the DNS data. 
 
@@ -87,52 +103,95 @@ The rms value of the streamwise profile increases from zero at the wall to some 
 \begin{figure}[h]
 %\centering
 \begin{minipage}[b]{0.5\textwidth}
-\subfigure[Zoom near the wall]{
+\subfigure[global coordinates]{
 \includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg}}
 \end{minipage}
 %
 \begin{minipage}[b]{0.5\textwidth}
-\subfigure[Outer region]{
+\subfigure[wall coordinates]{
 \includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg}}
 \end{minipage}
-\caption{Channel flow at $Re_\tau=2000$}
-\label{uv_balance}
+\caption{Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau$}
+\label{urms udns}
 \end{figure}
 
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg}
-    \caption{$u_{rms}$ normalized by $u_\tau$ in wall coordinates}
-    \label{urms wall}
+%% vrms %%
+\begin{figure}[h]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg}}
+\end{minipage}
+\caption{Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau$}
+\label{vrms udns}
 \end{figure}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg}
-    \caption{$v_{rms}$ normalized by $u_\tau$ in wall coordinates}
-    \label{vrms wall}
+%% wrms %%
+\begin{figure}[h]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg}}
+\end{minipage}
+\caption{Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau$}
+\label{wrms udns}
 \end{figure}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg}
-    \caption{$w_{rms}$ normalized by $u_\tau$ in wall coordinates}
-    \label{wrms wall}
-\end{figure}
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg}
+%    \caption{$u_{rms}$ normalized by $u_\tau$ in wall coordinates}
+%    \label{urms wall}
+%\end{figure}
+
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg}
+%    \caption{$v_{rms}$ normalized by $u_\tau$ in wall coordinates}
+%    \label{vrms wall}
+%\end{figure}
+
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg}
+%    \caption{$w_{rms}$ normalized by $u_\tau$ in wall coordinates}
+%    \label{wrms wall}
+%\end{figure}
 
 \subsubsection{Turbulent shear stress}
 Turbulent shear stress is also referred to as the co-variance of the Reynolds stress tensor i.e. $-\overline{\up\vp}$. This component is responsible for the turbulent diffusion of the momentum. It is also sometimes referred to as the resolved shear stress. 
 
-Fig. (\ref{uvrms wall}) shows the turbulent shear stress profile normalised with the $u_\tau^2$ plotted in wall coordinates and compared against the DNS data and with the mesh resolutions.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg}
-    \caption{$uv_{rms}$ normalized by $u_\tau$ in wall coordinates}
-    \label{uvrms wall}
+Fig. (\ref{uvrms udns}) shows the turbulent shear stress profile normalised with the $u_\tau^2$ plotted in wall coordinates and compared against the DNS data and with the mesh resolutions. As seen from the Fig. (\ref{uvrms udns}) the increase in the mesh resolution results in the better agreement to the DNS data. Mesh 3 here shows a very good agreement to the DNS data and also it predicts the location of the peak value, $y^+ = 35$ fairly well.
+
+%% uv_rms %%
+\begin{figure}[h]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg}}
+\end{minipage}
+\caption{Turbulent shear stress normalised by $u_\tau^2$}
+\label{uvrms udns}
 \end{figure}
 
-As seen from the Fig. (\ref{uvrms wall}) the increase in the mesh resolution results in the better agreement to the DNS data. Mesh 3 here shows a very good agreement to the DNS data and also it predicts the location of the peak value, $y^+ = 35$ fairly well.
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg}
+%    \caption{$uv_{rms}$ normalized by $u_\tau$ in wall coordinates}
+%    \label{uvrms wall}
+%\end{figure}
 \subsection{WALE model results}
 In this section the results obtained from the combination of the LB flow solver with the WALE model (LES) performed on the relatively coarser mesh, in comparison to the resolution of the DNS data, will be presented. The main purpose is to access the accuracy with which the aforementioned combination reproduces the mean flow profiles and other turbulence statistics when compared to the DNS data. The computed physical quantities have been listed in the table \ref{Global quantities WALE} for all mesh resolutions. The same trend is seen for the physical quantities as mentioned in the section \ref{UDNS profiles}. The physical quantities approach closer to the respective target values with the increase in the mesh resolution. 
 %
@@ -174,6 +233,7 @@ The mean velocity profiles, normalised with the $u_\tau$, presented here are ave
 %%% End mean velociy profiles %%%%
 \subsubsection{Turbulence intensities}
 The rms profiles presented here are averaged in the same fashion as that of the section \ref{Turbulence intensities UDNS}. To show the adequacy of sampling taken for averaging the symmetric rms profiles, about the half-channel height $y  = \de$, of all three velocity fluctuations is shown in Fig. (\ref{Turbulence intensities WALE}). The comments made in the section \ref{Turbulence intensities UDNS} for the velocity profiles are also applicable here.
+The rms velocity profiles for all three components show a good agreement towards the DNS data as the mesh resolution increases.
 %
 \begin{figure}[h!]
     \centering
@@ -182,7 +242,8 @@ The rms profiles presented here are averaged in the same fashion as that of the 
     \label{Turbulence intensities WALE}
 \end{figure}
 %
-The rms velocity profiles for all three components show a good agreement towards the DNS data as the mesh resolution increases. 
+
+From Fig. (\ref{urms wale}) it is clear that the location of the peak value is predicted nearly correctly by rms profile of mesh 3. Rms profiles of all meshes overpredict the reference(DNS data) peak value. Overall mesh 3 shows a better agreement to the DNS data, although with a slight overprediction of the peak value. 
 %
 \begin{figure}[h!]
 %\centering
@@ -199,6 +260,8 @@ The rms velocity profiles for all three components show a good agreement towards
 \label{urms wale}
 \end{figure}
 %% End %%
+
+From Fig. (\ref{vrms wale}) it appears that profile for mesh 1 is shifted towards the right and so is the location of the peak value. With mesh refinement the profiles shift towards the left and the peak value is under-predicted by mesh 1 and mesh 3. Mesh 2 somehow overpredicts the peak value. All profiles underpredict in the viscous sublayer (mesh 2 and mesh 3) and the buffer layer. Resolution for mesh 3 approximates the DNS data quite well, although, with some underprediction in the log-law layer i.e. peak value.
 %
 \begin{figure}[h!]
 %\centering
@@ -215,6 +278,8 @@ The rms velocity profiles for all three components show a good agreement towards
 \label{vrms wale}
 \end{figure}
 %% End %%
+
+Fig. (\ref{wrms wale}) shows that all the profiles overpredict the location of the peak values and also the peak values. Mesh 3 shows a better agreement with the DNS data, with some overprediction in the log-law layer.
 %
 \begin{figure}[h!]
 %\centering
@@ -232,6 +297,7 @@ The rms velocity profiles for all three components show a good agreement towards
 \end{figure}
 %% End %%
 \subsubsection{Turbulent shear stress}
+Fig. (\ref{uvrms wale}) shows the turbulent shear stress normalised by $u_\tau^2$ plotted in global and wall coordinates. Mesh 1 and mesh 2 overpredicts the DNS data in the log-law layer and eventually the peak value. Profile for mesh 3 completely collapses on to the DNS data.
 %
 \begin{figure}[h!]
 %\centering
@@ -248,4 +314,58 @@ The rms velocity profiles for all three components show a good agreement towards
 \label{uvrms wale}
 \end{figure}
 %% End %%
-%\subsection{Comparison UDNS and WALE}
+
+\subsection{Comparison UDNS and WALE}
+
+In this section a comparison will be made between the UDNS and WALE model results. The purpose of this comparison is to see how accurately does the combination of LB solver and WALE model predict the results in comparison to that of the UDNS results. Simultaneously they will also be compared with the DNS data. Only the comparison for the mesh 3 will be shown in here and the comparison for other resolution will be shown in the Appendix. From the table (\ref{Global quantities}) and (\ref{Global quantities WALE}) it can be seen that $u_\tau$ and the resulting $Re_\tau$ for the WALE model are smaller in comparison with that of the UDNS.
+
+\subsubsection{Mean velocity profile}
+Fig. (\ref{mean profiles udns vs wale global coords}) and Fig. (\ref{mean profiles udns vs wale wall coords}) show the comparison of the mean velocity profiles, normalised by $u_\tau$, with the results of UDNS, WALE and the DNS data in global and wall coordinates. Both the profiles overpredict the DNS data. The profile of WALE shows a slight more overprediction in comparison to the UDNS profile.
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[zoom in fig. (a)]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png}}
+\end{minipage}
+\caption{Mean velocity profiles normalised by $u_\tau$}
+\label{mean profiles udns vs wale global coords}
+\end{figure} 
+%
+
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[zoom in fig. (a)]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zoom.png}}
+\end{minipage}
+\caption{Mean velocity profiles normalised by $u_\tau$}
+\label{mean profiles udns vs wale wall coords}
+\end{figure} 
+%
+The general explanation for the overprediction is the resulting $u_\tau$ being smaller, for WALE \& UDNS,  in comparison to the DNS data. The same applies to the overpredicting profile of the WALE in comparison to the UDNS profile. Ideally, both profiles, WALE \& UDNS, should underpredict the reference profile and this behaviour can be seen when we plot just the mean velocity and not the normalised mean velocity, $u^+$. 
+
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[zoom in fig. (a)]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png}}
+\end{minipage}
+\caption{Mean velocity profiles}
+\label{mean profiles udns vs wale}
+\end{figure} 
+%

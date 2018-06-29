@@ -32,12 +32,14 @@
 \contentsline {subsection}{\numberline {6.1}UDNS results}{19}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Mean velocity profile}{20}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}Turbulence intensities}{20}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Turbulent shear stress}{22}{subsubsection.6.1.3}
-\contentsline {subsection}{\numberline {6.2}WALE model results}{24}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Mean velocity profiles}{24}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Turbulence intensities}{25}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Turbulent shear stress}{21}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}WALE model results}{22}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Mean velocity profiles}{22}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Turbulence intensities}{24}{subsubsection.6.2.2}
 \contentsline {subsubsection}{\numberline {6.2.3}Turbulent shear stress}{25}{subsubsection.6.2.3}
-\contentsline {section}{\numberline {A}Appendices}{28}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Initial conditions}{28}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Lattice units}{28}{subsection.A.2}
-\contentsline {section}{References}{30}{section*.6}
+\contentsline {subsection}{\numberline {6.3}Comparison UDNS and WALE}{26}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Mean velocity profile}{26}{subsubsection.6.3.1}
+\contentsline {section}{\numberline {A}Appendices}{29}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Initial conditions}{29}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Lattice units}{29}{subsection.A.2}
+\contentsline {section}{References}{31}{section*.6}

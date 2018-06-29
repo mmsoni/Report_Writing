@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.23)  28 JUN 2018 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.23)  29 JUN 2018 18:19
 entering extended mode
 **./Master_Thesis_report.tex
 (Master_Thesis_report.tex
@@ -749,22 +749,22 @@ LaTeX Warning: Label `Length lb' multiply defined.
 )
 \openout1 = `Master_Thesis_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 93.
+Package hyperref Info: Link coloring ON on input line 91.
 
 ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -776,9 +776,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
  (Master_Thesis_report.out) (Master_Thesis_report.out)
 \@outlinefile=\write5
 \openout5 = `Master_Thesis_report.out'.
@@ -799,15 +799,15 @@ i"
 \makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks25
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 106.
+LaTeX Font Info:    Try loading font information for U+msa on input line 104.
  ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 106.
+LaTeX Font Info:    Try loading font information for U+msb on input line 104.
  ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 106.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 104.
  ("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -819,13 +819,13 @@ Non-PDF special ignored!
 
 {C:/Users/Soni/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (00_Abstract
 /Abstract.tex) (Master_Thesis_report.lof
-Overfull \hbox (2.02771pt too wide) in paragraph at lines 8--8
+Overfull \hbox (2.02771pt too wide) in paragraph at lines 9--9
  [][] [][][]\OT1/cmr/m/n/10 Root-mean-square ve-loc-ity fluc-tu-a-tions nor-mal
 -ized by $\OML/cmm/m/it/10 u[]$ \OT1/cmr/m/n/10 in global 
  []
 
 
-Overfull \hbox (2.02771pt too wide) in paragraph at lines 19--19
+Overfull \hbox (2.02771pt too wide) in paragraph at lines 25--25
  [][] [][][]\OT1/cmr/m/n/10 Root-mean-square ve-loc-ity fluc-tu-a-tions nor-mal
 -ized by $\OML/cmm/m/it/10 u[]$ \OT1/cmr/m/n/10 in global 
  []
@@ -875,7 +875,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
 ) (04_Implementation/Implementation.tex [4]) (05_Methodology/Methodology.tex
 [5]
-<figur/3D_Domain.png, id=343, 871.00406pt x 444.15938pt>
+<figur/3D_Domain.png, id=353, 871.00406pt x 444.15938pt>
 File: figur/3D_Domain.png Graphic file (type png)
 <use figur/3D_Domain.png>
 Package pdftex.def Info: figur/3D_Domain.png  used on input line 16. on input l
@@ -888,7 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--50
  []
 
 [7]
-<figur/Turbulent_profile.png, id=377, 523.9575pt x 346.29375pt>
+<figur/Turbulent_profile.png, id=387, 523.9575pt x 346.29375pt>
 File: figur/Turbulent_profile.png Graphic file (type png)
 <use figur/Turbulent_profile.png>
 Package pdftex.def Info: figur/Turbulent_profile.png  used on input line 86. on
@@ -909,7 +909,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-<figur/Log-law-plot.png, id=399, 661.72218pt x 487.8225pt>
+<figur/Log-law-plot.png, id=409, 661.72218pt x 487.8225pt>
 File: figur/Log-law-plot.png Graphic file (type png)
 <use figur/Log-law-plot.png>
 Package pdftex.def Info: figur/Log-law-plot.png  used on input line 123. on inp
@@ -941,7 +941,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-<figur/Infinite_plates.png, id=418, 554.07pt x 321.45094pt>
+<figur/Infinite_plates.png, id=428, 554.07pt x 321.45094pt>
 File: figur/Infinite_plates.png Graphic file (type png)
 <use figur/Infinite_plates.png>
 Package pdftex.def Info: figur/Infinite_plates.png  used on input line 173. on 
@@ -967,7 +967,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
-<figur/Parabolic_profile.png, id=475, 421.575pt x 316.18124pt>
+<figur/Parabolic_profile.png, id=485, 421.575pt x 316.18124pt>
 File: figur/Parabolic_profile.png Graphic file (type png)
 <use figur/Parabolic_profile.png>
 Package pdftex.def Info: figur/Parabolic_profile.png  used on input line 281. o
@@ -992,244 +992,213 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
-<06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png, id=531, 421
+<06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png, id=539, 421
 .575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png Graphic
  file (type png)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/Profile_global
-_coords.png  used on input line 42. on input line 42.
-Package pdftex.def Info: Requested size: 327.74895pt x 245.72104pt on input lin
-e 42.
+_coords.png  used on input line 45. on input line 45.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 45.
 
-[19]
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 45--46
+[][] 
+ []
+
 <06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png, id=
-538, 421.575pt x 316.0608pt>
+540, 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png
  Graphic file (type png)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png>
 
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_c
-oords_theo_comp.png  used on input line 49. on input line 49.
-Package pdftex.def Info: Requested size: 327.74895pt x 245.72104pt on input lin
-e 49.
+oords_theo_comp.png  used on input line 50. on input line 50.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 50.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 50--51
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 43--52
+[][] [] 
+ []
+
+[19]
 <06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg, id=5
-42, 878.28125pt x 658.46pt>
+50, 878.28125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg 
 Graphic file (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ont
-ensities_Mesh2.jpg  used on input line 60. on input line 60.
+ensities_Mesh2.jpg  used on input line 76. on input line 76.
 Package pdftex.def Info: Requested size: 207.0021pt x 155.19025pt on input line
- 60.
- [20 <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png (PNG 
-copy)>] [21 <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo
-_comp.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ont
-ensities_Mesh2.jpg>]
-<06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg, id=561, 878.28
+ 76.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png (PNG c
+opy)> <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.
+png (PNG copy)>]
+<06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg, id=567, 878.28
 125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg Graphic fi
 le (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/urms_global_co
-ords.jpg  used on input line 91. on input line 91.
+ords.jpg  used on input line 107. on input line 107.
 Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
-e 91.
+e 107.
 
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 91--92
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg, id=562, 878.2812
+<06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg, id=568, 878.2812
 5pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg Graphic file
  (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coor
-ds.jpg  used on input line 96. on input line 96.
+ds.jpg  used on input line 112. on input line 112.
 Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
-e 96.
+e 112.
 
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 96--97
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 112--113
 [][] 
  []
 
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 89--98
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 105--114
 [][] [] 
  []
 
-File: 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg Graphic file
- (type jpg)
-<use 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coor
-ds.jpg  used on input line 105. on input line 105.
-Package pdftex.def Info: Requested size: 207.0021pt x 155.19025pt on input line
- 105.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg, id=563, 878.2812
+<06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg, id=569, 878.28
+125pt x 658.46pt>
+File: 06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg Graphic fi
+le (type jpg)
+<use 06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_co
+ords.jpg  used on input line 122. on input line 122.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
+e 122.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 122--123
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg, id=570, 878.2812
 5pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg Graphic file
  (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coor
-ds.jpg  used on input line 112. on input line 112.
-Package pdftex.def Info: Requested size: 207.0021pt x 155.19025pt on input line
- 112.
+ds.jpg  used on input line 127. on input line 127.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
+e 127.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 127--128
+[][] 
+ []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg, id=564, 878.2812
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 120--129
+[][] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg, id=571, 878.28
+125pt x 658.46pt>
+File: 06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg Graphic fi
+le (type jpg)
+<use 06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_co
+ords.jpg  used on input line 137. on input line 137.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
+e 137.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 137--138
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg, id=572, 878.2812
 5pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg Graphic file
  (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coor
-ds.jpg  used on input line 119. on input line 119.
-Package pdftex.def Info: Requested size: 207.0021pt x 155.19025pt on input line
- 119.
+ds.jpg  used on input line 142. on input line 142.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
+e 142.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 142--143
+[][] 
+ []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg, id=566, 878.28
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 135--144
+[][] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg, id=575, 878.
+28125pt x 658.46pt>
+File: 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg Graphic 
+file (type jpg)
+<use 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_
+coords.jpg  used on input line 178. on input line 178.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
+e 178.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 178--179
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg, id=576, 878.28
 125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg Graphic fi
 le (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_co
-ords.jpg  used on input line 130. on input line 130.
-Package pdftex.def Info: Requested size: 207.0021pt x 155.19025pt on input line
- 130.
+ords.jpg  used on input line 183. on input line 183.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.92252pt on input lin
+e 183.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 183--184
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 176--185
+[][] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg
+>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg> <./06_Re
-sultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg>]
-
-LaTeX Warning: Text page 23 contains only floats.
-
-[23 <./06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg> <./06_Resu
-ltsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg>]
-<06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png, id=583, 421.575p
+<06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png, id=586, 421.575p
 t x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png Graphic file
  (type png)
 <use 06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png>
 Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/Profile_global_coor
-ds.png  used on input line 164. on input line 164.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 164.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 164--165
-[][] 
- []
-
-<06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png, id=584, 
-421.575pt x 316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png Grap
-hic file (type png)
-<use 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords
-_theo_comp.png  used on input line 169. on input line 169.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 169.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 169--170
-[][] 
- []
-
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 162--171
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png, id=588, 4
-21.575pt x 316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png Graph
-ic file (type png)
-<use 06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/Turbulence intensit
-ies_Mesh2.png  used on input line 180. on input line 180.
-Package pdftex.def Info: Requested size: 207.0021pt x 155.19426pt on input line
- 180.
-<06_Resultsanddiscussion/figur/WALE/urms_global_coords.png, id=589, 421.575pt x
- 316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/urms_global_coords.png Graphic file (t
-ype png)
-<use 06_Resultsanddiscussion/figur/WALE/urms_global_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/urms_global_coords.
-png  used on input line 191. on input line 191.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 191.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 191--192
-[][] 
- []
-
-<06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png, id=590, 421.575pt x 3
-16.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png Graphic file (typ
-e png)
-<use 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.pn
-g  used on input line 196. on input line 196.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 196.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 196--197
-[][] 
- []
-
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 189--198
-[][] [] 
- []
-
-<06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png, id=591, 421.575pt x
- 316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png Graphic file (t
-ype png)
-<use 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.
-png  used on input line 207. on input line 207.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 207.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 207--208
-[][] 
- []
-
-<06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png, id=592, 421.575pt x 3
-16.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png Graphic file (typ
-e png)
-<use 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.pn
-g  used on input line 212. on input line 212.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 212.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 212--213
-[][] 
- []
-
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 205--214
-[][] [] 
- []
-
-<06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png, id=593, 421.575pt x
- 316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png Graphic file (t
-ype png)
-<use 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.
-png  used on input line 223. on input line 223.
+ds.png  used on input line 223. on input line 223.
 Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
  223.
 
@@ -1237,13 +1206,13 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 223--224
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png, id=594, 421.575pt x 3
-16.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png Graphic file (typ
-e png)
-<use 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.pn
-g  used on input line 228. on input line 228.
+<06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png, id=587, 
+421.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png Grap
+hic file (type png)
+<use 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords
+_theo_comp.png  used on input line 228. on input line 228.
 Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
  228.
 
@@ -1256,64 +1225,292 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 221--230
 [][] [] 
  []
 
-[24 <./06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg>]
+[22 <./06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg> <./06_Re
+sultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg> <./06_Resultsanddiscus
+sion/figur/UDNS_2016/vrms_global_coords.jpg> <./06_Resultsanddiscussion/figur/U
+DNS_2016/vrms_wall_coords.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png, id=599, 421.575pt
- x 316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png Graphic file 
-(type png)
-<use 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coord
-s.png  used on input line 240. on input line 240.
-Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+<06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png, id=599, 4
+21.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png Graph
+ic file (type png)
+<use 06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/Turbulence intensit
+ies_Mesh2.png  used on input line 240. on input line 240.
+Package pdftex.def Info: Requested size: 207.0021pt x 155.19426pt on input line
  240.
-
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 240--241
-[][] 
- []
-
-<06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png, id=600, 421.575pt x
+[23 <./06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg> <./06_Re
+sultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg> <./06_Resultsanddiscus
+sion/figur/UDNS_2016/uv_rms_global_coords.jpg> <./06_Resultsanddiscussion/figur
+/UDNS_2016/uv_rms_wall_coords.jpg>]
+<06_Resultsanddiscussion/figur/WALE/urms_global_coords.png, id=609, 421.575pt x
  316.0608pt>
-File: 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png Graphic file (t
+File: 06_Resultsanddiscussion/figur/WALE/urms_global_coords.png Graphic file (t
 ype png)
-<use 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png>
-Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.
-png  used on input line 245. on input line 245.
+<use 06_Resultsanddiscussion/figur/WALE/urms_global_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/urms_global_coords.
+png  used on input line 252. on input line 252.
 Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
- 245.
+ 252.
 
-Overfull \hbox (21.4667pt too wide) in paragraph at lines 245--246
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 252--253
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png, id=610, 421.575pt x 3
+16.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png Graphic file (typ
+e png)
+<use 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.pn
+g  used on input line 257. on input line 257.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 257.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 257--258
 [][] 
  []
 
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 238--247
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 250--259
 [][] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [25 <./06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png (PNG copy
-)> <./06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png (PNG
- copy)> <./06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png 
-(PNG copy)>] [26 <./06_Resultsanddiscussion/figur/WALE/urms_global_coords.png (
-PNG copy)> <./06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png (PNG copy
-)> <./06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png (PNG copy)> <./
-06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png (PNG copy)> <./06_Resul
-tsanddiscussion/figur/WALE/wrms_global_coords.png (PNG copy)> <./06_Resultsandd
-iscussion/figur/WALE/wrms_wall_coords.png (PNG copy)>] [27 <./06_Resultsanddisc
-ussion/figur/WALE/uv_rms_global_coords.png (PNG copy)> <./06_Resultsanddiscussi
-on/figur/WALE/uv_rms_wall_coords.png (PNG copy)>] (Appendix/Appendix.tex
-[28
+<06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png, id=612, 421.575pt x
+ 316.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png Graphic file (t
+ype png)
+<use 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.
+png  used on input line 270. on input line 270.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 270.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 270--271
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png, id=613, 421.575pt x 3
+16.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png Graphic file (typ
+e png)
+<use 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.pn
+g  used on input line 275. on input line 275.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 275.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 275--276
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 268--277
+[][] [] 
+ []
+
+[24 <./06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png (PNG copy)>
+ <./06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png (PNG c
+opy)> <./06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png (P
+NG copy)>]
+<06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png, id=621, 421.575pt x
+ 316.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png Graphic file (t
+ype png)
+<use 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.
+png  used on input line 288. on input line 288.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 288.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 288--289
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png, id=622, 421.575pt x 3
+16.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png Graphic file (typ
+e png)
+<use 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.pn
+g  used on input line 293. on input line 293.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 293.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 293--294
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 286--295
+[][] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png, id=624, 421.575pt
+ x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png Graphic file 
+(type png)
+<use 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coord
+s.png  used on input line 306. on input line 306.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 306.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 306--307
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png, id=625, 421.575pt x
+ 316.0608pt>
+File: 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png Graphic file (t
+ype png)
+<use 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.
+png  used on input line 311. on input line 311.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 311.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 311--312
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 304--313
+[][] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 <./06_Resultsanddiscussion/figur/WALE/urms_global_coords.png (PNG copy)> <.
+/06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png (PNG copy)> <./06_Resu
+ltsanddiscussion/figur/WALE/vrms_global_coords.png (PNG copy)> <./06_Resultsand
+discussion/figur/WALE/vrms_wall_coords.png (PNG copy)>]
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png, id=638, 42
+1.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png Graphi
+c file (type png)
+<use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_globa
+l_coords.png  used on input line 328. on input line 328.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 328.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 328--329
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png, id=63
+9, 421.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png G
+raphic file (type png)
+<use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_globa
+l_coords_zoom.png  used on input line 333. on input line 333.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 333.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 333--334
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 326--335
+[][] [] 
+ []
+
+[26 <./06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png (PNG copy)> <.
+/06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png (PNG copy)> <./06_Resu
+ltsanddiscussion/figur/WALE/uv_rms_global_coords.png (PNG copy)> <./06_Resultsa
+nddiscussion/figur/WALE/uv_rms_wall_coords.png (PNG copy)>]
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.png, id
+=649, 421.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.pn
+g Graphic file (type png)
+<use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.png
+>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_
+coords_theo_comp.png  used on input line 344. on input line 344.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 344.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 344--345
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zoom.pn
+g, id=650, 421.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zo
+om.png Graphic file (type png)
+<use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zoo
+m.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_
+coords_theo_comp_zoom.png  used on input line 349. on input line 349.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 349.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 349--350
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 342--351
+[][] [] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png, id=651, 
+421.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png Grap
+hic file (type png)
+<use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png>
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_globa
+l_coords_U.png  used on input line 361. on input line 361.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 361.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 361--362
+[][] 
+ []
+
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png, id=
+652, 421.575pt x 316.0608pt>
+File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png
+ Graphic file (type png)
+<use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png>
+
+Package pdftex.def Info: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_globa
+l_coords_U_zoom.png  used on input line 366. on input line 366.
+Package pdftex.def Info: Requested size: 190.63338pt x 142.9205pt on input line
+ 366.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 366--367
+[][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 359--368
+[][] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [27 <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png (PN
+G copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom
+.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coord
+s_theo_comp.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile
+_wall_coords_theo_comp_zoom.png (PNG copy)>] [28 <./06_Resultsanddiscussion/fig
+ur/UDNSvsWale/Profile_global_coords_U.png (PNG copy)> <./06_Resultsanddiscussio
+n/figur/UDNSvsWale/Profile_global_coords_U_zoom.png (PNG copy)>]
+(Appendix/Appendix.tex [29
 
 ]
 Overfull \hbox (3.09459pt too wide) in paragraph at lines 80--80
@@ -1330,28 +1527,28 @@ Overfull \hbox (3.09459pt too wide) in paragraph at lines 84--84
 [][]| 
  []
 
-) [29] (Master_Thesis_report.bbl [30
+) [30] (Master_Thesis_report.bbl [31
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+ [32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (Master_Thesis_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `Master_Thesis_report.out' has not changed.
-(rerunfilecheck)             Checksum: DF29E900F347254E4E1A8DE2FCFAA506;2927.
+(rerunfilecheck)             Checksum: AFD6B6415CEDF88E21130CBA10862C5E;3084.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 8617 strings out of 493312
- 131545 string characters out of 3130262
- 214153 words of memory out of 3000000
- 11785 multiletter control sequences out of 15000+200000
+ 8674 strings out of 493312
+ 134581 string characters out of 3130262
+ 214146 words of memory out of 3000000
+ 11824 multiletter control sequences out of 15000+200000
  14063 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,17n,40p,1277b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1380,9 +1577,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Soni
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C
 :/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on Master_Thesis_report.pdf (36 pages, 1639630 bytes).
+Output written on Master_Thesis_report.pdf (37 pages, 2017255 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 465 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 808 PDF objects out of 1000 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
