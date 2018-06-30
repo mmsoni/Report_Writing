@@ -39,7 +39,10 @@
 \contentsline {subsubsection}{\numberline {6.2.3}Turbulent shear stress}{25}{subsubsection.6.2.3}
 \contentsline {subsection}{\numberline {6.3}Comparison UDNS and WALE}{26}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Mean velocity profile}{26}{subsubsection.6.3.1}
-\contentsline {section}{\numberline {A}Appendices}{29}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Initial conditions}{29}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Lattice units}{29}{subsection.A.2}
-\contentsline {section}{References}{31}{section*.6}
+\contentsline {subsubsection}{\numberline {6.3.2}Turbulence intensities}{28}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Turbulent shear stress}{30}{subsubsection.6.3.3}
+\contentsline {subsection}{\numberline {6.4}Conclusion and Outlook}{30}{subsection.6.4}
+\contentsline {section}{\numberline {A}Appendices}{31}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Initial conditions}{31}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Lattice units}{31}{subsection.A.2}
+\contentsline {section}{References}{33}{section*.6}

@@ -352,7 +352,7 @@ Fig. (\ref{mean profiles udns vs wale global coords}) and Fig. (\ref{mean profil
 \label{mean profiles udns vs wale wall coords}
 \end{figure} 
 %
-The general explanation for the overprediction is the resulting $u_\tau$ being smaller, for WALE \& UDNS,  in comparison to the DNS data. The same applies to the overpredicting profile of the WALE in comparison to the UDNS profile. Ideally, both profiles, WALE \& UDNS, should underpredict the reference profile and this behaviour can be seen when we plot just the mean velocity and not the normalised mean velocity, $u^+$. 
+The general explanation for the overprediction is the resulting $u_\tau$ being smaller, for WALE \& UDNS,  in comparison to the DNS data. The same applies to the overpredicting profile of the WALE in comparison to the UDNS profile. Ideally, both profiles, WALE \& UDNS, should underpredict the reference profile as we perform the simulations using under resolved mesh. This behaviour can be seen when we plot just the mean velocity and not the normalised mean velocity, $u^+$. Fig. \ref{mean profiles}(a) shows the mean velocity profile in the global coordinates and the Fig. \ref{mean profiles}(b) shows the zoomed in view of the mean velocity profile. It can be clearly seen that both UDNS \& WALE model underpredicts the reference mean centreline velocity, $U_c$. Profile for the WALE has the smallest centreline velocity. Thus, the comparison between the profiles of UDNS and WALE with each other as well as with the DNS data does not show any drastic difference. A marginal difference is seen between the profiles of the UDNS and WALE.
 
 %
 \begin{figure}[h!]
@@ -366,6 +366,80 @@ The general explanation for the overprediction is the resulting $u_\tau$ being s
 \includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png}}
 \end{minipage}
 \caption{Mean velocity profiles}
-\label{mean profiles udns vs wale}
+\label{mean profiles}
 \end{figure} 
 %
+
+\subsubsection{Turbulence intensities}
+Fig. (\ref{urms udns vs wale}) shows the comparison of the $u_{rms}$ profiles of UDNS and WALE with each other  and also with the profile of the DNS data. Profiles of UDNS and WALE show a good agreement with the DNS data with the profile of WALE slightly overpredicting the peak value in the buffer layer. Apart from the slight overprediction in the buffer layer, the profiles for UDNS and WALE are also in good agreement with each other.
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/urms_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/urms_wall_coords.png}}
+\end{minipage}
+\caption{Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau$}
+\label{urms udns vs wale}
+\end{figure} 
+%
+
+Fig. (\ref{vrms udns vs wale}) shows the $v_{rms}$ profile of UDNS and WALE with each other  and also with the profile of the DNS data. The comparison of the WALE and the UDNS profile shows that the WALE model dampens out the wall normal velocity fluctuations. This damping effect is present till $y^+ = 100$ and after that the profiles are in good agreement with each other. The peak value is underpredicted and the location of the peak value is overpredicted by both the UDNS and WALE profiles in comparison to the DNS data. 
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/vrms_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/vrms_wall_coords.png}}
+\end{minipage}
+\caption{Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau$}
+\label{vrms udns vs wale}
+\end{figure} 
+%
+
+Fig. (\ref{wrms udns vs wale}) shows the $w_{rms}$ profile of UDNS and WALE with each other  and also with the profile of the DNS data. The WALE model dampens out the spanwise velocity fluctuations in comparison to the UDNS profile. This effect is present till $y^+ = 100$ and after that the profiles are in good agreement. Both profiles overpredict the peak value and the location of the peak value in comparison to the DNS data. This can be seen by the slightly leftwards tilted velocity profiles.
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/wrms_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/wrms_wall_coords.png}}
+\end{minipage}
+\caption{Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau$}
+\label{wrms udns vs wale}
+\end{figure} 
+%
+
+Thus, from the comparison of the rms velocity profiles for all components with the UDNS and WALE it is observed that the mean velocity profile for the WALE model overpredicts the UDNS profile $y^+ = 100$ and then they are in good agreement. Also does the WALE profile overpredicts the peak value in comparison to that of the DNS data. With the other two fluctuating velocity components the WALE model dampens out the respective fluctuations till around $y^+ = 100$ in comparison to the UDNS profile. For wall-normal velocity fluctuation both profiles underpredict the peak value and for the spanwise velocity fluctuation both profiles overpredict the peak value. From the comparison of the WALE and the UDNS profiles it seems that the $\nu_t$ has a minimal effect.
+
+\subsubsection{Turbulent shear stress}
+Fig. (\ref{uvrms udns vs wale}) shows the comparison of the turbulent shear stress profiles of WALE and UDNS with each other as well as with the DNS data. WALE and UDNS profiles are in good agreement with each other except for the region between $y^+ = 30$ to $y^+ = 170$ where the UDNS profile underpredicts the WALE and the DNS data profiles. After $y^+ = 170$ the profile fluctuates about the DNS data like a mean. Thus this underprediction can be attributed to the insufficinet averaging for that case. Overall profile of WALE is in good agreement with the DNS data. 
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[wall coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_wall_coords.png}}
+\end{minipage}
+\caption{Turbulent shear stress profiles normalised by $u_\tau^2$}
+\label{uvrms udns vs wale}
+\end{figure} 
+%
+
+\subsection{Conclusion and Outlook}
