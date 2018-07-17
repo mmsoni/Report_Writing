@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.23)  30 JUN 2018 05:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.23)  17 JUL 2018 06:42
 entering extended mode
 **./Master_Thesis_report.tex
 (Master_Thesis_report.tex
@@ -819,13 +819,13 @@ Non-PDF special ignored!
 
 {C:/Users/Soni/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (00_Abstract
 /Abstract.tex) (Master_Thesis_report.lof
-Overfull \hbox (2.02771pt too wide) in paragraph at lines 9--9
+Overfull \hbox (2.02771pt too wide) in paragraph at lines 11--11
  [][] [][][]\OT1/cmr/m/n/10 Root-mean-square ve-loc-ity fluc-tu-a-tions nor-mal
 -ized by $\OML/cmm/m/it/10 u[]$ \OT1/cmr/m/n/10 in global 
  []
 
 
-Overfull \hbox (2.02771pt too wide) in paragraph at lines 25--25
+Overfull \hbox (2.02771pt too wide) in paragraph at lines 27--27
  [][] [][][]\OT1/cmr/m/n/10 Root-mean-square ve-loc-ity fluc-tu-a-tions nor-mal
 -ized by $\OML/cmm/m/it/10 u[]$ \OT1/cmr/m/n/10 in global 
  []
@@ -853,42 +853,109 @@ me identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \newpage
-             [1]) (02_LBM/LBM.tex [2]) (03_Turbulence/Turbulence.tex [3]
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
+             [1] [2]
+
+LaTeX Warning: Citation `doolen' on page 3 undefined on input line 20.
+
+
+LaTeX Warning: Citation `doolen' on page 3 undefined on input line 20.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+
+
+LaTeX Warning: Citation `thesis:bespalko' on page 3 undefined on input line 27.
+
+
+[3]
+
+LaTeX Warning: Citation `geller' on page 4 undefined on input line 32.
+
+
+LaTeX Warning: Citation `thesis:bespalko' on page 4 undefined on input line 32.
+
+
+) (02_LBM/LBM.tex [4]) (03_Turbulence/Turbulence.tex [5]
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
-) (04_Implementation/Implementation.tex [4]) (05_Methodology/Methodology.tex
-[5]
-<figur/3D_Domain.png, id=380, 871.00406pt x 444.15938pt>
+
+LaTeX Warning: Citation `versteeg:book' on page 6 undefined on input line 17.
+
+[6]) (04_Implementation/Implementation.tex [7]
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+<04_Implementation/figur/3D_Domain_gradients.png, id=413, 871.00406pt x 444.159
+38pt>
+File: 04_Implementation/figur/3D_Domain_gradients.png Graphic file (type png)
+<use 04_Implementation/figur/3D_Domain_gradients.png>
+Package pdftex.def Info: 04_Implementation/figur/3D_Domain_gradients.png  used 
+on input line 17. on input line 17.
+Package pdftex.def Info: Requested size: 227.62204pt x 116.06833pt on input lin
+e 17.
+
+Overfull \hbox (14.17065pt too wide) in paragraph at lines 23--25
+\OT1/cmr/m/n/10 The WALE model has been im-ple-mented in the LB ker-nel it-self
+ "LB[]Kernel[]2SOD".
+ []
+
+[8]
+<04_Implementation/figur/nutSimulation_latex_64.jpg, id=423, 667.49374pt x 812.
+03375pt>
+File: 04_Implementation/figur/nutSimulation_latex_64.jpg Graphic file (type jpg
+)
+<use 04_Implementation/figur/nutSimulation_latex_64.jpg>
+Package pdftex.def Info: 04_Implementation/figur/nutSimulation_latex_64.jpg  us
+ed on input line 35. on input line 35.
+Package pdftex.def Info: Requested size: 190.63338pt x 231.91525pt on input lin
+e 35.
+
+Overfull \hbox (21.4667pt too wide) in paragraph at lines 35--36
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (05_Methodology/Methodology.tex [9 <./04_Implementation/figur/3D_Domain_gradi
+ents.png>]
+<figur/3D_Domain.png, id=436, 871.00406pt x 444.15938pt>
 File: figur/3D_Domain.png Graphic file (type png)
 <use figur/3D_Domain.png>
 Package pdftex.def Info: figur/3D_Domain.png  used on input line 16. on input l
 ine 16.
 Package pdftex.def Info: Requested size: 276.00105pt x 140.73776pt on input lin
 e 16.
- [6 <./figur/3D_Domain.png>]
+ [10 <./04_Implementation/figur/nutSimulation_latex_64.jpg>] [11 <./figur/3D_Do
+main.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
-[7]
-<figur/Turbulent_profile.png, id=414, 523.9575pt x 346.29375pt>
+[12]
+<figur/Turbulent_profile.png, id=476, 523.9575pt x 346.29375pt>
 File: figur/Turbulent_profile.png Graphic file (type png)
 <use figur/Turbulent_profile.png>
 Package pdftex.def Info: figur/Turbulent_profile.png  used on input line 86. on
@@ -896,20 +963,16 @@ Package pdftex.def Info: figur/Turbulent_profile.png  used on input line 86. on
 Package pdftex.def Info: Requested size: 207.0021pt x 136.8083pt on input line 
 86.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 91--94
 
  []
 
-[8] [9 <./figur/Turbulent_profile.png>]
+[13 <./figur/Turbulent_profile.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-<figur/Log-law-plot.png, id=436, 661.72218pt x 487.8225pt>
+<figur/Log-law-plot.png, id=487, 661.72218pt x 487.8225pt>
 File: figur/Log-law-plot.png Graphic file (type png)
 <use figur/Log-law-plot.png>
 Package pdftex.def Info: figur/Log-law-plot.png  used on input line 123. on inp
@@ -921,7 +984,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--136
 
  []
 
-[10 <./figur/Log-law-plot.png>]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -936,12 +999,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
 
-
+[15 <./figur/Log-law-plot.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-<figur/Infinite_plates.png, id=455, 554.07pt x 321.45094pt>
+<figur/Infinite_plates.png, id=514, 554.07pt x 321.45094pt>
 File: figur/Infinite_plates.png Graphic file (type png)
 <use figur/Infinite_plates.png>
 Package pdftex.def Info: figur/Infinite_plates.png  used on input line 173. on 
@@ -953,28 +1016,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--179
 
  []
 
-[11]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./figur/Infinite_plates.png>] [13]
+[17 <./figur/Infinite_plates.png>] [18]
 Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
-<figur/Parabolic_profile.png, id=512, 421.575pt x 316.18124pt>
+<figur/Parabolic_profile.png, id=563, 421.575pt x 316.18124pt>
 File: figur/Parabolic_profile.png Graphic file (type png)
 <use figur/Parabolic_profile.png>
 Package pdftex.def Info: figur/Parabolic_profile.png  used on input line 281. o
 n input line 281.
 Package pdftex.def Info: Requested size: 207.0021pt x 155.2534pt on input line 
 281.
-[15 <./figur/Parabolic_profile.png (PNG copy)>] [16]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19] [20 <./figur/Parabolic_profile.png (PNG copy)>]
 Overfull \hbox (3.09459pt too wide) in paragraph at lines 337--337
 [][]| 
  []
@@ -984,15 +1053,8 @@ Overfull \hbox (3.09459pt too wide) in paragraph at lines 341--341
 [][]| 
  []
 
-[17]) (06_Resultsanddiscussion/Resultsanddiscussion.tex [18]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
-
-("C:\Users\Soni\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
-<06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png, id=566, 421
+[21]) (06_Resultsanddiscussion/Resultsanddiscussion.tex [22]
+<06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png, id=619, 421
 .575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png Graphic
  file (type png)
@@ -1007,7 +1069,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 45--46
  []
 
 <06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png, id=
-567, 421.575pt x 316.0608pt>
+620, 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png
  Graphic file (type png)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.png>
@@ -1026,9 +1088,9 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 43--52
 [][] [] 
  []
 
-[19]
-<06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg, id=5
-77, 878.28125pt x 658.46pt>
+[23]
+<06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg, id=6
+29, 878.28125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg 
 Graphic file (type jpg)
 <use 06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg>
@@ -1040,10 +1102,10 @@ Package pdftex.def Info: Requested size: 207.0021pt x 155.19025pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20 <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png (PNG c
+[24 <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_global_coords.png (PNG c
 opy)> <./06_Resultsanddiscussion/figur/UDNS_2016/Profile_wall_coords_theo_comp.
 png (PNG copy)>]
-<06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg, id=594, 878.28
+<06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg, id=644, 878.28
 125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg Graphic fi
 le (type jpg)
@@ -1057,7 +1119,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg, id=595, 878.2812
+<06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg, id=645, 878.2812
 5pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg Graphic file
  (type jpg)
@@ -1079,7 +1141,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 105--114
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg, id=596, 878.28
+<06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg, id=646, 878.28
 125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/vrms_global_coords.jpg Graphic fi
 le (type jpg)
@@ -1093,7 +1155,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 122--123
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg, id=597, 878.2812
+<06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg, id=647, 878.2812
 5pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/vrms_wall_coords.jpg Graphic file
  (type jpg)
@@ -1115,7 +1177,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 120--129
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg, id=598, 878.28
+<06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg, id=648, 878.28
 125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg Graphic fi
 le (type jpg)
@@ -1129,7 +1191,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 137--138
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg, id=599, 878.2812
+<06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg, id=649, 878.2812
 5pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg Graphic file
  (type jpg)
@@ -1151,7 +1213,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 135--144
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg, id=602, 878.
+<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg, id=652, 878.
 28125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_global_coords.jpg Graphic 
 file (type jpg)
@@ -1165,7 +1227,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 178--179
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg, id=603, 878.28
+<06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg, id=653, 878.28
 125pt x 658.46pt>
 File: 06_Resultsanddiscussion/figur/UDNS_2016/uv_rms_wall_coords.jpg Graphic fi
 le (type jpg)
@@ -1187,12 +1249,12 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 176--185
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg
+[25 <./06_Resultsanddiscussion/figur/UDNS_2016/Turbulence ontensities_Mesh2.jpg
 >]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png, id=613, 421.575p
+<06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png, id=662, 421.575p
 t x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png Graphic file
  (type png)
@@ -1206,7 +1268,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 223--224
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png, id=614, 
+<06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png, id=663, 
 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png Grap
 hic file (type png)
@@ -1225,14 +1287,14 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 221--230
 [][] [] 
  []
 
-[22 <./06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg> <./06_Re
+[26 <./06_Resultsanddiscussion/figur/UDNS_2016/urms_global_coords.jpg> <./06_Re
 sultsanddiscussion/figur/UDNS_2016/urms_wall_coords.jpg> <./06_Resultsanddiscus
 sion/figur/UDNS_2016/vrms_global_coords.jpg> <./06_Resultsanddiscussion/figur/U
 DNS_2016/vrms_wall_coords.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png, id=626, 4
+<06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png, id=676, 4
 21.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png Graph
 ic file (type png)
@@ -1241,11 +1303,11 @@ Package pdftex.def Info: 06_Resultsanddiscussion/figur/WALE/Turbulence intensit
 ies_Mesh2.png  used on input line 240. on input line 240.
 Package pdftex.def Info: Requested size: 207.0021pt x 155.19426pt on input line
  240.
-[23 <./06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg> <./06_Re
+[27 <./06_Resultsanddiscussion/figur/UDNS_2016/wrms_global_coords.jpg> <./06_Re
 sultsanddiscussion/figur/UDNS_2016/wrms_wall_coords.jpg> <./06_Resultsanddiscus
 sion/figur/UDNS_2016/uv_rms_global_coords.jpg> <./06_Resultsanddiscussion/figur
 /UDNS_2016/uv_rms_wall_coords.jpg>]
-<06_Resultsanddiscussion/figur/WALE/urms_global_coords.png, id=636, 421.575pt x
+<06_Resultsanddiscussion/figur/WALE/urms_global_coords.png, id=686, 421.575pt x
  316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/urms_global_coords.png Graphic file (t
 ype png)
@@ -1259,7 +1321,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 252--253
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png, id=637, 421.575pt x 3
+<06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png, id=687, 421.575pt x 3
 16.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png Graphic file (typ
 e png)
@@ -1281,7 +1343,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 250--259
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png, id=639, 421.575pt x
+<06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png, id=689, 421.575pt x
  316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/vrms_global_coords.png Graphic file (t
 ype png)
@@ -1295,7 +1357,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 270--271
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png, id=640, 421.575pt x 3
+<06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png, id=690, 421.575pt x 3
 16.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/vrms_wall_coords.png Graphic file (typ
 e png)
@@ -1314,11 +1376,11 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 268--277
 [][] [] 
  []
 
-[24 <./06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png (PNG copy)>
+[28 <./06_Resultsanddiscussion/figur/WALE/Profile_global_coords.png (PNG copy)>
  <./06_Resultsanddiscussion/figur/WALE/Profile_wall_coords_theo_comp.png (PNG c
 opy)> <./06_Resultsanddiscussion/figur/WALE/Turbulence intensities_Mesh2.png (P
 NG copy)>]
-<06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png, id=648, 421.575pt x
+<06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png, id=698, 421.575pt x
  316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png Graphic file (t
 ype png)
@@ -1332,7 +1394,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 288--289
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png, id=649, 421.575pt x 3
+<06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png, id=699, 421.575pt x 3
 16.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png Graphic file (typ
 e png)
@@ -1354,7 +1416,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 286--295
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png, id=651, 421.575pt
+<06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png, id=701, 421.575pt
  x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/uv_rms_global_coords.png Graphic file 
 (type png)
@@ -1368,7 +1430,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 306--307
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png, id=652, 421.575pt x
+<06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png, id=702, 421.575pt x
  316.0608pt>
 File: 06_Resultsanddiscussion/figur/WALE/uv_rms_wall_coords.png Graphic file (t
 ype png)
@@ -1390,11 +1452,11 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 304--313
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./06_Resultsanddiscussion/figur/WALE/urms_global_coords.png (PNG copy)> <.
+[29 <./06_Resultsanddiscussion/figur/WALE/urms_global_coords.png (PNG copy)> <.
 /06_Resultsanddiscussion/figur/WALE/urms_wall_coords.png (PNG copy)> <./06_Resu
 ltsanddiscussion/figur/WALE/vrms_global_coords.png (PNG copy)> <./06_Resultsand
 discussion/figur/WALE/vrms_wall_coords.png (PNG copy)>]
-<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png, id=665, 42
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png, id=715, 42
 1.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png Graphi
 c file (type png)
@@ -1408,7 +1470,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 328--329
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png, id=66
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png, id=71
 6, 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.png G
 raphic file (type png)
@@ -1427,12 +1489,12 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 326--335
 [][] [] 
  []
 
-[26 <./06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png (PNG copy)> <.
+[30 <./06_Resultsanddiscussion/figur/WALE/wrms_global_coords.png (PNG copy)> <.
 /06_Resultsanddiscussion/figur/WALE/wrms_wall_coords.png (PNG copy)> <./06_Resu
 ltsanddiscussion/figur/WALE/uv_rms_global_coords.png (PNG copy)> <./06_Resultsa
 nddiscussion/figur/WALE/uv_rms_wall_coords.png (PNG copy)>]
 <06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.png, id
-=676, 421.575pt x 316.0608pt>
+=725, 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.pn
 g Graphic file (type png)
 <use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp.png
@@ -1447,7 +1509,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 344--345
  []
 
 <06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zoom.pn
-g, id=677, 421.575pt x 316.0608pt>
+g, id=726, 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zo
 om.png Graphic file (type png)
 <use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_theo_comp_zoo
@@ -1466,7 +1528,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 342--351
 [][] [] 
  []
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png, id=680, 
+<06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png, id=729, 
 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png Grap
 hic file (type png)
@@ -1481,7 +1543,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 361--362
  []
 
 <06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png, id=
-681, 421.575pt x 316.0608pt>
+730, 421.575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png
  Graphic file (type png)
 <use 06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zoom.png>
@@ -1503,7 +1565,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 359--368
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/urms_global_coords.png, id=683, 421.5
+<06_Resultsanddiscussion/figur/UDNSvsWale/urms_global_coords.png, id=732, 421.5
 75pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/urms_global_coords.png Graphic f
 ile (type png)
@@ -1517,7 +1579,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 379--380
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/urms_wall_coords.png, id=684, 421.575
+<06_Resultsanddiscussion/figur/UDNSvsWale/urms_wall_coords.png, id=733, 421.575
 pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/urms_wall_coords.png Graphic fil
 e (type png)
@@ -1536,12 +1598,12 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 377--386
 [][] [] 
  []
 
-[27 <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png (PNG 
+[31 <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords.png (PNG 
 copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_zoom.p
 ng (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_wall_coords_
 theo_comp.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_w
 all_coords_theo_comp_zoom.png (PNG copy)>]
-<06_Resultsanddiscussion/figur/UDNSvsWale/vrms_global_coords.png, id=694, 421.5
+<06_Resultsanddiscussion/figur/UDNSvsWale/vrms_global_coords.png, id=743, 421.5
 75pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/vrms_global_coords.png Graphic f
 ile (type png)
@@ -1555,7 +1617,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 396--397
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/vrms_wall_coords.png, id=695, 421.575
+<06_Resultsanddiscussion/figur/UDNSvsWale/vrms_wall_coords.png, id=744, 421.575
 pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/vrms_wall_coords.png Graphic fil
 e (type png)
@@ -1577,7 +1639,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 394--403
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/wrms_global_coords.png, id=697, 421.5
+<06_Resultsanddiscussion/figur/UDNSvsWale/wrms_global_coords.png, id=746, 421.5
 75pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/wrms_global_coords.png Graphic f
 ile (type png)
@@ -1591,7 +1653,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 413--414
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/wrms_wall_coords.png, id=698, 421.575
+<06_Resultsanddiscussion/figur/UDNSvsWale/wrms_wall_coords.png, id=747, 421.575
 pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/wrms_wall_coords.png Graphic fil
 e (type png)
@@ -1610,16 +1672,16 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 411--420
 [][] [] 
  []
 
-[28 <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png (PN
+[32 <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U.png (PN
 G copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/Profile_global_coords_U_zo
 om.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/urms_global_coor
 ds.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/urms_wall_coords
-.png (PNG copy)>] [29 <./06_Resultsanddiscussion/figur/UDNSvsWale/vrms_global_c
+.png (PNG copy)>] [33 <./06_Resultsanddiscussion/figur/UDNSvsWale/vrms_global_c
 oords.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/vrms_wall_coo
 rds.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/wrms_global_coo
 rds.png (PNG copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/wrms_wall_coord
 s.png (PNG copy)>]
-<06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_global_coords.png, id=716, 421
+<06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_global_coords.png, id=766, 421
 .575pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_global_coords.png Graphic
  file (type png)
@@ -1633,7 +1695,7 @@ Overfull \hbox (21.4667pt too wide) in paragraph at lines 433--434
 [][] 
  []
 
-<06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_wall_coords.png, id=717, 421.5
+<06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_wall_coords.png, id=767, 421.5
 75pt x 316.0608pt>
 File: 06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_wall_coords.png Graphic f
 ile (type png)
@@ -1652,9 +1714,9 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 431--440
 [][] [] 
  []
 
-) [30 <./06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_global_coords.png (PNG
+) [34 <./06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_global_coords.png (PNG
  copy)> <./06_Resultsanddiscussion/figur/UDNSvsWale/uv_rms_wall_coords.png (PNG
- copy)>] (Appendix/Appendix.tex [31
+ copy)>] (Appendix/Appendix.tex [35
 
 ]
 Overfull \hbox (3.09459pt too wide) in paragraph at lines 80--80
@@ -1671,11 +1733,11 @@ Overfull \hbox (3.09459pt too wide) in paragraph at lines 84--84
 [][]| 
  []
 
-) [32] (Master_Thesis_report.bbl [33
+) [36] (Master_Thesis_report.bbl [37
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
- [34]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (Master_Thesis_report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
@@ -1684,18 +1746,21 @@ Package rerunfilecheck Info: File `Master_Thesis_report.out' has not changed.
 (rerunfilecheck)             Checksum: 96134CF34C820715E01229FCCD0F3D53;3323.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 8730 strings out of 493312
- 137101 string characters out of 3130262
- 214561 words of memory out of 3000000
- 11863 multiletter control sequences out of 15000+200000
+ 8770 strings out of 493312
+ 137969 string characters out of 3130262
+ 217008 words of memory out of 3000000
+ 11887 multiletter control sequences out of 15000+200000
  14063 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,17n,40p,1277b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,19n,40p,1277b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/font
@@ -1704,26 +1769,27 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Soni/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/S
 oni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi8.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Soni/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Soni/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Son
-i/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
+m/cmmi5.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Soni/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Soni/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/So
+ni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsl10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Soni/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Soni/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Soni/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
 /Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r8.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsl10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Soni/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Soni/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Soni
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C
-:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb>
-Output written on Master_Thesis_report.pdf (39 pages, 2345432 bytes).
+tt10.pfb><C:/Users/Soni/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on Master_Thesis_report.pdf (43 pages, 2525264 bytes).
 PDF statistics:
- 867 PDF objects out of 1000 (max. 8388607)
- 203 named destinations out of 1000 (max. 500000)
- 590 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 219 named destinations out of 1000 (max. 500000)
+ 600 words of extra memory for PDF output out of 10000 (max. 10000000)
 

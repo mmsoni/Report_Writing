@@ -1,6 +1,7 @@
 \newpage
-
+%\chapter{Turbulence theories}
 \section{Turbulence theories}
+
 {\bf i DNS}.\\
 Direct numerical simulation (DNS) method uses a modelling-free approach for approximation of the exact solution, as the navier-stokes equation comprises of all turbulence mechanisms. Since the turbulence is three dimensional and inherently instationary it has to take in to account all the components present in the navier stokes equation.Turbulence involves the interaction in between the scales of various different sizes and thus to represnt the exact solution or the characteristics of the turbulent flow considered correctly, the DNS method emphasises on the fine spatial and temporal resolution of the meshes. Apart from that this method requires the discretization methods to have low level of numerical dissipation and dispersion. In order to correctly determine the effects of the turbulence intensity, the fluctuating flow variables which satisfy the navier stokes equation are provided as inputs.
 \\
@@ -13,4 +14,74 @@ In comparison with LES, for the computation of the flows involving the boundary 
 \\
 Avery good compilation of the hybrid RANS-LES approach is found in {\it Fröhlich and von Tersi (2008)}\\
 \subsection{RANS}
+Resolving the entire range of scales present in the flow is not necessary for most engineering purposes and just the information of the mean properties is sufficient. This makes RANS a widely used approach for the turbulence modeling~\cite{versteeg:book}. The fundamental step in RANS is the decomposition of the instantaneous flow quantities into their corresponding mean and the fluctuating part:
+%
+\begin{equation}
+\begin{split}
+u_i(t) &= \bar{u_i} + {u_i}',\\
+p(t) &= \bar{p} + {p'}
+\label{Reynolds decomposition}
+\end{split}
+\end{equation}
+%
+This is known as the Reynolds decomposition. 
+The incompressible continuity and the Navier-Stokes equation are :
+%
+\begin{equation}
+\label{cont_eq}
+\begin{split}
+\frac{\D u_i}{\D x_i} &= 0,\\
+\frac{\D u_{i}}{\D t} + u_j\frac{\D u_i}{\D x_j} &= - \frac{1}{\rho}\frac{\D p}{\D x_i} + \nu \frac{\D^2 u_i}{\D {x_j}^2}
+\end{split}
+\end{equation}
+%
+Using the eq.(\ref{Reynolds decomposition}) in the eq.(\ref{cont_eq}) and time averaging the resulting equations we get the following equations:
+%
+\begin{eqnarray}
+\label{cont_time_eq}
+\frac{\D  \ub_i}{\D x_i} &=& 0\\
+\label{NS_time_eq}
+\frac{\D \ub_{i}}{\D t} +  \ub_j\frac{\D \ub_i}{\D x_j} &=&
+-\frac{1}{\rho } \frac{\D \pb}{\D x_i} + \nu \frac{\D^2 \ub_i}{\D{x_j}^2} -  \frac{\D\uij}{\D x_j}
+\end{eqnarray}
+%
+Eq.(\ref{cont_time_eq}) is the time-averaged continuity equation and the eq.(\ref{NS_time_eq}) is the RANS equation. The time-averaged Navier-Stokes equation has the same form as the instantaneous navier-Stokes equation. An additional term, $\frac{\D\uij}{\D x_j}$, is present in the right hand side of the eq.(\ref{NS_time_eq}). This additional term is the result of the non-linearity in the convection term of the NS equation and it represents the effect of the fluctuating velocities on to the mean flow. This term also posses a diffusive character as the viscous stress term.
 \subsection{LES}
+%
+\begin{equation}
+\label{traceless tensor}
+\begin{split}
+{{S}^d_{ij}} &= \frac{1}{2}\left(\overline{g_{ij}}^2 + \overline{g_{ji}}^2 \right) - \frac{1}{3}\de_{ij}\overline{g_{kk}}^2
+\end{split}
+\end{equation}
+%
+where $ \overline{g_{ij}}^2 = \overline{g_{ik}}\  \overline{g_{kj}} $ and $\de_{ij}$ is the Kronecker delta.
+%
+\begin{equation}
+\label{traceless tensor-1}
+\begin{split}
+{{S}^d_{ij}} &= \overline{S_{ik}}\  \overline{S_{kj}} + \overline{\Omega_{ik}}\  \overline{\Omega_{kj}} - \frac{1}{3}\de_{ij}\left[\overline{S_{mn}}\  \overline{S_{mn}} - \overline{\Omega_{mn}}\  \overline{\Omega_{mn}}\right]
+\end{split}
+\end{equation}
+%
+where $$\overline{S_{ij}} = \frac{1}{2}\left(\frac{\partial{\bar{u_i}}}{\partial{\bar{x_j}}} + \frac{\partial{\bar{u_j}}}{\partial{\bar{x_i}}}\right)$$ is the strain rate tensor and the rotation rate tensor is : $$\overline{\Omega_{ij}} = \frac{1}{2}\left(\frac{\partial{\bar{u_i}}}{\partial{\bar{x_j}}} - \frac{\partial{\bar{u_j}}}{\partial{\bar{x_i}}}\right)$$
+%
+%
+\begin{equation}
+\label{traceless tensor-2}
+\begin{split}
+{{S}^d_{ij}}{{S}^d_{ij}} &= \frac{1}{6}\left(\overline{S^2}\  \overline{S^2} + \overline{\Omega^2}\  \overline{\Omega^2}\right)  + \frac{2}{3}{S^2}{\Omega^2} +2IV_{S\Omega}
+\end{split}
+\end{equation}
+%
+with the notations:
+
+${S^2} = \overline{S_{ij}}\ \overline{S_{ij}}$, ${\Omega^2} = \overline{\Omega_{ij}}\ \overline{\Omega_{ij}}$ and $IV_{S\Omega} = \overline{S_{ik}}\ \overline{S_{kj}}\ \overline{\Omega_{jl}}\ \overline{\Omega_{li}}$
+\begin{equation}
+\label{eddy-viscosity}
+\begin{split}
+{\nu_t} &= \left({C_w}{\Delta}\right)^{2}
+\frac{\left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{3/2}}{\left(\sij \sij\right)^{5/2} + {\left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{5/4}} + \epsilon}
+\end{split}
+\end{equation}
+%

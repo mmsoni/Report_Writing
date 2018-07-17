@@ -2,47 +2,47 @@
 \contentsline {section}{List of Tables}{ii}{section*.2}
 \contentsline {section}{Nomenclature}{iii}{section*.3}
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Literature survey}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Objectives and Motivation}{2}{subsection.1.2}
-\contentsline {section}{\numberline {2}Lattice Boltzmann theories}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}BGK}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}MRT}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Cumulant LBM}{3}{subsection.2.3}
-\contentsline {section}{\numberline {3}Turbulence theories}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}RANS}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}LES}{4}{subsection.3.2}
-\contentsline {section}{\numberline {4}Implementation}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}Discretisation}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Implementation of eddy viscosity contribution}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Taylor-Green vortex simulations}{5}{subsection.4.3}
-\contentsline {section}{\numberline {5}Model set-up and theories}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}Turbulent channel flow}{6}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Governing equations}{7}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Scaling units}{8}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}Reynolds number}{11}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Computational Domain and Meshing}{12}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Computational Domain}{12}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Physical parameters}{13}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Meshing}{13}{subsubsection.5.3.3}
-\contentsline {subsection}{\numberline {5.4}Initial conditions}{14}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Modelling of pressure gradient}{15}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Solver settings}{16}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Computational details \& Post-processing}{17}{subsection.5.7}
-\contentsline {section}{\numberline {6}Results and discussion}{19}{section.6}
-\contentsline {subsection}{\numberline {6.1}UDNS results}{19}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Mean velocity profile}{20}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Turbulence intensities}{20}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Turbulent shear stress}{21}{subsubsection.6.1.3}
-\contentsline {subsection}{\numberline {6.2}WALE model results}{22}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Mean velocity profiles}{22}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Turbulence intensities}{24}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Turbulent shear stress}{25}{subsubsection.6.2.3}
-\contentsline {subsection}{\numberline {6.3}Comparison UDNS and WALE}{26}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Mean velocity profile}{26}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Turbulence intensities}{28}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Turbulent shear stress}{30}{subsubsection.6.3.3}
-\contentsline {subsection}{\numberline {6.4}Conclusion and Outlook}{30}{subsection.6.4}
-\contentsline {section}{\numberline {A}Appendices}{31}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Initial conditions}{31}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Lattice units}{31}{subsection.A.2}
-\contentsline {section}{References}{33}{section*.6}
+\contentsline {subsection}{\numberline {1.1}Literature survey}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Objectives and Motivation}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Lattice Boltzmann theories}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}BGK}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}MRT}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cumulant LBM}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Turbulence theories}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}RANS}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}LES}{7}{subsection.3.2}
+\contentsline {section}{\numberline {4}Implementation}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Discretisation}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Implementation of eddy viscosity contribution}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Taylor-Green vortex simulations}{9}{subsection.4.3}
+\contentsline {section}{\numberline {5}Model set-up and theories}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Turbulent channel flow}{10}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Governing equations}{11}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Scaling units}{13}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Reynolds number}{16}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Computational Domain and Meshing}{16}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Computational Domain}{16}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Physical parameters}{17}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Meshing}{18}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Initial conditions}{19}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Modelling of pressure gradient}{20}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Solver settings}{21}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Computational details \& Post-processing}{22}{subsection.5.7}
+\contentsline {section}{\numberline {6}Results and discussion}{23}{section.6}
+\contentsline {subsection}{\numberline {6.1}UDNS results}{23}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Mean velocity profile}{24}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Turbulence intensities}{24}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Turbulent shear stress}{25}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}WALE model results}{26}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Mean velocity profiles}{26}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Turbulence intensities}{28}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Turbulent shear stress}{29}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Comparison UDNS and WALE}{30}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Mean velocity profile}{30}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Turbulence intensities}{32}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Turbulent shear stress}{34}{subsubsection.6.3.3}
+\contentsline {subsection}{\numberline {6.4}Conclusion and Outlook}{34}{subsection.6.4}
+\contentsline {section}{\numberline {A}Appendices}{35}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Initial conditions}{35}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Lattice units}{35}{subsection.A.2}
+\contentsline {section}{References}{37}{section*.6}

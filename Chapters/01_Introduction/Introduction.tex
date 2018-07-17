@@ -1,73 +1,38 @@
 \newpage
+
+%\chapter{Introduction}
 \section{Introduction}
+Navier-stokes equations (NS) are the governing equation for the fluid flow. The flow of fluid can be termed as laminar or turbulent depending on the dimensionless Reynolds (Re) number. Reynolds number of a flow gives the measure of the relative importance of the inertia force over the viscous force. When the viscous forces are dominating i.e. the Re no is small the flow is laminar. Any disturbance present or originating in the laminar flow would be damped out by the viscosity. Above a certain value of Re number the flow becomes turbulent i.e. inertia forces are quite significant and any disturbance or irregularity would be amplified resulting in the flow becoming random and chaotic with the velocity and the pressure changing continuously in time and with in the substantial region of the flow i.e. turbulent regime. 
+
+Turbulent flows comprise of the rotating flow structures called turbulent eddies. These structures posses a wide range of length scales. The largest eddies interact with the mean flow and derive the energy from it. These large eddies are anisotropic and are affected by the inertia forces. They are insensitive to the viscosity. These eddies than transfer the energy further to the smaller and the smaller eddies via a mechanism called energy cascade. The energy present in the smaller eddies is dissipated by working against the viscous forces.
+
+Analytical solution of the flow governing equations are only available for certain basic cases viz. Couette flow or Poiseuille flow. The solution for the flow involving turbulence or with complex boundary conditions is not available. Thus the equations have to be solved numerically i.e. numerical simulations. The most straightforward approach for the solution of the turbulent flows is to perform Direct numerical simulation (DNS), where the flow governing equations are discretized and solved numerically. This approach resolves all the existing scales in the flow which eventually results in a computationally expensive simulation. With the latest advancement in the computational resources this approach is applicable only to flows with smaller to moderate Reynolds number (see section). The remedy to this problem is not to resolve all scales of motion present in the flow. This alternative approach is turbulence modeling. In this approach the entire scales of motion present in the flow are modeled, Reynolds averaged Navier stokes equation (RANS), or a certain level of scales are chosen to be resolved and the rest are modeled, Large eddy simulation (LES). 
+
+A sophisticated approach to obtain the solution of the turbulent flows is to use the Reynolds decomposition, where the flow properties are decomposed in to their respective mean and fluctuating parts, in combination with the flow governing equations to obtain the RANS equations. RANS equations describe the evolution of the mean flow properties. An additional term is obtained in RANS equations which represents the effects of the turbulent fluctuations i.e. fluctuating velocity components. This additional term has to be modeled to close the set of equations. 
+
+In LES large scales are resolved and the smaller scales are modeled. The separation of the scales is achieved by a filtering process (see section). Using the filtering operation, where the flow properties are decomposed in to resolved/filtered and unresolved/residual part, in combination with the NS equations we get the LES equations. These equations describe the evolution of the filtered quantities. Additional term is obtained in the LES equations which represents the effect of the residual scales on to the filtered scales. This additional term has to be modeled to close the set of equations.
+
+In terms of the computational expense LES lies in between the solution of turbulent flows by DNS and RANS. This method is motivated by the limitations of the RANS and the DNS approach \cite{pope:book}. LES involves modeling of the smaller scales of motion and does not resolve the entire range of scales as done in DNS. This allows this method to be applicable to flows with high Reynolds number. In comparison to RANS, where the entire range of scales is modeled, LES models only the smaller scales and thus it is computationally expensive. This extra computational overhead is justified when an accurate and reliable prediction of the flow is obtained. Specifically in the flows where the unsteadiness due to the larger scales are important i.e. flow over the bluff bodies LES is the appropriate choice. With the recent developments in the computational resources a lot of research is going on to make LES applicable to complex geometries and industrial flows.
+
+\textbf{\emph{Why LBM?}}\\
+A wide variety of methods are available to find the solution to the fluid flow equations. These methods differentiate from each other on the basis of the level of description of the fluid i.e microscopic, mesoscopic  or macroscopic. The methods are grouped under two terminologies: Conventional methods and the particle based methods~\cite{krueger:book}. The former methods assumes the macroscopic description or continuum approach of the fluid viz. finite difference method, finite volume method. The latter assumes the microscopic or mesoscopic description viz. Molecular dynamics, LBM etc. In this work, LBM has been chosen to perform the LES of the wall-bounded turbulent flow. This method differentiates from the conventional methods in the sense that it does not solve the flow equations directly, but it solves the boltzmann equation. Well known methods exist that can relate the dynamics of this equation to the macrosccopic conservation equations~\cite{krueger:book}. 
+
+Because of its kinetic nature the LBM enjoys several advantages over other numerical methods and that makes it a lucrative option for the simulation of the fluid flow~\cite{doolen}. \emph{S. Chen et. al}~\cite{doolen} points out some major advantages of LBM over other methods:
+
+\begin{itemize}
+\item The convection operator (streaming process) of LBM is linear. This behavior is in contrast to the non-linear behavior of the convection term in the conventional methods that use the macroscopic description. Streaming process in combination with the relaxation process (collision operator) is able to recover the non-linear convection behavior present in the macroscopic equations.
+
+\item The pressure of the LBM is computed from the equation of state. On the other hand, a poisson equation has to be solved for the pressure in the conventional methods which is quite tedious to discretize and solve numerically.
+
+\item The LBM discretises the Boltzmann equation in velocity space and only retains a minimal set of particle velocities that are needed to recover the proper macroscopic behaviour. This makes the LBM considerably more computationally efficient than other particle-based methods~\cite{thesis:bespalko}.
+
+\item In a grid, the collision process is local to each node and the interaction between the nodes is linear. It is this property of LBM which makes it very amenable to high performance computing on parallel architectures including GPU`s ~\cite{krueger:book}.
+\end{itemize}
+
+All methods have their advantages and disadvantages and there is no one method that is superior to other methods. LBM has also disadvantages: it memory intensive~\cite{krueger:book}, not efficient for steady flow simulations~\cite{geller}, it is limited to incompressible problems~\cite{thesis:bespalko} etc. It is a relatively young method and is evolving at a fast pace, which means that the applicability of the method to variety of problem is still increasing~\cite{krueger:book}.
+
 
 \subsection{Literature survey}
 
+
 \subsection{Objectives and Motivation}
-%The idea for this investigation is to check the cause for non-existant eddy viscosity in the channel for the ${Re_{\tau}} = 395$.
-%We would perform two set of simulations on the mesh resolution 192x64x96 (Mesh1). We would write out all the quantities i.e. gradients $\frac{\D v_i}{\D x_i}$ , strain rates contraction and the traceless tensor formulated with the square of the velocity gradient tensor. In short, it would be same as we did previously in the poiseuille flow simulations and the Taylor green vortex simulations. \\
-%
-%{\bf i. Mesh 1 AA2016Wale}. We will perform the simulation for total 300,000 time steps and write out the data only for the $300,000^{th}$ time-step. In this tests we will not perform any kind of averaging, but write out all the details as discussed above. The idea here is to observe the order for the different quantities written out and to estimate the orgin of the error.\\
-%
-%{\bf ii. Mesh 1 AA2016Wale -  smaller perturbation number ($\epsilon$)}. Here we will perform the same simulation as above, but with the smaller $\epsilon$ added to make the system well-poised.
-%The definition of which is as follows:\\
-%%
-%\begin{equation}
-%\label{eddy-viscosity}
-%\begin{split}
-%{\nu_t} &= \left({C_w}{\Delta}\right)^{2}
-%\frac{\left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{3/2}}{\left(\sij \sij\right)^{5/2} + {\left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{5/4}} + \epsilon}
-%\end{split}
-%\end{equation}
-%%
-%\\
-%where, $\epsilon$ in our case is of the order $\sim 10^{-8}$.\\
-%
-%In this simulation we will change the value of $\epsilon$ to $\sim 10^{-30}$ or lower as the order of the terms in the numerator and the denominator are in between $\sim 10^{-18}$ to $\sim 10^{-25}$. Adding the epsilon of $\sim 10^{-8}$ in the denominator, which is relatively a larger number, is the reason we do not see the eddy viscosity in the channel. The purpose of this test is to see if we get the same orders of magnitude of the eddy viscosity as obtained in the tests performed using Matlab.
-%\subsection{Discussion $9^{th}$ May}
-%
-%{\bf I. Test 1}. Here we have to improve the conditioning for the eddy viscosity in a more general way, rather than adding a constant  approximately. The idea as discussed by professor is as follows:
-%\begin{equation}
-%\label{eddy-viscosity-conditioning}
-%\begin{split}
-%A^{3/2} &= \left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{3/2},\\
-%A^{5/4} &= \left({S_{ij}^{d}}{S_{ij}^{d}}\right)^{5/4},\\
-%B^{5/2} &= \left(\sij \sij\right)^{5/2}
-%\end{split}
-%\end{equation}
-%When terms of the equation ~\ref{eddy-viscosity-conditioning} are replaced in the equation for ~\ref{eddy-viscosity} it looks as follows (not considering $\epsilon$ now):
-%\begin{equation}
-%\label{eddy-viscosity-changed}
-%\begin{split}\\
-%{\nu_t} &= \left({C_w}{\Delta}\right)^{2}
-%\frac{A^{3/2}}{B^{5/2} + {A^{5/4}}},\\
-%{OP} &= \frac{A^{3/2}}{B^{5/2} + {A^{5/4}}}\\
-%\end{split}
-%\end{equation}\\
-%Now in the equation ~\ref{eddy-viscosity-changed} let's divide by ${A^{5/4}}$ and ${OP}$ would like:
-%\begin{equation}
-%\label{some_modification}
-%\begin{split}\\
-%{OP} &= \frac{A^{3/2}A^{\--5/4}}{\left(B^{5/2}\// {A^{5/4}}\right) + 1}\\
-%\end{split}
-%\end{equation}\\
-%Some sort of this modification can give a general conditioning of the eddy viscosity.\\
-%{\bf II. Channel flow}.  Pressure and the density are negative i.e. mass deficit in the channel\\
-%{\bf III. Taylor green vortex}. Finer resolution with changed value of $\epsilon$. %%
-%\begin{equation}
-%\label{some_modification}
-%\begin{split}
-%{OP} &= \frac{A^{1/4}}{\left(B^{1/2}\// {\left(A^{1/4} + 10^{-10}\right)}\right)^{5} + 1}
-%\end{split}
-%\end{equation}\\
-%%Some sort of this modification can give a general conditioning of the eddy viscosity.\\
-%%{\bf II. Channel flow}.  Pressure and the density are negative i.e. mass deficit in the channel\\
-%%{\bf III. Taylor green vortex}. Finer resolution with changed value of $\epsilon$. 
-%
-%\subsection{Next steps $15^{th} May$}
-%
-%Since the reason for the missing eddy viscosity is found, $\epsilon$ = $10^{-30}$, and an appropriate wale model co-efficient, $C_{W} = 0.55$, we should start the wale model simulations on the channel flow.
-%\\
-%\\
-%{\bf i}. AA2016Wale and OneWale\\
-%{\bf ii}. AA2016wale with double precision. This will be a comparison to see if any significant changes are present in the flow.

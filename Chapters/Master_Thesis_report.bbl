@@ -16,6 +16,29 @@ S.B. Pope.
 \newblock {\em Turbulent Flow}.
 \newblock Cambridge University Press, Cambridge, UK, 2001.
 
+\bibitem{krueger:book}
+T.~Krüger, H.~Kusumaatmaja, A.~Kuzmin, O.~Shardt, G.~Silva, and E.M. Viggen.
+\newblock {\em The Lattice Boltzmann Method: Principles and Practice}.
+\newblock Springer, Cham, Switzerland, 2016.
+
+\bibitem{geier:parameter}
+Martin Geier, Andrea Pasquali, and Martin Schönherr.
+\newblock Parametrization of the cumulant lattice boltzmann method for fourth
+  order accurate diffusion part i: derivation and validation.
+\newblock {\em Journal of Computational Physics}, 348:862--888, 2017.
+
+\bibitem{weickert:LES}
+M.~Weickert, G.~Teike, O.~Schmidt, and M.~Sommerfeld.
+\newblock Investigation of the les wale turbulence model within the lattice
+  boltzmann framework.
+\newblock {\em Computers and Mathematics with Applications}, 59:2200--2214,
+  2010.
+
+\bibitem{davidson}
+Lars Davidson.
+\newblock Fluid mechanics, turbulent flow and turbulence modeling- lecture
+  script.
+
 \bibitem{froehlich:book}
 Jochen Fröhlich.
 \newblock {\em Large Eddy Simulationen turbulenter Strömungen}.
@@ -75,11 +98,6 @@ Eugene de~Villiers.
   Engineering, Imperial College of Science, Technology and Medicine,
   Kensington, London SW7 2AZ, 2006.
 
-\bibitem{krueger:book}
-T.~Krüger, H.~Kusumaatmaja, A.~Kuzmin, O.~Shardt, G.~Silva, and E.M. Viggen.
-\newblock {\em The Lattice Boltzmann Method: Principles and Practice}.
-\newblock Springer, Cham, Switzerland, 2016.
-
 \bibitem{Premnath:09}
 K.~Premnath, M.J. Pattinson, and S.~Banerjee.
 \newblock Generalized lattice-boltzmann equation with forcing term for
@@ -126,12 +144,6 @@ Prof.~Manfred Krafczyk.
 
 \bibitem{phoenix}
 \url{https://www.tu-braunschweig.de/it/dienste/21/phoenix}.
-
-\bibitem{geier:parameter}
-Martin Geier, Andrea Pasquali, and Martin Schönherr.
-\newblock Parametrization of the cumulant lattice boltzmann method for fourth
-  order accurate diffusion part i: derivation and validation.
-\newblock {\em Journal of Computational Physics}, 348:862--888, 2017.
 
 \bibitem{geier:cumulant}
 Martin Geier, Martin Schönherr, Andrea Pasquali, and Manfred Krafczyk.
