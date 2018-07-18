@@ -39,6 +39,23 @@ Lars Davidson.
 \newblock Fluid mechanics, turbulent flow and turbulence modeling- lecture
   script.
 
+\bibitem{nicoud:WALE}
+F.~Nicoud and F.~Ducros.
+\newblock Subgrid-scale stress modelling based on the square of the velocity
+  gradient tensor.
+\newblock {\em Flow, Turbulence and Combustion}, 62:183–200, 1999.
+
+\bibitem{taylor:green}
+F.R.S. G.~I.~Taylor and B.A. A.~E.~Green.
+\newblock Mechanism of the production of small eddies from large ones.
+\newblock {\em Proceddings og the Royal Society A Mathematical, Physical and
+  Engineering Sciences}, 158:499–521, 1937.
+
+\bibitem{wiki:tgv}
+{Wikipedia}.
+\newblock Taylor-green vortex --- {W}ikipedia{,} the free encyclopedia, 2016.
+\newblock [Online; accessed 17-July-2018].
+
 \bibitem{froehlich:book}
 Jochen Fröhlich.
 \newblock {\em Large Eddy Simulationen turbulenter Strömungen}.

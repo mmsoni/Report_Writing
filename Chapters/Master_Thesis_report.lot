@@ -1,8 +1,10 @@
-\contentsline {table}{\numberline {1}{\ignorespaces The size of the domain in x, y, z directions}}{17}{table.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Physical quantities}}{18}{table.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Mesh statistics}}{18}{table.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Mach number}}{21}{table.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Solver settings}}{22}{table.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Comparison of the resulting physical quantities}}{23}{table.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Comparison of the computed physical quantities using WALE model}}{27}{table.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Parameters in lattice units}}{36}{table.8}
+\contentsline {table}{\numberline {1}{\ignorespaces Mesh resolution used in TGV simulations}}{11}{table.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Solver settings for TGV}}{12}{table.2}
+\contentsline {table}{\numberline {3}{\ignorespaces The size of the domain in x, y, z directions}}{19}{table.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Physical quantities}}{20}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Mesh statistics}}{21}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Mach number}}{24}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Solver settings}}{24}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Comparison of the resulting physical quantities}}{25}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Comparison of the computed physical quantities using WALE model}}{29}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Parameters in lattice units}}{38}{table.10}

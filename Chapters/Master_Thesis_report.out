@@ -14,35 +14,39 @@
 \BOOKMARK [1][-]{section.4}{Implementation}{}% 14
 \BOOKMARK [2][-]{subsection.4.1}{Discretisation}{section.4}% 15
 \BOOKMARK [2][-]{subsection.4.2}{Implementation of eddy viscosity contribution}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.3}{Taylor-Green vortex simulations}{section.4}% 17
-\BOOKMARK [1][-]{section.5}{Model set-up and theories}{}% 18
-\BOOKMARK [2][-]{subsection.5.1}{Turbulent channel flow}{section.5}% 19
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Governing equations}{subsection.5.1}% 20
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Scaling units}{subsection.5.1}% 21
-\BOOKMARK [2][-]{subsection.5.2}{Reynolds number}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.3}{Computational Domain and Meshing}{section.5}% 23
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Computational Domain}{subsection.5.3}% 24
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Physical parameters}{subsection.5.3}% 25
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Meshing}{subsection.5.3}% 26
-\BOOKMARK [2][-]{subsection.5.4}{Initial conditions}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.5}{Modelling of pressure gradient}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.6}{Solver settings}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.7}{Computational details \046 Post-processing}{section.5}% 30
-\BOOKMARK [1][-]{section.6}{Results and discussion}{}% 31
-\BOOKMARK [2][-]{subsection.6.1}{UDNS results}{section.6}% 32
-\BOOKMARK [3][-]{subsubsection.6.1.1}{Mean velocity profile}{subsection.6.1}% 33
-\BOOKMARK [3][-]{subsubsection.6.1.2}{Turbulence intensities}{subsection.6.1}% 34
-\BOOKMARK [3][-]{subsubsection.6.1.3}{Turbulent shear stress}{subsection.6.1}% 35
-\BOOKMARK [2][-]{subsection.6.2}{WALE model results}{section.6}% 36
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Mean velocity profiles}{subsection.6.2}% 37
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Turbulence intensities}{subsection.6.2}% 38
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Turbulent shear stress}{subsection.6.2}% 39
-\BOOKMARK [2][-]{subsection.6.3}{Comparison UDNS and WALE}{section.6}% 40
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Mean velocity profile}{subsection.6.3}% 41
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Turbulence intensities}{subsection.6.3}% 42
-\BOOKMARK [3][-]{subsubsection.6.3.3}{Turbulent shear stress}{subsection.6.3}% 43
-\BOOKMARK [2][-]{subsection.6.4}{Conclusion and Outlook}{section.6}% 44
-\BOOKMARK [1][-]{appendix.A}{Appendices}{}% 45
-\BOOKMARK [2][-]{subsection.A.1}{Initial conditions}{appendix.A}% 46
-\BOOKMARK [2][-]{subsection.A.2}{Lattice units}{appendix.A}% 47
-\BOOKMARK [1][-]{section*.6}{References}{}% 48
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Conditioning of the WALE model equation}{subsection.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.3}{Taylor-Green vortex simulations \(TGV\)}{section.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Simulation settings}{subsection.4.3}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Analytical settings}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Results \046 comparison}{subsection.4.3}% 21
+\BOOKMARK [1][-]{section.5}{Model set-up and theories}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Turbulent channel flow}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Governing equations}{subsection.5.1}% 24
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Scaling units}{subsection.5.1}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Reynolds number}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.3}{Computational Domain and Meshing}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Computational Domain}{subsection.5.3}% 28
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Physical parameters}{subsection.5.3}% 29
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Meshing}{subsection.5.3}% 30
+\BOOKMARK [2][-]{subsection.5.4}{Initial conditions}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.5}{Modelling of pressure gradient}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.6}{Solver settings}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.7}{Computational details \046 Post-processing}{section.5}% 34
+\BOOKMARK [1][-]{section.6}{Results and discussion}{}% 35
+\BOOKMARK [2][-]{subsection.6.1}{UDNS results}{section.6}% 36
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Mean velocity profile}{subsection.6.1}% 37
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Turbulence intensities}{subsection.6.1}% 38
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Turbulent shear stress}{subsection.6.1}% 39
+\BOOKMARK [2][-]{subsection.6.2}{WALE model results}{section.6}% 40
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Mean velocity profiles}{subsection.6.2}% 41
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Turbulence intensities}{subsection.6.2}% 42
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Turbulent shear stress}{subsection.6.2}% 43
+\BOOKMARK [2][-]{subsection.6.3}{Comparison UDNS and WALE}{section.6}% 44
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Mean velocity profile}{subsection.6.3}% 45
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Turbulence intensities}{subsection.6.3}% 46
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Turbulent shear stress}{subsection.6.3}% 47
+\BOOKMARK [2][-]{subsection.6.4}{Conclusion and Outlook}{section.6}% 48
+\BOOKMARK [1][-]{appendix.A}{Appendices}{}% 49
+\BOOKMARK [2][-]{subsection.A.1}{Initial conditions}{appendix.A}% 50
+\BOOKMARK [2][-]{subsection.A.2}{Lattice units}{appendix.A}% 51
+\BOOKMARK [1][-]{section*.6}{References}{}% 52
