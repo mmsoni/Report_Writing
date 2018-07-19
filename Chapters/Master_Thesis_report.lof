@@ -1,63 +1,66 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Cuboid representing a channel}}{9}{figure.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{12}{subfigure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces 3D rectangular duct}}{13}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Velocity profile in the fully developed channel flow \nobreakspace {}\cite {cengel:book}}}{15}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Nondimensional velocity $u^+$ vs. the nondimensional distance $y^+$ (plotted in logarithmic scale) \nobreakspace {}\cite {kundu:book}}}{17}{figure.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{12}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {global coordinates}}}{12}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {global coordinates}}}{13}{subfigure.2.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {global coordinates}}}{13}{subfigure.2.4}
+\contentsline {figure}{\numberline {2}{\ignorespaces 3D rectangular duct}}{14}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Velocity profile in the fully developed channel flow \nobreakspace {}\cite {cengel:book}}}{16}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Nondimensional velocity $u^+$ vs. the nondimensional distance $y^+$ (plotted in logarithmic scale) \nobreakspace {}\cite {kundu:book}}}{18}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Flow between the infinite parallel plates}}{19}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Parabolic flow profile with $U_b = 0.1335\ m/s$}}{22}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Mean stream-wise velocity profile normalized by $u_\tau $}}{26}{figure.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{26}{figure.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{26}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Root-mean-square velocity fluctuations normalized by $u_\tau $ in global coordinates}}{27}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau $}}{28}{figure.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{28}{figure.9}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{28}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau $}}{28}{figure.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{28}{figure.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{28}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau $}}{29}{figure.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{29}{figure.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{29}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Turbulent shear stress normalised by $u_\tau ^2$}}{29}{figure.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{29}{figure.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{29}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Mean velocity profile normalised with $u_\tau $}}{30}{figure.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{30}{figure.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{30}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Root-mean-square velocity fluctuations normalized by $u_\tau $ in global coordinates}}{30}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau $}}{31}{figure.15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{31}{figure.15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{31}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau $}}{31}{figure.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{31}{figure.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{31}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau $}}{32}{figure.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{32}{figure.17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{32}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Turbulent shear stress profiles normalised by $u_\tau $}}{32}{figure.18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{32}{figure.18}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{32}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Mean velocity profiles normalised by $u_\tau $}}{33}{figure.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{33}{figure.19}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {zoom in fig. (a)}}}{33}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Mean velocity profiles normalised by $u_\tau $}}{33}{figure.20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wall coordinates}}}{33}{figure.20}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {zoom in fig. (a)}}}{33}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Mean velocity profiles}}{34}{figure.21}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{34}{figure.21}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {zoom in fig. (a)}}}{34}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau $}}{34}{figure.22}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{34}{figure.22}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{34}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau $}}{35}{figure.23}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{35}{figure.23}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{35}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau $}}{35}{figure.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{35}{figure.24}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{35}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Turbulent shear stress profiles normalised by $u_\tau ^2$}}{36}{figure.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{36}{figure.25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{36}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Mean velocity profiles, $Re_\tau = 550$}}{37}{figure.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{37}{figure.26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{37}{figure.26}
+\contentsline {figure}{\numberline {7}{\ignorespaces Mean stream-wise velocity profile normalized by $u_\tau $}}{27}{figure.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{27}{figure.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{27}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Root-mean-square velocity fluctuations normalized by $u_\tau $ in global coordinates}}{28}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau $}}{29}{figure.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{29}{figure.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{29}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau $}}{29}{figure.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{29}{figure.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{29}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau $}}{30}{figure.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{30}{figure.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{30}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Turbulent shear stress normalised by $u_\tau ^2$}}{30}{figure.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{30}{figure.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{30}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Mean velocity profile normalised with $u_\tau $}}{31}{figure.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{31}{figure.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{31}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Root-mean-square velocity fluctuations normalized by $u_\tau $ in global coordinates}}{31}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau $}}{32}{figure.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{32}{figure.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{32}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau $}}{32}{figure.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{32}{figure.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{32}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau $}}{33}{figure.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{33}{figure.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{33}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Turbulent shear stress profiles normalised by $u_\tau $}}{33}{figure.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{33}{figure.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{33}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Mean velocity profiles normalised by $u_\tau $}}{34}{figure.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{34}{figure.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {zoom in fig. (a)}}}{34}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Mean velocity profiles normalised by $u_\tau $}}{34}{figure.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {wall coordinates}}}{34}{figure.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {zoom in fig. (a)}}}{34}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Mean velocity profiles}}{35}{figure.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{35}{figure.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {zoom in fig. (a)}}}{35}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Rms profiles for the streamwise velocity fluctuation normalised by $u_\tau $}}{35}{figure.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{35}{figure.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{35}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Rms profiles for the wall-normal velocity fluctuation normalised by $u_\tau $}}{36}{figure.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{36}{figure.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{36}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Rms profiles for the spanwise velocity fluctuation normalised by $u_\tau $}}{36}{figure.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{36}{figure.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{36}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Turbulent shear stress profiles normalised by $u_\tau ^2$}}{37}{figure.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{37}{figure.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {wall coordinates}}}{37}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Mean velocity profiles, $Re_\tau = 550$}}{38}{figure.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {global coordinates}}}{38}{figure.26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {local coordinates}}}{38}{figure.26}
