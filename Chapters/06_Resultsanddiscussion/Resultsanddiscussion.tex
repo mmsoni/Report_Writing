@@ -2,7 +2,7 @@
 %\chapter{Results and discussion}
 
 \section{Results and discussion}
-In this section the results of the simulations will be presented and discussed. Two different variations of the LB solver were tested. One with the optimised values of the relaxation parameters~\cite{geier:parameter} and other with the relaxation parameters used as specified in ~\cite{geier:cumulant}. The results presented in this section are performed with the former variation of the LB solver  and the results of the latter variation will just be presented in the Appendix, as the choice of value one for all the parameters is the most stable choice but not accurate enough~\cite{geier:parameter}. Firstly, the results of the LB simulations carried out without any turbulence model will be presented and discussed. The result of the simulations with no-model will be termed as the \emph{under resolved DNS} (UDNS). Under resolved because the resolution is coarser compared to the reference mesh resolution and DNS because no additional modelling is done for turbulence. It will be followed by the discussion of the results from the LB-LES with the WALE model and will be compared with the UDNS and DNS results. Few general comments applicable for all the simulations are:
+In this section the results of the simulations will be presented and discussed. Two different variations of the LB solver were tested. One with the optimised values of the relaxation parameters~\cite{geier:parameter} and other with the relaxation parameters used as specified in ~\cite{geier:cumulant}. The results presented in this section are performed with the former variation of the LB solver and the results of the latter variation will just be presented in the Appendix (\ref{One wale}), as the choice of value one for all the parameters is the most stable choice but not accurate enough~\cite{geier:parameter}. Firstly, the results of the LB simulations carried out without any turbulence model will be presented and discussed. The result of the simulations with no-model will be termed as the \emph{under resolved DNS} (UDNS). Under resolved because the resolution is coarser compared to the reference mesh resolution and DNS because no additional modelling is done for turbulence. It will be followed by the discussion of the results from the LB-LES with the WALE model and will be compared with the UDNS and DNS results. Few general comments applicable for all the simulations are:
 
 \begin{itemize}
 \item The DNS results of~\cite{kim:moin:moser:87} , for $Re_\tau = 395$, will be used as a reference for the comparison. The quantities obtained from the DNS data will be referred to as the \emph{target} quantities.
@@ -315,7 +315,7 @@ Fig. (\ref{uvrms wale}) shows the turbulent shear stress normalised by $u_\tau^2
 \end{figure}
 %% End %%
 
-\subsection{Comparison UDNS and WALE}
+\subsection{Comparison UDNS and WALE, $Re_\tau = 395$}
 
 In this section a comparison will be made between the UDNS and WALE model results. The purpose of this comparison is to see how accurately does the combination of LB solver and WALE model predict the results in comparison to that of the UDNS results. Simultaneously they will also be compared with the DNS data. Only the comparison for the mesh 3 will be shown in here and the comparison for other resolution will be shown in the Appendix. From the table (\ref{Global quantities}) and (\ref{Global quantities WALE}) it can be seen that $u_\tau$ and the resulting $Re_\tau$ for the WALE model are smaller in comparison with that of the UDNS.
 
@@ -441,5 +441,94 @@ Fig. (\ref{uvrms udns vs wale}) shows the comparison of the turbulent shear stre
 \label{uvrms udns vs wale}
 \end{figure} 
 %
+
+\subsection{Comparison UDNS and WALE, $Re_\tau = 550$}
+The comparison of the UDNS and the WALE model profiles for $Re_\tau = 395$ did not show any noteworthy difference. A slight difference, less than $1\%$, is observed in the mean velocity profile and the Reynolds stress profiles. The initial assumption was that $\nu_t$ is not sufficient enough to create a noticeable difference. Thus it was decided to perform a simulation with the higher Reynolds number, $Re_\tau = 550$. The DNS results of~\cite{lee:moser:15} , for $Re_\tau = 550$, will be used as a reference for the comparison. The DNS data for the comparison can be obtained from the database of turbulent channel flow~\cite{channeldata:99}.
+
+The main purpose for performing this simulation is to have some noticeable difference between the WALE and the UDNS results with the increased Reynolds number. The domain size was same as that used for the investigation with $Re_\tau = 395$. The simulation has been performed on the Mesh 1 resolution. The table (\ref{Physical quantities 550}) shows the values of the physical quantities in both S.I and LB units. The Ma number of the flow $Ma_{act} = 0.002915452$ is very small and for the reason mentioned in subsection (\ref{Mach reference}) the Ma number is artificially increased to $Ma_{art} = 0.173205081$. The table (Solver settings 550) shows the solver settings.\\
+
+%
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|c}
+%\hline
+$ Physical\ quantity$ & $ S.I\ Units$ & $LB\ units$  \\
+\hline
+%
+Half channel height, $\de$ & $1.0\ m$ & $32\Delta x$\\
+\hline
+%
+Friction velocity, $u_\tau$ & $0.0543496\ m/s$ & $-$ \\
+\hline
+%
+Bulk velocity, $U_b$ & $1\ m/s$ & $0.1 \Delta x/ \Delta t$ \\
+\hline
+%
+Kinematic Viscosity, $\nu$ & $0.0001\ m^2/s$ & $0.00032 \Delta x^2 / \Delta t$\\
+\hline
+%
+\end{tabular}
+\caption{Physical quantities, $Re_\tau = 550$}
+\label{Physical quantities 550}
+\end{table}
+%
+%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2cm}|p{1.5cm}|p{2cm}|  } 
+\hline
+ &$\sim time$ & Mesh1 \\
+  \hline
+  \multirow{3}{6em}{Flow developing stage} & $t\ [s]$ & 1562.5  \\
+  & $tu_\tau/\delta$ & 84 \\ 
+  & $tU_b/\delta$ & 1562.5 \\ 
+  \hline
+  \multirow{3}{6em}{Averaging stage} & $t [s]$ & 9062.5 \\
+  & $tu_\tau/\delta$ & 492.54  \\ 
+  & $tU_b/\delta$ & 9062.5 \\ 
+  \hline
+\end{tabular}
+\end{center}
+\caption{Solver settings, $Re_\tau = 550$}
+\label{Solver settings 550}
+\end{table}
+%
+\textbf{Mean velocity profile}
+%
+\begin{figure}[h!]
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[global coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/Re_tau_550/Profile_global_coords.png}}
+\end{minipage}
+%
+\begin{minipage}[b]{0.5\textwidth}
+\subfigure[local coordinates]{
+\includegraphics[width=6.7cm]{06_Resultsanddiscussion/figur/Re_tau_550/Profile_wall_coords_theo_comp.png}}
+\end{minipage}
+\caption{Mean velocity profiles, $Re_\tau = 550$}
+\label{mean profiles 550}
+\end{figure} 
+%
+The resulting quantities for UDNS and WALE have listed in the table (\ref{Global quantities results 550}) along with the target values.
+%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ p{3cm}|p{1.5cm}p{1.5cm}p{1.5cm}  } 
+\hline
+Physical quantity & WALE & UDNS & Target \\
+  \hline
+  \multirow{1}{6em}{$u_\tau,\ m/s$}  & 0.0451 & 0.0455 & 0.0550\\
+  \hline
+  \multirow{1}{6em}{$Re_\tau$} & 451 & 455 & 550\\
+  \hline
+%  \multirow{1}{6em}{$U_c,\ m/s$} & 0.1562 & 0.1557 & 0.1547 & 0.1591\\
+%  \hline
+\end{tabular}
+\end{center}
+\caption{Comparison of the computed physical quantities using WALE model \& UDNS $Re_\tau = 550$}
+\label{Global quantities results 550}
+\end{table}
+%
+Fig. (\ref{mean profiles 550}) shows the mean velocity profiles of UDNS and WALE compared with each other as well as with the DNS results. The profiles for UDNS and the WALE model overpredict the DNS profiles significantly. Noticeable difference is not seen between the UDNS and WALE profiles. Thus increasing the Reynolds number is also not helpful to see the $\nu_t$ influencing the WALE mean velocity profiles. Since no positive outcome is obtained from these profiles, the profiles for the turbulence intensity and the Reynolds stress will not be shown or discussed.
 
 \subsection{Conclusion and Outlook}

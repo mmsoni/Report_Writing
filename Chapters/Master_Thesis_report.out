@@ -41,12 +41,14 @@
 \BOOKMARK [3][-]{subsubsection.6.2.1}{Mean velocity profiles}{subsection.6.2}% 41
 \BOOKMARK [3][-]{subsubsection.6.2.2}{Turbulence intensities}{subsection.6.2}% 42
 \BOOKMARK [3][-]{subsubsection.6.2.3}{Turbulent shear stress}{subsection.6.2}% 43
-\BOOKMARK [2][-]{subsection.6.3}{Comparison UDNS and WALE}{section.6}% 44
+\BOOKMARK [2][-]{subsection.6.3}{Comparison UDNS and WALE, Re= 395}{section.6}% 44
 \BOOKMARK [3][-]{subsubsection.6.3.1}{Mean velocity profile}{subsection.6.3}% 45
 \BOOKMARK [3][-]{subsubsection.6.3.2}{Turbulence intensities}{subsection.6.3}% 46
 \BOOKMARK [3][-]{subsubsection.6.3.3}{Turbulent shear stress}{subsection.6.3}% 47
-\BOOKMARK [2][-]{subsection.6.4}{Conclusion and Outlook}{section.6}% 48
-\BOOKMARK [1][-]{appendix.A}{Appendices}{}% 49
-\BOOKMARK [2][-]{subsection.A.1}{Initial conditions}{appendix.A}% 50
-\BOOKMARK [2][-]{subsection.A.2}{Lattice units}{appendix.A}% 51
-\BOOKMARK [1][-]{section*.6}{References}{}% 52
+\BOOKMARK [2][-]{subsection.6.4}{Comparison UDNS and WALE, Re= 550}{section.6}% 48
+\BOOKMARK [2][-]{subsection.6.5}{Conclusion and Outlook}{section.6}% 49
+\BOOKMARK [1][-]{appendix.A}{Appendices}{}% 50
+\BOOKMARK [2][-]{subsection.A.1}{Initial conditions}{appendix.A}% 51
+\BOOKMARK [2][-]{subsection.A.2}{Lattice units}{appendix.A}% 52
+\BOOKMARK [2][-]{subsection.A.3}{One WALE}{appendix.A}% 53
+\BOOKMARK [1][-]{section*.6}{References}{}% 54

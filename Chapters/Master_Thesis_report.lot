@@ -7,4 +7,7 @@
 \contentsline {table}{\numberline {7}{\ignorespaces Solver settings}}{24}{table.7}
 \contentsline {table}{\numberline {8}{\ignorespaces Comparison of the resulting physical quantities}}{25}{table.8}
 \contentsline {table}{\numberline {9}{\ignorespaces Comparison of the computed physical quantities using WALE model}}{29}{table.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Parameters in lattice units}}{38}{table.10}
+\contentsline {table}{\numberline {10}{\ignorespaces Physical quantities, $Re_\tau = 550$}}{37}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Solver settings, $Re_\tau = 550$}}{37}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Comparison of the computed physical quantities using WALE model \& UDNS $Re_\tau = 550$}}{37}{table.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Parameters in lattice units}}{40}{table.13}
